@@ -25,8 +25,9 @@ test_df = pd.read_csv('../../test.csv')
 
 # Prepare features - keep it simple for AutoGluon
 train_df['label'] = (train_df['Personality'] == 'Extrovert').astype(int)
-train_data = train_df.drop(['Personality'], axis=1)
-test_data = test_df.copy()
+# Must drop id - ignored_columns doesn't work properly
+train_data = train_df.drop(['Personality', 'id'], axis=1)
+test_data = test_df.drop(['id'], axis=1)
 
 print(f"Training samples: {len(train_data)}")
 print(f"Test samples: {len(test_data)}")
@@ -36,8 +37,11 @@ try:
     always_wrong_df = pd.read_csv('output/20250704_2318_always_wrong_samples.csv')
     always_wrong_ids = set(always_wrong_df['id'].values)
     print(f"\nLoaded {len(always_wrong_ids)} always-wrong sample IDs")
+    # Create index mask for always-wrong samples
+    always_wrong_indices = train_df[train_df['id'].isin(always_wrong_ids)].index
 except:
     always_wrong_ids = set()
+    always_wrong_indices = []
     print("\nNo always-wrong samples file found")
 
 # Custom metric that penalizes errors on known difficult samples
@@ -49,13 +53,12 @@ def custom_accuracy(y_true, y_pred, sample_weight=None):
         return np.average(y_true == y_pred, weights=sample_weight)
 
 # Create sample weights
-if always_wrong_ids:
+if len(always_wrong_indices) > 0:
     # Give 10x weight to always-wrong samples
     train_weights = np.ones(len(train_data))
-    wrong_mask = train_data['id'].isin(always_wrong_ids)
-    train_weights[wrong_mask] = 10.0
+    train_weights[always_wrong_indices] = 10.0
     train_data['sample_weight'] = train_weights
-    print(f"Applied 10x weight to {wrong_mask.sum()} difficult samples")
+    print(f"Applied 10x weight to {len(always_wrong_indices)} difficult samples")
 else:
     train_data['sample_weight'] = 1.0
 
@@ -119,7 +122,6 @@ predictor.fit(
     ag_args_fit={
         #'num_gpus': 1,  # Use GPU when available
         'sample_weight': 'sample_weight' if 'sample_weight' in train_data.columns else None,
-        'ignored_columns': ['id'],  # Ignore ID column
     },
     ag_args_ensemble={
         'fold_fitting_strategy': 'sequential_local',  # Better for difficult samples
@@ -146,9 +148,9 @@ print("\n=== FEATURE IMPORTANCE ===")
 print(feature_importance)
 
 # Analyze predictions on always-wrong samples
-if always_wrong_ids:
+if len(always_wrong_indices) > 0:
     print("\n=== ANALYZING DIFFICULT SAMPLES ===")
-    wrong_samples = train_data[train_data['id'].isin(always_wrong_ids)].copy()
+    wrong_samples = train_data.iloc[always_wrong_indices].copy()
     # Remove sample_weight for prediction
     wrong_samples_clean = wrong_samples.drop('sample_weight', axis=1) if 'sample_weight' in wrong_samples.columns else wrong_samples
     wrong_preds = predictor.predict_proba(wrong_samples_clean)
