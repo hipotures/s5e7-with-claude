@@ -117,7 +117,7 @@ predictor.fit(
     num_stack_levels=2,
     excluded_model_types=['KNN'],  # Exclude KNN as it's slow for large datasets
     ag_args_fit={
-        'num_gpus': 1,  # Use GPU when available
+        #'num_gpus': 1,  # Use GPU when available
         'sample_weight': 'sample_weight' if 'sample_weight' in train_data.columns else None,
     },
     ag_args_ensemble={
@@ -147,17 +147,26 @@ print(feature_importance)
 # Analyze predictions on always-wrong samples
 if always_wrong_ids:
     print("\n=== ANALYZING DIFFICULT SAMPLES ===")
-    wrong_samples = train_data[train_data['id'].isin(always_wrong_ids)]
-    wrong_preds = predictor.predict_proba(wrong_samples)
-    wrong_accuracy = (predictor.predict(wrong_samples) == wrong_samples['label']).mean()
+    wrong_samples = train_data[train_data['id'].isin(always_wrong_ids)].copy()
+    # Remove sample_weight for prediction
+    wrong_samples_clean = wrong_samples.drop('sample_weight', axis=1) if 'sample_weight' in wrong_samples.columns else wrong_samples
+    wrong_preds = predictor.predict_proba(wrong_samples_clean)
+    wrong_predictions = predictor.predict(wrong_samples_clean)
+    wrong_accuracy = (wrong_predictions == wrong_samples['label']).mean()
     print(f"Accuracy on always-wrong samples: {wrong_accuracy:.4f}")
     print(f"Average probability on always-wrong: {wrong_preds[1].mean():.4f}")
 
 # Generate test predictions
 print("\n=== GENERATING TEST PREDICTIONS ===")
 
+# Remove sample_weight from test data if it exists
+if 'sample_weight' in test_data.columns:
+    test_data_clean = test_data.drop('sample_weight', axis=1)
+else:
+    test_data_clean = test_data
+
 # Get probabilities
-test_probs = predictor.predict_proba(test_data, as_multiclass=False)
+test_probs = predictor.predict_proba(test_data_clean, as_multiclass=False)
 
 # Apply custom threshold based on analysis
 optimal_threshold = 0.35  # From error analysis
