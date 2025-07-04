@@ -25,9 +25,8 @@ test_df = pd.read_csv('../../test.csv')
 
 # Prepare features - keep it simple for AutoGluon
 train_df['label'] = (train_df['Personality'] == 'Extrovert').astype(int)
-# Must drop id - ignored_columns doesn't work properly
-train_data = train_df.drop(['Personality', 'id'], axis=1)
-test_data = test_df.drop(['id'], axis=1)
+train_data = train_df.drop(['Personality'], axis=1)
+test_data = test_df.copy()
 
 print(f"Training samples: {len(train_data)}")
 print(f"Test samples: {len(test_data)}")
@@ -52,15 +51,14 @@ def custom_accuracy(y_true, y_pred, sample_weight=None):
     else:
         return np.average(y_true == y_pred, weights=sample_weight)
 
-# Create sample weights
+# Create sample weights (will be passed separately, not as a column)
 if len(always_wrong_indices) > 0:
     # Give 10x weight to always-wrong samples
-    train_weights = np.ones(len(train_data))
-    train_weights[always_wrong_indices] = 10.0
-    train_data['sample_weight'] = train_weights
+    sample_weights = np.ones(len(train_data))
+    sample_weights[always_wrong_indices] = 10.0
     print(f"Applied 10x weight to {len(always_wrong_indices)} difficult samples")
 else:
-    train_data['sample_weight'] = 1.0
+    sample_weights = None
 
 # AutoGluon configuration for extended training
 print("\n=== CONFIGURING AUTOGLUON ===")
@@ -121,7 +119,7 @@ predictor.fit(
     excluded_model_types=['KNN'],  # Exclude KNN as it's slow for large datasets
     ag_args_fit={
         #'num_gpus': 1,  # Use GPU when available
-        'sample_weight': 'sample_weight' if 'sample_weight' in train_data.columns else None,
+        'sample_weight': sample_weights,  # Pass weights array, not column name
     },
     ag_args_ensemble={
         'fold_fitting_strategy': 'sequential_local',  # Better for difficult samples
@@ -151,10 +149,9 @@ print(feature_importance)
 if len(always_wrong_indices) > 0:
     print("\n=== ANALYZING DIFFICULT SAMPLES ===")
     wrong_samples = train_data.iloc[always_wrong_indices].copy()
-    # Remove sample_weight for prediction
-    wrong_samples_clean = wrong_samples.drop('sample_weight', axis=1) if 'sample_weight' in wrong_samples.columns else wrong_samples
-    wrong_preds = predictor.predict_proba(wrong_samples_clean)
-    wrong_predictions = predictor.predict(wrong_samples_clean)
+    # No need to clean - sample_weight is not a column anymore
+    wrong_preds = predictor.predict_proba(wrong_samples)
+    wrong_predictions = predictor.predict(wrong_samples)
     wrong_accuracy = (wrong_predictions == wrong_samples['label']).mean()
     print(f"Accuracy on always-wrong samples: {wrong_accuracy:.4f}")
     print(f"Average probability on always-wrong: {wrong_preds[1].mean():.4f}")
@@ -162,14 +159,8 @@ if len(always_wrong_indices) > 0:
 # Generate test predictions
 print("\n=== GENERATING TEST PREDICTIONS ===")
 
-# Remove sample_weight from test data if it exists
-if 'sample_weight' in test_data.columns:
-    test_data_clean = test_data.drop('sample_weight', axis=1)
-else:
-    test_data_clean = test_data
-
 # Get probabilities
-test_probs = predictor.predict_proba(test_data_clean, as_multiclass=False)
+test_probs = predictor.predict_proba(test_data, as_multiclass=False)
 
 # Apply custom threshold based on analysis
 optimal_threshold = 0.35  # From error analysis
