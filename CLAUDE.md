@@ -4,12 +4,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Kaggle Playground Series S5E7 competition project for personality classification (Introvert/Extrovert prediction). The project has discovered a mathematical accuracy ceiling of 0.975708 due to ~2.43% ambiguous cases (ambiverts) that cannot be classified from the given features.
+This is a Kaggle Playground Series S5E7 competition project for personality classification (Introvert/Extrovert prediction). The project has discovered a mathematical accuracy ceiling of 0.975708 due to ~19.4% ambiguous cases (ambiverts) that cannot be classified from the given features.
 
 ### Critical Understanding
 - **The 0.975708 barrier is NOT random** - it's a mathematical limit from 16 MBTI types → 2 classes (I/E) reduction
-- **2.43% of data is ambiguous** (mainly ISFJ/ESFJ types that can be either I or E)
-- **96.2% of ambiverts are labeled as Extrovert** in the dataset
+- **19.4% of data is ambiguous** (mainly ISFJ/ESFJ types that can be either I or E) - much more than initially estimated 2.43%
+- **97.9% of ambiverts are labeled as Extrovert** in the dataset
 - Without full MBTI dimensions (N/S, T/F, J/P are missing), these cases cannot be correctly classified
 
 ## Key Commands
@@ -126,3 +126,9 @@ Each experimental script follows:
 4. Configuration is embedded in scripts rather than external files
 5. The project focuses on understanding data structure rather than model optimization
 6. This is NOT a "better model" problem - it's about understanding the information-theoretic limit
+
+## Project Memories
+
+### Development Strategies
+- Jeśli tworzysz skrypt który działa i produkuje dane i chcesz uruchomić ponownie, modyfikująć w nim rzeczy nie związane z błędnym działaniem, utwórz kolejny plik z nowszą datą i ten plik modyfikuj. Oryginalny plik musi zostać.
+- Commituj po każdej dłuższej analizie, jesli wyprodukowałeś nowy, działający kod.
