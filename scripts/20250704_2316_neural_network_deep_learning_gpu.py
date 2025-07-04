@@ -32,8 +32,8 @@ if gpus:
 
 # Load data
 print("Loading data...")
-train_df = pd.read_csv('../train.csv')
-test_df = pd.read_csv('../test.csv')
+train_df = pd.read_csv('../../train.csv')
+test_df = pd.read_csv('../../test.csv')
 
 # Prepare features with neural network in mind
 def prepare_features_nn(df, is_train=True):

@@ -17,8 +17,8 @@ from collections import Counter
 
 # Load data
 print("Loading data...")
-train_df = pd.read_csv('../train.csv')
-test_df = pd.read_csv('../test.csv')
+train_df = pd.read_csv('../../train.csv')
+test_df = pd.read_csv('../../test.csv')
 
 # Prepare features
 def prepare_features(df, is_train=True):
@@ -219,7 +219,7 @@ for low, high in prob_ranges:
         }
 
 # Save detailed error analysis
-with open('scripts/output/20250704_2318_error_analysis.json', 'w') as f:
+with open('output/20250704_2318_error_analysis.json', 'w') as f:
     json.dump(error_analysis, f, indent=2)
 
 # If we found always-wrong samples, save them for inspection
@@ -227,7 +227,7 @@ if len(all_wrong) > 0:
     all_wrong_detailed = train_df.iloc[wrong_indices].copy()
     all_wrong_detailed['avg_probability'] = avg_probs[wrong_indices]
     all_wrong_detailed['prob_std'] = prob_std[wrong_indices]
-    all_wrong_detailed.to_csv('scripts/output/20250704_2318_always_wrong_samples.csv', index=False)
+    all_wrong_detailed.to_csv('output/20250704_2318_always_wrong_samples.csv', index=False)
     print(f"\nSaved {len(all_wrong)} always-wrong samples to CSV")
 
 print("\n=== BREAKTHROUGH INSIGHTS ===")
@@ -236,6 +236,6 @@ print(f"2. {len(all_wrong)} samples are consistently misclassified by all models
 print(f"3. High disagreement on {high_disagreement.sum()} samples suggests uncertainty")
 print(f"4. {mislabeled_extroverts.sum() + mislabeled_introverts.sum()} samples appear mislabeled")
 print("\nTo break 0.975708, we need to correctly classify some of these 'impossible' samples")
-print("Results saved to scripts/output/20250704_2318_error_analysis.json")
+print("Results saved to output/20250704_2318_error_analysis.json")
 
 # RESULT: [To be filled after execution]

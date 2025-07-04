@@ -28,8 +28,8 @@ os.environ['CUDA_VISIBLE_DEVICES'] = '0,1'  # Use both GPUs
 
 # Load and prepare data
 print("Loading data...")
-train_df = pd.read_csv('../train.csv')
-test_df = pd.read_csv('../test.csv')
+train_df = pd.read_csv('../../train.csv')
+test_df = pd.read_csv('../../test.csv')
 
 # Feature engineering based on discoveries
 def prepare_features_optimized(df, is_train=True):

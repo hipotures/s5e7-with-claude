@@ -15,8 +15,8 @@ import json
 
 # Load data
 print("Loading data...")
-train_df = pd.read_csv('../train.csv')
-test_df = pd.read_csv('../test.csv')
+train_df = pd.read_csv('../../train.csv')
+test_df = pd.read_csv('../../test.csv')
 
 # Extract labels
 y_train = (train_df['Personality'] == 'Extrovert').astype(int)

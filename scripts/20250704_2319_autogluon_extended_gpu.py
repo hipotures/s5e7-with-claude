@@ -20,8 +20,8 @@ warnings.filterwarnings('ignore')
 
 # Load data
 print("Loading data...")
-train_df = pd.read_csv('../train.csv')
-test_df = pd.read_csv('../test.csv')
+train_df = pd.read_csv('../../train.csv')
+test_df = pd.read_csv('../../test.csv')
 
 # Prepare features - keep it simple for AutoGluon
 train_df['label'] = (train_df['Personality'] == 'Extrovert').astype(int)
@@ -33,7 +33,7 @@ print(f"Test samples: {len(test_data)}")
 
 # Load the always-wrong samples from error analysis
 try:
-    always_wrong_df = pd.read_csv('scripts/output/20250704_2318_always_wrong_samples.csv')
+    always_wrong_df = pd.read_csv('output/20250704_2318_always_wrong_samples.csv')
     always_wrong_ids = set(always_wrong_df['id'].values)
     print(f"\nLoaded {len(always_wrong_ids)} always-wrong sample IDs")
 except:
@@ -207,7 +207,7 @@ results = {
     }
 }
 
-with open('scripts/output/20250704_2319_autogluon_results.json', 'w') as f:
+with open('output/20250704_2319_autogluon_results.json', 'w') as f:
     json.dump(results, f, indent=2)
 
 # Feature analysis for breakthrough insights
