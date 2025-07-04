@@ -31,6 +31,23 @@ test_data = test_df.copy()
 print(f"Training samples: {len(train_data)}")
 print(f"Test samples: {len(test_data)}")
 
+# Verify data correctness before long training
+print("\n=== DATA VERIFICATION ===")
+print(f"Train has 'label' column: {'label' in train_data.columns}")
+print(f"Train has 'Personality' column: {'Personality' in train_data.columns}")
+print(f"Test has 'label' column: {'label' in test_data.columns}")
+print(f"Test has 'Personality' column: {'Personality' in test_data.columns}")
+print(f"Train label distribution: {train_data['label'].value_counts().to_dict()}")
+print(f"Train shape: {train_data.shape}")
+print(f"Test shape: {test_data.shape}")
+
+# Sanity check
+assert 'label' in train_data.columns, "ERROR: train_data missing 'label' column!"
+assert 'Personality' not in train_data.columns, "ERROR: train_data should not have 'Personality'!"
+assert 'label' not in test_data.columns, "ERROR: test_data should not have 'label'!"
+assert 'id' in test_data.columns, "ERROR: test_data missing 'id' column!"
+print("✓ All data checks passed!")
+
 # Load the always-wrong samples from error analysis
 try:
     always_wrong_df = pd.read_csv('output/20250704_2318_always_wrong_samples.csv')
