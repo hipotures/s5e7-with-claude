@@ -154,7 +154,8 @@ def create_embedding_model(input_dim):
     
     # Time alone embedding (0-10 hours)
     time_alone = layers.Lambda(lambda x: tf.clip_by_value(x[:, 0:1], 0, 10))(continuous)
-    time_alone_emb = layers.Embedding(11, 8, input_length=1)(tf.cast(time_alone, tf.int32))
+    time_alone_int = layers.Lambda(lambda x: tf.cast(x, tf.int32))(time_alone)
+    time_alone_emb = layers.Embedding(11, 8, input_length=1)(time_alone_int)
     time_alone_emb = layers.Flatten()(time_alone_emb)
     embedded_features.append(time_alone_emb)
     
