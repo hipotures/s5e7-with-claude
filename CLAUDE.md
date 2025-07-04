@@ -132,3 +132,9 @@ Each experimental script follows:
 ### Development Strategies
 - Jeśli tworzysz skrypt który działa i produkuje dane i chcesz uruchomić ponownie, modyfikująć w nim rzeczy nie związane z błędnym działaniem, utwórz kolejny plik z nowszą datą i ten plik modyfikuj. Oryginalny plik musi zostać.
 - Commituj po każdej dłuższej analizie, jesli wyprodukowałeś nowy, działający kod.
+
+### Workspace Management
+- Przed commitem usuń pliki utworzone przez modele do obliczeń (katalogi robocze)
+
+### Server Resources
+- Mamy dostęp do odrebnego serwera obliczeniowego 200GB RAM i 2x4090 GPU. Jeśli jest potrzeba dłuższych obliczeń (np. dla optuna), zgłoś potrzebę dłuższej optymalizacji.
