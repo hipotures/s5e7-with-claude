@@ -349,7 +349,7 @@ results = {
     }
 }
 
-with open('scripts/output/20250704_2316_nn_results.json', 'w') as f:
+with open('output/20250704_2316_nn_results.json', 'w') as f:
     json.dump(results, f, indent=2)
 
 print(f"\n=== SUMMARY ===")
