@@ -25,8 +25,8 @@ test_df = pd.read_csv('../../test.csv')
 
 # Prepare features - keep it simple for AutoGluon
 train_df['label'] = (train_df['Personality'] == 'Extrovert').astype(int)
-train_data = train_df.drop(['Personality', 'id'], axis=1)
-test_data = test_df.drop(['id'], axis=1)
+train_data = train_df.drop(['Personality'], axis=1)
+test_data = test_df.copy()
 
 print(f"Training samples: {len(train_data)}")
 print(f"Test samples: {len(test_data)}")
@@ -36,11 +36,8 @@ try:
     always_wrong_df = pd.read_csv('output/20250704_2318_always_wrong_samples.csv')
     always_wrong_ids = set(always_wrong_df['id'].values)
     print(f"\nLoaded {len(always_wrong_ids)} always-wrong sample IDs")
-    # Create a mask for always-wrong samples in train_df (before dropping id)
-    always_wrong_mask = train_df['id'].isin(always_wrong_ids)
 except:
     always_wrong_ids = set()
-    always_wrong_mask = pd.Series([False] * len(train_df))
     print("\nNo always-wrong samples file found")
 
 # Custom metric that penalizes errors on known difficult samples
@@ -55,9 +52,10 @@ def custom_accuracy(y_true, y_pred, sample_weight=None):
 if always_wrong_ids:
     # Give 10x weight to always-wrong samples
     train_weights = np.ones(len(train_data))
-    train_weights[always_wrong_mask] = 10.0
+    wrong_mask = train_data['id'].isin(always_wrong_ids)
+    train_weights[wrong_mask] = 10.0
     train_data['sample_weight'] = train_weights
-    print(f"Applied 10x weight to {always_wrong_mask.sum()} difficult samples")
+    print(f"Applied 10x weight to {wrong_mask.sum()} difficult samples")
 else:
     train_data['sample_weight'] = 1.0
 
@@ -118,6 +116,7 @@ predictor.fit(
     num_bag_sets=2,
     num_stack_levels=2,
     excluded_model_types=['KNN'],  # Exclude KNN as it's slow for large datasets
+    ignored_columns=['id'],  # Ignore ID column
     ag_args_fit={
         #'num_gpus': 1,  # Use GPU when available
         'sample_weight': 'sample_weight' if 'sample_weight' in train_data.columns else None,
@@ -149,7 +148,7 @@ print(feature_importance)
 # Analyze predictions on always-wrong samples
 if always_wrong_ids:
     print("\n=== ANALYZING DIFFICULT SAMPLES ===")
-    wrong_samples = train_data[always_wrong_mask].copy()
+    wrong_samples = train_data[train_data['id'].isin(always_wrong_ids)].copy()
     # Remove sample_weight for prediction
     wrong_samples_clean = wrong_samples.drop('sample_weight', axis=1) if 'sample_weight' in wrong_samples.columns else wrong_samples
     wrong_preds = predictor.predict_proba(wrong_samples_clean)
