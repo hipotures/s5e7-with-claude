@@ -116,10 +116,10 @@ predictor.fit(
     num_bag_sets=2,
     num_stack_levels=2,
     excluded_model_types=['KNN'],  # Exclude KNN as it's slow for large datasets
-    ignored_columns=['id'],  # Ignore ID column
     ag_args_fit={
         #'num_gpus': 1,  # Use GPU when available
         'sample_weight': 'sample_weight' if 'sample_weight' in train_data.columns else None,
+        'ignored_columns': ['id'],  # Ignore ID column
     },
     ag_args_ensemble={
         'fold_fitting_strategy': 'sequential_local',  # Better for difficult samples
