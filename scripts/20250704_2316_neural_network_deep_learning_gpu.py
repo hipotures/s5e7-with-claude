@@ -66,6 +66,13 @@ X_test, _ = prepare_features_nn(test_df, is_train=False)
 
 print(f"Features: {X_train.shape[1]}")
 
+# Calculate class weights for imbalanced dataset
+from sklearn.utils.class_weight import compute_class_weight
+class_weights = compute_class_weight('balanced', classes=np.unique(y_train), y=y_train)
+class_weight_dict = {0: class_weights[0], 1: class_weights[1]}
+print(f"\nClass weights: {class_weight_dict}")
+print(f"Class balance: {np.bincount(y_train)}")
+
 # Scale features
 scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)
@@ -226,13 +233,14 @@ for fold, (train_idx, val_idx) in enumerate(kf.split(X_train_scaled, y_train)):
         metrics=['accuracy']
     )
     
-    # Train
+    # Train with class weights
     history = model.fit(
         X_tr, y_tr,
         validation_data=(X_val, y_val),
         epochs=100,
         batch_size=64,
         callbacks=[early_stopping, reduce_lr],
+        class_weight=class_weight_dict,
         verbose=0
     )
     
@@ -280,13 +288,14 @@ for create_func, name in architectures:
         metrics=['accuracy']
     )
     
-    # Train with validation split
+    # Train with validation split and class weights
     history = model.fit(
         X_train_scaled, y_train,
         validation_split=0.1,
         epochs=100,
         batch_size=64,
         callbacks=[early_stopping, reduce_lr],
+        class_weight=class_weight_dict,
         verbose=0
     )
     
