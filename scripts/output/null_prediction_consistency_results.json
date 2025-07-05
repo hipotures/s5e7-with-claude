@@ -1,0 +1,44 @@
+{
+  "null_count_analysis": {
+    "total_records": {
+      "0": 3397,
+      "1": 2487,
+      "2": 284,
+      "3": 7
+    },
+    "extrovert_rate": {
+      "0": 0.834,
+      "1": 0.655,
+      "2": 0.518,
+      "3": 0.429
+    },
+    "extrovert_count": {
+      "0": 2834,
+      "1": 1629,
+      "2": 147,
+      "3": 3
+    },
+    "introvert_count": {
+      "0": 563,
+      "1": 858,
+      "2": 137,
+      "3": 4
+    },
+    "introvert_rate": {
+      "0": 0.16600000000000004,
+      "1": 0.345,
+      "2": 0.482,
+      "3": 0.571
+    }
+  },
+  "psychological_null_impact": {
+    "no_psych_nulls_intro_rate": 0.2154203796977916,
+    "has_drained_null_intro_rate": 0.5662650602409638,
+    "has_stage_null_intro_rate": 0.3545611015490534,
+    "has_both_intro_rate": 0.5294117647058824
+  },
+  "consistency_metrics": {
+    "high_null_intro_rate": 0.48453608247422686,
+    "low_null_intro_rate": 0.1657344715925817,
+    "ratio": 2.9060342342296104,
+    "is_consistent": 

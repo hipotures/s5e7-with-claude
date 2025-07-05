@@ -1,8 +1,8 @@
 # Submissions directory
 subm/
 
+
 # Analysis output directory
-scripts/output/
 
 # Python cache
 __pycache__/

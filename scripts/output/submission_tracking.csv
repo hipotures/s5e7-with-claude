@@ -1,0 +1,12 @@
+Number,Filename,Description,Kaggle_Score,Notes
+001,submission_DT_depth2_simple.csv,Decision Tree,,
+002,submission_manual_DT_rules.csv,Decision Tree,,
+003,submission_SINGLE_Drained.csv,Single feature: Drained.csv,,
+004,submission_XGB_n1_d1.csv,,,
+005,submission_XGB_n1_d2.csv,,,
+006,submission_XGB_n2_d1.csv,,,
+007,submission_XGB_n2_d2.csv,,,
+008,submission_XGB_n3_d1.csv,,,
+009,submission_XGB_n3_d2.csv,,,
+010,submission_XGB_n5_d1.csv,,,
+011,submission_XGB_n5_d2.csv,,,

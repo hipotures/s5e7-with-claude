@@ -1,0 +1,141 @@
+======================================================================
+COMPREHENSIVE MISCLASSIFICATION SEARCH
+======================================================================
+
+Loading data...
+======================================================================
+SEARCHING FOR ALL POTENTIAL MISCLASSIFICATIONS
+======================================================================
+
+1. EXTREME INTROVERTS PREDICTED AS EXTROVERTS:
+============================================================
+
+EXTREME_ALONE: 8 cases
+  ID 18876: Alone=10.0, Social=nan, Friends=10.0, Drained=No, Fear=No (Score: nan)
+  ID 20765: Alone=10.0, Social=8.0, Friends=12.0, Drained=No, Fear=No (Score: 0.39)
+  ID 21359: Alone=11.0, Social=3.0, Friends=4.0, Drained=No, Fear=No (Score: 0.65)
+  ID 21800: Alone=10.0, Social=3.0, Friends=5.0, Drained=No, Fear=No (Score: 0.58)
+  ID 22547: Alone=11.0, Social=5.0, Friends=6.0, Drained=No, Fear=No (Score: 0.55)
+  ID 22660: Alone=10.0, Social=5.0, Friends=14.0, Drained=No, Fear=nan (Score: 0.45)
+  ID 23547: Alone=11.0, Social=9.0, Friends=13.0, Drained=No, Fear=No (Score: 0.36)
+  ID 23844: Alone=11.0, Social=2.0, Friends=2.0, Drained=No, Fear=No (Score: 0.67)
+
+ZERO_SOCIAL: 3 cases
+  ID 18954: Alone=2.0, Social=0.0, Friends=12.0, Drained=No, Fear=No (Score: 0.36)
+  ID 19612: Alone=5.0, Social=0.0, Friends=4.0, Drained=Yes, Fear=No (Score: 0.68)
+  ID 22049: Alone=0.0, Social=0.0, Friends=9.0, Drained=No, Fear=No (Score: 0.36)
+
+MINIMAL_FRIENDS: 7 cases
+  ID 19192: Alone=1.0, Social=6.0, Friends=2.0, Drained=No, Fear=No (Score: 0.30)
+  ID 19410: Alone=3.0, Social=8.0, Friends=1.0, Drained=No, Fear=No (Score: 0.31)
+  ID 20786: Alone=3.0, Social=9.0, Friends=0.0, Drained=No, Fear=No (Score: 0.32)
+  ID 22028: Alone=0.0, Social=7.0, Friends=1.0, Drained=No, Fear=No (Score: 0.28)
+  ID 22291: Alone=4.0, Social=3.0, Friends=2.0, Drained=No, Fear=No (Score: nan)
+  ID 23844: Alone=11.0, Social=2.0, Friends=2.0, Drained=No, Fear=No (Score: 0.67)
+  ID 24143: Alone=0.0, Social=9.0, Friends=2.0, Drained=No, Fear=No (Score: 0.21)
+
+HIGH_ALONE_LOW_SOCIAL: 3 cases
+  ID 23336: Alone=9.0, Social=2.0, Friends=4.0, Drained=No, Fear=No (Score: 0.59)
+  ID 23418: Alone=8.0, Social=2.0, Friends=4.0, Drained=No, Fear=No (Score: 0.58)
+  ID 23844: Alone=11.0, Social=2.0, Friends=2.0, Drained=No, Fear=No (Score: 0.67)
+
+
+2. EXTREME EXTROVERTS PREDICTED AS INTROVERTS:
+============================================================
+
+MINIMAL_ALONE: 3 cases
+  ID 20985: Alone=1.0, Social=0.0, Friends=5.0, Drained=Yes, Fear=Yes (Score: 0.33)
+  ID 21294: Alone=0.0, Social=1.0, Friends=3.0, Drained=Yes, Fear=Yes (Score: 0.36)
+  ID 21457: Alone=1.0, Social=3.0, Friends=2.0, Drained=Yes, Fear=Yes (Score: 0.39)
+
+MANY_FRIENDS: 1 cases
+  ID 24428: Alone=4.0, Social=0.0, Friends=15.0, Drained=Yes, Fear=Yes (Score: 0.36)
+
+
+======================================================================
+CONFIDENCE ANALYSIS
+======================================================================
+
+Total unique potential misclassifications: 23
+
+TOP 20 MISCLASSIFICATION CANDIDATES:
+Rank   ID       Current      Should Be    Score    Pattern
+----------------------------------------------------------------------
+1      19612    Extrovert    Introvert    0.685    zero_social
+2      23844    Extrovert    Introvert    0.665    minimal_friends
+3      21359    Extrovert    Introvert    0.650    extreme_alone
+4      23336    Extrovert    Introvert    0.595    high_alone_low_social
+5      21800    Extrovert    Introvert    0.585    extreme_alone
+6      23418    Extrovert    Introvert    0.580    high_alone_low_social
+7      22547    Extrovert    Introvert    0.550    extreme_alone
+8      22660    Extrovert    Introvert    0.445    extreme_alone
+9      21457    Introvert    Extrovert    0.390    minimal_alone
+10     20765    Extrovert    Introvert    0.390    extreme_alone
+11     21294    Introvert    Extrovert    0.365    minimal_alone
+12     23547    Extrovert    Introvert    0.360    extreme_alone
+13     22049    Extrovert    Introvert    0.360    zero_social
+14     18954    Extrovert    Introvert    0.360    zero_social
+15     24428    Introvert    Extrovert    0.360    many_friends
+16     20985    Introvert    Extrovert    0.335    minimal_alone
+17     20786    Extrovert    Introvert    0.320    minimal_friends
+18     19410    Extrovert    Introvert    0.315    minimal_friends
+19     19192    Extrovert    Introvert    0.295    minimal_friends
+20     22028    Extrovert    Introvert    0.275    minimal_friends
+
+
+MISCLASSIFICATIONS BY PATTERN:
+  minimal_friends: 7
+  extreme_alone: 7
+  zero_social: 3
+  minimal_alone: 3
+  high_alone_low_social: 2
+  many_friends: 1
+
+
+MISCLASSIFICATIONS BY DIRECTION:
+  Should be Introvert (currently Extrovert): 19
+  Should be Extrovert (currently Introvert): 4
+
+
+======================================================================
+FLIP RECOMMENDATIONS
+======================================================================
+
+Confidence >= 0.8: 0 flips
+
+Confidence >= 0.75: 0 flips
+
+Confidence >= 0.7: 0 flips
+
+Confidence >= 0.65: 2 flips
+  IDs to flip:
+    19612: Extrovert → Introvert
+    23844: Extrovert → Introvert
+
+
+OPTIMAL FLIP STRATEGY (targeting ~5 flips):
+Flip these 5 records:
+  ID 19612: Extrovert → Introvert (score: 0.685)
+  ID 23844: Extrovert → Introvert (score: 0.665)
+  ID 21359: Extrovert → Introvert (score: 0.650)
+  ID 23336: Extrovert → Introvert (score: 0.595)
+  ID 21800: Extrovert → Introvert (score: 0.585)
+
+Saved all 23 potential misclassifications to: output/all_potential_misclassifications.csv
+
+Created optimal flip submission: output/optimal_comprehensive_flip_submission.csv
+
+======================================================================
+SUMMARY
+======================================================================
+
+Found 23 potential misclassifications
+Recommended 5 flips to potentially reach 0.976518
+
+Note: The original flip analysis found only 2 errors (IDs 19612, 23844)
+This comprehensive search found 23 candidates
+The difference suggests the model handles most extreme cases correctly
+
+======================================================================
+ANALYSIS COMPLETE
+======================================================================

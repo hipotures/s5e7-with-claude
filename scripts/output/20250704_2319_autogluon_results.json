@@ -1,0 +1,135 @@
+{
+  "training_time_hours": 0.22215387331114875,
+  "best_model": "WeightedEnsemble_L4",
+  "num_models": 45,
+  "leaderboard_top5": [
+    {
+      "model": "WeightedEnsemble_L4",
+      "score_val": 0.9698769164327359,
+      "eval_metric": "accuracy",
+      "pred_time_val": 2.8936500549316406,
+      "fit_time": 302.23753213882446,
+      "pred_time_val_marginal": 0.0006310939788818359,
+      "fit_time_marginal": 0.23678159713745117,
+      "stack_level": 4,
+      "can_infer": true,
+      "fit_order": 45
+    },
+    {
+      "model": "WeightedEnsemble_L2",
+      "score_val": 0.9697149643705463,
+      "eval_metric": "accuracy",
+      "pred_time_val": 0.15315628051757812,
+      "fit_time": 52.64326739311218,
+      "pred_time_val_marginal": 0.0005939006805419922,
+      "fit_time_marginal": 0.11256122589111328,
+      "stack_level": 2,
+      "can_infer": true,
+      "fit_order": 15
+    },
+    {
+      "model": "CatBoost_BAG_L3",
+      "score_val": 0.9697149643705463,
+      "eval_metric": "accuracy",
+      "pred_time_val": 2.893018960952759,
+      "fit_time": 302.000750541687,
+      "pred_time_val_marginal": 0.015458106994628906,
+      "fit_time_marginal": 14.49450969696045,
+      "stack_level": 3,
+      "can_infer": true,
+      "fit_order": 36
+    },
+    {
+      "model": "XGBoost_2_BAG_L3",
+      "score_val": 0.9697149643705463,
+      "eval_metric": "accuracy",
+      "pred_time_val": 2.927617073059082,
+      "fit_time": 289.810204744339,
+      "pred_time_val_marginal": 0.05005621910095215,
+      "fit_time_marginal": 2.3039638996124268,
+      "stack_level": 3,
+      "can_infer": true,
+      "fit_order": 41
+    },
+    {
+      "model": "NeuralNetTorch_BAG_L2",
+      "score_val": 0.9696609803498164,
+      "eval_metric": "accuracy",
+      "pred_time_val": 1.414276361465454,
+      "fit_time": 184.8471395969391,
+      "pred_time_val_marginal": 0.16926836967468262,
+      "fit_time_marginal": 48.460442543029785,
+      "stack_level": 2,
+      "can_infer": true,
+      "fit_order": 28
+    }
+  ],
+  "feature_importance": {
+    "importance": {
+      "Stage_fear": 0.04063999999999997,
+      "Drained_after_socializing": 0.011359999999999992,
+      "Time_spent_Alone": 0.0038000000000000035,
+      "Social_event_attendance": 0.0011600000000000054,
+      "id": 0.0005199999999999649,
+      "Post_frequency": 0.00023999999999997358,
+      "Friends_circle_size": 0.0001600000000000046,
+      "Going_outside": 0.00011999999999998679
+    },
+    "stddev": {
+      "Stage_fear": 0.002246775467197391,
+      "Drained_after_socializing": 0.0015836666315863165,
+      "Time_spent_Alone": 0.0014352700094407136,
+      "Social_event_attendance": 0.00040987803063842276,
+      "id": 0.00017888543819994486,
+      "Post_frequency": 0.00032863353450306344,
+      "Friends_circle_size": 0.0005899152481500796,
+      "Going_outside": 0.00017888543819996348
+    },
+    "p_value": {
+      "Stage_fear": 1.1164450889563956e-06,
+      "Drained_after_socializing": 4.4172534311734224e-05,
+      "Time_spent_Alone": 0.002038823287607674,
+      "Social_event_attendance": 0.001595589080634645,
+      "id": 0.0014450035585495808,
+      "Post_frequency": 0.08890390417811055,
+      "Friends_circle_size": 0.2884663986521203,
+      "Going_outside": 0.10399999999999987
+    },
+    "n": {
+      "Stage_fear": 5,
+      "Drained_after_socializing": 5,
+      "Time_spent_Alone": 5,
+      "Social_event_attendance": 5,
+      "id": 5,
+      "Post_frequency": 5,
+      "Friends_circle_size": 5,
+      "Going_outside": 5
+    },
+    "p99_high": {
+      "Stage_fear": 0.04526614174069646,
+      "Drained_after_socializing": 0.014620791483035186,
+      "Time_spent_Alone": 0.0067552407869781155,
+      "Social_event_attendance": 0.0020039445302009384,
+      "id": 0.0008883275897131578,
+      "Post_frequency": 0.0009166609897399314,
+      "Friends_circle_size": 0.0013746436494362268,
+      "Going_outside": 0.0004883275897132179
+    },
+    "p99_low": {
+      "Stage_fear": 0.03601385825930348,
+      "Drained_after_socializing": 0.008099208516964797,
+      "Time_spent_Alone": 0.000844759213021891,
+      "Social_event_attendance": 0.0003160554697990727,
+      "id": 0.0001516724102867721,
+      "Post_frequency": -0.0004366609897399842,
+      "Friends_circle_size": -0.0010546436494362178,
+      "Going_outside": -0.0002483275897132444
+    }
+  },
+  "difficult_samples_accuracy": 0.0,
+  "optimal_threshold": 0.35,
+  "prediction_distribution": {
+    "introverts": 1310,
+    "extroverts": 4865
+  }
+}

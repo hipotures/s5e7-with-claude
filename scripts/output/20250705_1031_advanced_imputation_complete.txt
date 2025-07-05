@@ -1,0 +1,120 @@
+Loading data...
+Train shape: (18524, 9)
+Test shape: (6175, 8)
+
+============================================================
+MISSING PATTERNS BY PERSONALITY
+============================================================
+Time_spent_Alone.............. Intro: 0.058, Extro: 0.066
+Social_event_attendance....... Intro: 0.093, Extro: 0.053
+Drained_after_socializing..... Intro: 0.142, Extro: 0.034
+Stage_fear.................... Intro: 0.154, Extro: 0.084
+Going_outside................. Intro: 0.104, Extro: 0.070
+Friends_circle_size........... Intro: 0.073, Extro: 0.051
+Post_frequency................ Intro: 0.101, Extro: 0.057
+
+============================================================
+METHOD 1: MISSFOREST-STYLE IMPUTATION
+============================================================
+
+Testing standard MissForest...
+MissForest Standard: 0.966206 (+/- 0.002789)
+
+Testing personality-aware MissForest...
+MissForest Personality-Aware: 0.965127 (+/- 0.002192)
+
+============================================================
+METHOD 2: DENOISING AUTOENCODER
+============================================================
+Training denoising autoencoder...
+Epoch 20, Loss: 0.9113
+Epoch 40, Loss: 0.6584
+Epoch 60, Loss: 0.4510
+Epoch 80, Loss: 0.4186
+Epoch 100, Loss: 0.4021
+Denoising Autoencoder: 0.967610 (+/- 0.001844)
+
+============================================================
+METHOD 3: VARIATIONAL AUTOENCODER (VAE)
+============================================================
+Training VAE...
+Epoch 20, Loss: 131576.1094
+Epoch 40, Loss: 121589.2734
+Epoch 60, Loss: 100764.7344
+Epoch 80, Loss: 88788.2969
+Epoch 100, Loss: 85118.8750
+VAE: 0.967232 (+/- 0.001825)
+
+============================================================
+METHOD 4: GAIN (Generative Adversarial Imputation Networks)
+============================================================
+Training GAIN...
+Epoch 10, D_loss: 0.1231, G_loss: 0.1036
+Epoch 20, D_loss: 0.1147, G_loss: 0.0881
+Epoch 30, D_loss: 0.1101, G_loss: 0.0826
+Epoch 40, D_loss: 0.1075, G_loss: 0.0808
+Epoch 50, D_loss: 0.1071, G_loss: 0.0788
+GAIN: 0.966638 (+/- 0.002175)
+
+============================================================
+METHOD 5: SYNTHETIC MNAR VALIDATION
+============================================================
+
+Evaluating imputation quality on synthetic MNAR data...
+Simple Imputation - RMSE: 0.6348, MAE: 0.4030
+KNN Imputation - RMSE: 0.2675, MAE: 0.1238
+
+Testing personality-aware imputation on synthetic data...
+RF Personality-Aware - RMSE: 0.2846, MAE: 0.1205
+
+Imputation quality by personality type:
+  Introverts - RMSE: 0.8837
+  Extroverts - RMSE: 0.1291
+
+============================================================
+BASELINE COMPARISON
+============================================================
+Baseline (Median): 0.965774 (+/- 0.002543)
+
+============================================================
+FINAL COMPARISON OF ALL METHODS
+============================================================
+
+Complete Summary of Results:
+----------------------------------------------------------------------
+Method                              CV Accuracy  Std Dev    Improvement 
+----------------------------------------------------------------------
+MissForest Standard                 0.966206     0.002789   +0.043%
+MissForest Personality Aware        0.965127     0.002192   -0.065%
+Denoising Autoencoder               0.967610     0.001844   +0.184%
+Vae                                 0.967232     0.001825   +0.146%
+Gain                                0.966638     0.002175   +0.086%
+Baseline                            0.965774     0.002543   +0.000%
+----------------------------------------------------------------------
+
+Best Method: Denoising Autoencoder with accuracy 0.967610
+
+============================================================
+KEY FINDINGS
+============================================================
+
+1. Missing Pattern Analysis:
+   - Introverts have 2-4x higher missing rates for psychological features
+   - Drained_after_socializing: 14.2% (Intro) vs 3.4% (Extro)
+   - Stage_fear: 15.4% (Intro) vs 8.4% (Extro)
+
+2. Method Performance:
+   - Deep learning methods (Autoencoder, VAE, GAIN) performed best
+   - Personality-aware imputation did NOT improve results
+   - Best improvement: 0.184% over baseline
+
+3. Implications:
+   - Missing values DO encode personality information
+   - However, leveraging this directly doesn't improve classification
+   - The 0.975708 ceiling remains unbroken
+
+Results saved to: output/advanced_imputation_results_complete.json
+
+============================================================
+ADVANCED IMPUTATION TESTING COMPLETE
+============================================================

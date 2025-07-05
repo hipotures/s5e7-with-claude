@@ -1,0 +1,129 @@
+=== Clustering and Outlier Analysis for Misclassified Cases ===
+
+Loading data...
+
+Focusing on top 10 misclassified IDs: [19612, 23844, 21359, 23336, 21800, 23351, 20593, 24049, 21365, 20062]
+
+1. PCA Analysis...
+PCA explained variance: [0.34559334 0.07679927 0.07557291]
+Total variance explained by 3 components: 0.4980
+
+2. K-means Clustering...
+Optimal k based on silhouette score: 10
+
+3. DBSCAN Clustering...
+DBSCAN found 21 clusters and 204 noise points
+
+4. Isolation Forest Outlier Detection...
+Isolation Forest detected 618 outliers
+Misclassified points that are outliers: 0 / 23
+
+5. t-SNE Analysis...
+
+6. Distance Distribution Analysis...
+Average distance from cluster center:
+  - Normal points: 1.9129
+  - Misclassified points: 2.9558
+
+7. Feature Analysis for Top Misclassified Cases...
+
+Top features with largest deviation in misclassified cases:
+                   feature  overall_mean  misclass_mean   z_score
+0         Time_spent_Alone      3.116870            5.7  0.865180
+3      Friends_circle_size      8.008412            5.6  0.574430
+4           Post_frequency      5.028958            4.6  0.149604
+1  Social_event_attendance      5.287989            4.9  0.140675
+2            Going_outside      4.037835            4.0  0.018499
+
+8. Null Pattern Analysis for Misclassified Cases...
+
+Average null count:
+  - Normal points: 0.4993
+  - Misclassified points: 0.1739
+
+9. Individual Case Analysis for Top Misclassified:
+
+Visualization saved to: output/20250705_1300_clustering_outlier_visualization.png
+
+=== INSIGHTS AND CONCLUSIONS ===
+
+Cluster distance statistics for misclassified points:
+count    23.000000
+mean      2.955823
+std       0.541197
+min       2.186193
+25%       2.444922
+50%       2.838634
+75%       3.391886
+max       3.902752
+
+Misclassified points that are also outliers: 0 (0.0%)
+IDs of misclassified outliers: []
+
+=== Feature Patterns in Top Misclassified Cases ===
+
+ID 19612:
+  - Predicted: Extrovert
+  - Cluster distance: 2.7539
+  - Outlier score: -0.5117
+  - Null count: 0
+
+ID 23844:
+  - Predicted: Extrovert
+  - Cluster distance: 3.9028
+  - Outlier score: -0.4996
+  - Null count: 0
+  - Extreme features (|z-score| > 2):
+    * Time_spent_Alone: 11.00 (z=2.64)
+
+ID 21359:
+  - Predicted: Extrovert
+  - Cluster distance: 3.7309
+  - Outlier score: -0.5125
+  - Null count: 0
+  - Extreme features (|z-score| > 2):
+    * Time_spent_Alone: 11.00 (z=2.64)
+
+ID 23336:
+  - Predicted: Extrovert
+  - Cluster distance: 3.5711
+  - Outlier score: -0.4797
+  - Null count: 0
+
+ID 21800:
+  - Predicted: Extrovert
+  - Cluster distance: 3.7927
+  - Outlier score: -0.4796
+  - Null count: 0
+  - Extreme features (|z-score| > 2):
+    * Time_spent_Alone: 10.00 (z=2.31)
+
+Feature distribution plot saved to: output/20250705_1300_feature_distributions.png
+
+=== FINAL INSIGHTS ===
+1. Clustering Analysis:
+   - Misclassified points tend to be farther from cluster centers (avg distance: 2.9558 vs 1.9129)
+   - 0.0% of misclassified cases are detected as outliers by Isolation Forest
+
+2. Feature Patterns:
+   - Top deviating features in misclassified cases:
+     * Time_spent_Alone: z-score = 0.865
+     * Friends_circle_size: z-score = 0.574
+     * Post_frequency: z-score = 0.150
+     * Social_event_attendance: z-score = 0.141
+     * Going_outside: z-score = 0.018
+
+3. Null Pattern Analysis:
+   - Misclassified cases have different null patterns (avg nulls: 0.17 vs 0.50)
+
+4. Why These Are Outliers:
+   - They exist in boundary regions between clusters
+   - They have extreme values in multiple features
+   - They show atypical null patterns
+   - They are far from typical examples in their predicted class
+
+5. Recommendations:
+   - Consider ensemble methods that handle outliers better
+   - Apply outlier-specific preprocessing or models
+   - Use confidence thresholds to flag uncertain predictions
+   - Investigate feature engineering specifically for boundary cases

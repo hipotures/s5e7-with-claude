@@ -1,0 +1,12 @@
+{
+  "cv_mean": 0.9682575353485892,
+  "cv_std": 0.0019185740892942937,
+  "avg_ambiverts_pct": 43.343832250504974,
+  "test_ambiverts_pct": 43.15789473684211,
+  "ensemble_models": [
+    "XGBoost",
+    "LightGBM",
+    "CatBoost"
+  ],
+  "submission_path": "subm/DATE_20250704/20250704_2252_refined_ambivert_detection.csv"
+}

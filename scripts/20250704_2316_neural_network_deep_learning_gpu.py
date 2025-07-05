@@ -247,6 +247,12 @@ for fold, (train_idx, val_idx) in enumerate(kf.split(X_train_scaled, y_train)):
     # Evaluate with custom threshold
     val_probs = model.predict(X_val, verbose=0).flatten()
     
+    # Debug: Check predictions
+    print(f"  Val probs - min: {val_probs.min():.4f}, max: {val_probs.max():.4f}, mean: {val_probs.mean():.4f}")
+    print(f"  Val labels - 0s: {(y_val==0).sum()}, 1s: {(y_val==1).sum()}")
+    unique_probs = np.unique(np.round(val_probs, 4))
+    print(f"  Unique prob values: {len(unique_probs)} - first 5: {unique_probs[:5]}")
+    
     # Find optimal threshold
     best_threshold = 0.5
     best_accuracy = 0

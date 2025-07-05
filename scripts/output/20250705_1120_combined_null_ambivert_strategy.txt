@@ -1,0 +1,93 @@
+======================================================================
+COMBINED NULL-AMBIVERT STRATEGY MODEL
+======================================================================
+
+Loading data...
+Train shape: (18524, 9)
+Test shape: (6175, 8)
+
+============================================================
+TRAINING COMBINED NULL-AMBIVERT MODEL
+============================================================
+
+Fold 1/5
+  Accuracy: 0.88475
+
+Fold 2/5
+  Accuracy: 0.88961
+
+Fold 3/5
+  Accuracy: 0.88178
+
+Fold 4/5
+  Accuracy: 0.89096
+
+Fold 5/5
+  Accuracy: 0.87851
+
+Mean CV Score: 0.88512 (+/- 0.00467)
+
+============================================================
+FEATURE IMPORTANCE ANALYSIS
+============================================================
+
+Top 20 Most Important Features:
+Friends_circle_size                      554.2086
+Time_spent_Alone                         427.9399
+Social_event_attendance                  417.7922
+Post_frequency                           379.6765
+Going_outside                            376.9805
+Drained_after_socializing                132.9954
+Stage_fear                               85.7632
+ambivert_score                           68.0340
+weighted_null_score                      56.5384
+null_count                               52.6037
+Time_spent_Alone_null                    50.8815
+Going_outside_null                       46.7130
+Post_frequency_null                      45.5866
+Friends_circle_size_null                 35.4171
+Stage_fear_null                          32.0266
+Social_event_attendance_null             30.1303
+no_nulls                                 11.2352
+Drained_after_socializing_null           8.0888
+has_psych_nulls                          4.5759
+complete_social_data                     4.4975
+
+============================================================
+APPLYING TO TEST DATA
+============================================================
+
+Prediction Summary:
+Total predictions: 6175
+Introverts: 5145 (83.3%)
+Extroverts: 1030 (16.7%)
+
+Rule Applications:
+Strong null pattern rules: 0
+Ambivert handling rules: 0
+Standard predictions: 6175
+
+Predictions by Null Count:
+  0 nulls: 3397 records, 83.5% introverts
+  1 nulls: 2487 records, 82.8% introverts
+  2 nulls: 284 records, 84.9% introverts
+  3 nulls: 7 records, 100.0% introverts
+
+Submission saved to: output/combined_null_ambivert_submission_20250705_1120.csv
+
+Results saved to: output/combined_null_ambivert_results.json
+
+Visualization saved to: output/combined_null_ambivert_results.png
+
+======================================================================
+FINAL SUMMARY
+======================================================================
+
+Mean CV Accuracy: 0.88512 (+/- 0.00467)
+Expected Public LB: ~0.88070
+
+Still below ceiling. Gap: 0.09059
+
+======================================================================
+ANALYSIS COMPLETE
+======================================================================

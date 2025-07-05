@@ -1,0 +1,14 @@
+{
+  "train_id_range": [
+    0,
+    18523
+  ],
+  "test_id_range": [
+    18524,
+    24698
+  ],
+  "id_overlap": 0,
+  "missing_ids_count": 0,
+  "best_patterns": [],
+  "patterns_applied": 0
+}

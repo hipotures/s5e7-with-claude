@@ -1,0 +1,23 @@
+{
+  "best_score": 0.9692782767755909,
+  "best_params": {
+    "alone_thresh": 2.1817463514573863,
+    "social_thresh": 4.054263475837612,
+    "friends_thresh": 9,
+    "ambig_score_thresh": 0.3990937955149213,
+    "proba_low_thresh": 0.11902947957708665,
+    "proba_high_thresh": 0.4778153122913316,
+    "ambig_weight": 6.584883029491957,
+    "n_estimators": 2048,
+    "learning_rate": 0.004668480189638815,
+    "max_depth": 7,
+    "subsample": 0.7068629772005426,
+    "colsample_bytree": 0.6422456761469334,
+    "reg_lambda": 2.8582087877740836,
+    "reg_alpha": 3.5593727512356175,
+    "gamma": 0.16749940284031337,
+    "min_child_weight": 7
+  },
+  "test_ambiguous_count": 147,
+  "test_ambiguous_pct": 2.3805668016194335
+}

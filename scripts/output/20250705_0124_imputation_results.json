@@ -1,0 +1,114 @@
+{
+  "imputation_strategies": {
+    "drop_nulls": {
+      "mean_cv_score": 0.9606440324073338,
+      "std_cv_score": 0.004280368267115404,
+      "samples_used": 10189,
+      "always_wrong_performance": null
+    },
+    "mean": {
+      "mean_cv_score": 0.9684194640946941,
+      "std_cv_score": 0.0015245713864517885,
+      "samples_used": 18524,
+      "always_wrong_performance": 0.0
+    },
+    "median": {
+      "mean_cv_score": 0.9675557955363571,
+      "std_cv_score": 0.0023468997174842226,
+      "samples_used": 18524,
+      "always_wrong_performance": 0.0
+    },
+    "mode": {
+      "mean_cv_score": 0.9675017998560115,
+      "std_cv_score": 0.0027800992351617254,
+      "samples_used": 18524,
+      "always_wrong_performance": 0.0
+    },
+    "knn_5": {
+      "mean_cv_score": 0.9678796676023003,
+      "std_cv_score": 0.001966273243485254,
+      "samples_used": 18524,
+      "always_wrong_performance": 0.0
+    },
+    "mice": {
+      "mean_cv_score": 0.9686894279226891,
+      "std_cv_score": 0.0020462221590158624,
+      "samples_used": 18524,
+      "always_wrong_performance": 0.0
+    },
+    "class_aware_mean": {
+      "mean_cv_score": 0.9790543396204416,
+      "std_cv_score": 0.0022929195008620884,
+      "samples_used": 18524,
+      "always_wrong_performance": 0.330416646662396
+    },
+    "special_value": {
+      "mean_cv_score": 0.9676097329217711,
+      "std_cv_score": 0.0024837373931506325,
+      "samples_used": 18524,
+      "always_wrong_performance": 0.0
+    },
+    "pattern_based": {
+      "mean_cv_score": 0.9684194640946941,
+      "std_cv_score": 0.0015245713864517885,
+      "samples_used": 18524,
+      "always_wrong_performance": 0.0
+    },
+    "zero_key_features": {
+      "mean_cv_score": 0.9654504740835309,
+      "std_cv_score": 0.0041445782126463245,
+      "samples_used": 18524,
+      "always_wrong_performance": 0.002631578947368421
+    }
+  },
+  "rankings": [
+    [
+      "class_aware_mean",
+      0.9790543396204416
+    ],
+    [
+      "mice",
+      0.9686894279226891
+    ],
+    [
+      "mean",
+      0.9684194640946941
+    ],
+    [
+      "pattern_based",
+      0.9684194640946941
+    ],
+    [
+      "knn_5",
+      0.9678796676023003
+    ],
+    [
+      "special_value",
+      0.9676097329217711
+    ],
+    [
+      "median",
+      0.9675557955363571
+    ],
+    [
+      "mode",
+      0.9675017998560115
+    ],
+    [
+      "zero_key_features",
+      0.9654504740835309
+    ],
+    [
+      "drop_nulls",
+      0.9606440324073338
+    ]
+  ],
+  "best_strategy": "class_aware_mean",
+  "best_score": 0.9790543396204416,
+  "combined_approach": {
+    "score": 0.979324259727238,
+    "std": 0.002215373571658622,
+    "improvement": 0.0002699201067963841
+  },
+  "insights": {
+    "drop_nulls_viable": 

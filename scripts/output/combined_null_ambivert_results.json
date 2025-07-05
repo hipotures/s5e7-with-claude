@@ -1,0 +1,114 @@
+{
+  "cv_scores": [
+    0.8847503373819163,
+    0.889608636977058,
+    0.8817813765182186,
+    0.8909581646423752,
+    0.8785097192224622
+  ],
+  "mean_cv": 0.8851216469484061,
+  "std_cv": 0.004673561466447044,
+  "feature_importance": [
+    {
+      "feature": "Friends_circle_size",
+      "importance": 554.208636210997
+    },
+    {
+      "feature": "Time_spent_Alone",
+      "importance": 427.93994507498326
+    },
+    {
+      "feature": "Social_event_attendance",
+      "importance": 417.7922253042563
+    },
+    {
+      "feature": "Post_frequency",
+      "importance": 379.6765305183666
+    },
+    {
+      "feature": "Going_outside",
+      "importance": 376.9804781502473
+    },
+    {
+      "feature": "Drained_after_socializing",
+      "importance": 132.9953814856845
+    },
+    {
+      "feature": "Stage_fear",
+      "importance": 85.76323729643673
+    },
+    {
+      "feature": "ambivert_score",
+      "importance": 68.03399335344054
+    },
+    {
+      "feature": "weighted_null_score",
+      "importance": 56.5384135951468
+    },
+    {
+      "feature": "null_count",
+      "importance": 52.60372438778796
+    },
+    {
+      "feature": "Time_spent_Alone_null",
+      "importance": 50.88145646751645
+    },
+    {
+      "feature": "Going_outside_null",
+      "importance": 46.712955451437786
+    },
+    {
+      "feature": "Post_frequency_null",
+      "importance": 45.5866464584944
+    },
+    {
+      "feature": "Friends_circle_size_null",
+      "importance": 35.41705390672724
+    },
+    {
+      "feature": "Stage_fear_null",
+      "importance": 32.026552203174575
+    },
+    {
+      "feature": "Social_event_attendance_null",
+      "importance": 30.130314056445805
+    },
+    {
+      "feature": "no_nulls",
+      "importance": 11.235238278813878
+    },
+    {
+      "feature": "Drained_after_socializing_null",
+      "importance": 8.088761570957635
+    },
+    {
+      "feature": "has_psych_nulls",
+      "importance": 4.575917426020201
+    },
+    {
+      "feature": "complete_social_data",
+      "importance": 4.497513947067576
+    },
+    {
+      "feature": "has_social_nulls",
+      "importance": 3.766068340496674
+    },
+    {
+      "feature": "has_stage_fear_null",
+      "importance": 0.6911031335452272
+    },
+    {
+      "feature": "null_variance",
+      "importance": 0.6034869649502017
+    },
+    {
+      "feature": "has_drained_null",
+      "importance": 0.3876997543919325
+    }
+  ],
+  "prediction_distribution": {
+    "introverts": 5145,
+    "extroverts": 1030,
+    "intro_rate": 0.8331983805668016
+  }
+}

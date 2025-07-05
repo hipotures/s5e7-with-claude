@@ -1,0 +1,123 @@
+{
+  "null_analysis": [
+    {
+      "feature": "Time_spent_Alone",
+      "intro_rate": 0.05832295558322956,
+      "extro_rate": 0.06782569765706611,
+      "ambi_rate": 0.0,
+      "ambi_diff": -0.06307432662014784
+    },
+    {
+      "feature": "Social_event_attendance",
+      "intro_rate": 0.09298464092984642,
+      "extro_rate": 0.054618713624832116,
+      "ambi_rate": 0.0,
+      "ambi_diff": -0.07380167727733927
+    },
+    {
+      "feature": "Drained_after_socializing",
+      "intro_rate": 0.14259028642590285,
+      "extro_rate": 0.033726309506043876,
+      "ambi_rate": 0.03289473684210526,
+      "ambi_diff": -0.055263561123868106
+    },
+    {
+      "feature": "Stage_fear",
+      "intro_rate": 0.15421336654213366,
+      "extro_rate": 0.08394269512013132,
+      "ambi_rate": 0.08223684210526316,
+      "ambi_diff": -0.036841188725869334
+    },
+    {
+      "feature": "Going_outside",
+      "intro_rate": 0.10440016604400167,
+      "extro_rate": 0.07006416952693628,
+      "ambi_rate": 0.07894736842105263,
+      "ambi_diff": -0.00828479936441634
+    },
+    {
+      "feature": "Friends_circle_size",
+      "intro_rate": 0.07347447073474471,
+      "extro_rate": 0.0522310102969706,
+      "ambi_rate": 0.0,
+      "ambi_diff": -0.06285274051585765
+    },
+    {
+      "feature": "Post_frequency",
+      "intro_rate": 0.10107928601079286,
+      "extro_rate": 0.05640949112072825,
+      "ambi_rate": 0.06907894736842106,
+      "ambi_diff": -0.009665441197339489
+    }
+  ],
+  "null_count_analysis": [
+    {
+      "null_count": 0,
+      "intro_pct": 36.57119136571191,
+      "extro_pct": 61.192359349350845,
+      "ambi_pct": 74.3421052631579
+    },
+    {
+      "null_count": 1,
+      "intro_pct": 54.794520547945204,
+      "extro_pct": 35.815549917922695,
+      "ambi_pct": 25.0
+    },
+    {
+      "null_count": 2,
+      "intro_pct": 8.032378580323787,
+      "extro_pct": 2.9100134308312193,
+      "ambi_pct": 0.6578947368421052
+    },
+    {
+      "null_count": 3,
+      "intro_pct": 0.5603985056039851,
+      "extro_pct": 0.08207730189523951,
+      "ambi_pct": 0.0
+    },
+    {
+      "null_count": 4,
+      "intro_pct": 0.04151100041511,
+      "extro_pct": 0.0,
+      "ambi_pct": 0.0
+    }
+  ],
+  "feature_importance": {
+    "feature": {
+      "1": "Social_event_attendance_is_null",
+      "5": "Friends_circle_size_is_null",
+      "7": "null_count",
+      "0": "Time_spent_Alone_is_null",
+      "2": "Drained_after_socializing_is_null",
+      "8": "has_psych_nulls",
+      "4": "Going_outside_is_null",
+      "6": "Post_frequency_is_null",
+      "9": "has_social_nulls",
+      "3": "Stage_fear_is_null",
+      "10": "null_consistency"
+    },
+    "importance": {
+      "1": 0.22733178734779358,
+      "5": 0.2170957624912262,
+      "7": 0.20819999277591705,
+      "0": 0.19714371860027313,
+      "2": 0.0970863550901413,
+      "8": 0.036463551223278046,
+      "4": 0.012920763343572617,
+      "6": 0.0032628292683511972,
+      "9": 0.000495211745146662,
+      "3": 0.0,
+      "10": 0.0
+    }
+  },
+  "train_stats": {
+    "total_records": 18524,
+    "ambivert_count": 304,
+    "ambivert_rate": 0.016411142301878644
+  },
+  "test_stats": {
+    "total_records": 6175,
+    "predicted_ambiverts": 4111,
+    "predicted_rate": 0.665748987854251
+  }
+}

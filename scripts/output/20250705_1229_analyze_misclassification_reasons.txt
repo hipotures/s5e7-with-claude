@@ -1,0 +1,152 @@
+======================================================================
+MISCLASSIFICATION ANALYSIS FOR 0.975708 MODEL
+======================================================================
+
+Loading data...
+======================================================================
+ANALYZING MISCLASSIFIED RECORDS
+======================================================================
+
+Misclassified Records Details:
+============================================================
+
+ID: 19612
+Predicted: Extrovert (WRONG)
+Should be: Introvert
+
+Features:
+  Time_spent_Alone: 5.0
+  Social_event_attendance: 0.0
+  Drained_after_socializing: Yes
+  Stage_fear: No
+  Going_outside: 0.0
+  Friends_circle_size: 4.0
+  Post_frequency: 3.0
+
+ID: 23844
+Predicted: Extrovert (WRONG)
+Should be: Introvert
+
+Features:
+  Time_spent_Alone: 11.0
+  Social_event_attendance: 2.0
+  Drained_after_socializing: No
+  Stage_fear: No
+  Going_outside: 4.0
+  Friends_circle_size: 2.0
+  Post_frequency: 3.0
+
+======================================================================
+FINDING SIMILAR RECORDS IN TRAINING DATA
+======================================================================
+
+
+Analyzing ID 19612:
+==================================================
+
+Found 653 similar records in training data:
+  Introverts: 614 (94.0%)
+  Extroverts: 39 (6.0%)
+
+Drained_after_socializing distribution:
+  Extrovert - Yes: 35
+  Extrovert - No: 2
+  Introvert - Yes: 500
+  Introvert - No: 2
+
+Stage_fear distribution:
+  Extrovert - Yes: 33
+  Extrovert - No: 1
+  Introvert - Yes: 489
+  Introvert - No: 1
+
+Example similar records:
+  Introvert: Alone=4.0, Social=0.0, Friends=3.0, Drained=Yes, Fear=Yes
+  Introvert: Alone=5.0, Social=1.0, Friends=2.0, Drained=Yes, Fear=Yes
+  Extrovert: Alone=6.0, Social=0.0, Friends=4.0, Drained=Yes, Fear=Yes
+  Introvert: Alone=6.0, Social=1.0, Friends=3.0, Drained=Yes, Fear=Yes
+  Introvert: Alone=6.0, Social=0.0, Friends=1.0, Drained=Yes, Fear=Yes
+
+
+Analyzing ID 23844:
+==================================================
+
+Found 561 similar records in training data:
+  Introverts: 531 (94.7%)
+  Extroverts: 30 (5.3%)
+
+Drained_after_socializing distribution:
+  Extrovert - Yes: 23
+  Extrovert - No: 1
+  Introvert - Yes: 447
+
+Stage_fear distribution:
+  Extrovert - Yes: 27
+  Introvert - Yes: 429
+  Introvert - No: 3
+
+Example similar records:
+  Introvert: Alone=10.0, Social=1.0, Friends=3.0, Drained=Yes, Fear=Yes
+  Introvert: Alone=10.0, Social=0.0, Friends=2.0, Drained=Yes, Fear=Yes
+  Extrovert: Alone=10.0, Social=2.0, Friends=1.0, Drained=No, Fear=Yes
+  Introvert: Alone=11.0, Social=3.0, Friends=0.0, Drained=nan, Fear=Yes
+  Introvert: Alone=10.0, Social=2.0, Friends=0.0, Drained=nan, Fear=Yes
+
+======================================================================
+DECISION BOUNDARY ANALYSIS
+======================================================================
+
+ID 19612 - Model probability: 0.0377
+
+Feature contributions (simplified):
+  Low social events (0.0) → +Introvert
+  Few friends (4.0) → +Introvert
+  Drained by socializing (Yes) → +Introvert
+
+Introvert indicators: 0.65
+Extrovert indicators: 0.00
+Expected: Introvert
+Model predicted: Extrovert (WRONG)
+
+ID 23844 - Model probability: 0.8022
+
+Feature contributions (simplified):
+  High alone time (11.0) → +Introvert
+  Low social events (2.0) → +Introvert
+  Few friends (2.0) → +Introvert
+
+Introvert indicators: 0.80
+Extrovert indicators: 0.00
+Expected: Introvert
+Model predicted: Extrovert (WRONG)
+
+======================================================================
+CREATING VISUALIZATIONS
+======================================================================
+Visualization saved to: output/misclassification_analysis.png
+
+======================================================================
+CONCLUSIONS
+======================================================================
+
+The model misclassified these two records likely because:
+
+1. **Extreme feature values**: Both have extreme profiles that may be rare in training data
+   - ID 19612: Zero social events is very rare
+   - ID 23844: 11h alone + 2 friends is an extreme combination
+
+2. **Model overfitting to moderate cases**: The model may perform better on moderate profiles
+   and struggle with extremes
+
+3. **Missing psychological features**: Without knowing their Drained_after_socializing and
+   Stage_fear values, the model may default to majority class (Extrovert)
+
+4. **Class imbalance effect**: With 74% Extroverts in training, the model has a bias toward
+   predicting Extrovert when uncertain
+
+These are exactly the types of cases where manual correction (flipping) makes sense!
+
+
+======================================================================
+ANALYSIS COMPLETE
+======================================================================

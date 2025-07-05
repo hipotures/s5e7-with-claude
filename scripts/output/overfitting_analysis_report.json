@@ -1,0 +1,141 @@
+{
+  "timestamp": "2025-07-05 07:50:20",
+  "null_patterns": {
+    "train_nulls_per_column": {
+      "id": 0,
+      "Time_spent_Alone": 1190,
+      "Stage_fear": 1893,
+      "Social_event_attendance": 1180,
+      "Going_outside": 1466,
+      "Drained_after_socializing": 1149,
+      "Friends_circle_size": 1054,
+      "Post_frequency": 1264,
+      "Personality": 0
+    },
+    "test_nulls_per_column": {
+      "id": 0,
+      "Time_spent_Alone": 425,
+      "Stage_fear": 598,
+      "Social_event_attendance": 397,
+      "Going_outside": 466,
+      "Drained_after_socializing": 432,
+      "Friends_circle_size": 350,
+      "Post_frequency": 408
+    },
+    "train_null_distribution": {
+      "mean": 0.49643705463182897,
+      "std": 0.589675465074996,
+      "max": 4,
+      "samples_with_nulls": 8335
+    },
+    "test_null_distribution": {
+      "mean": 0.49813765182186237,
+      "std": 0.5906254725432747,
+      "max": 3,
+      "samples_with_nulls": 2778
+    }
+  },
+  "prediction_differences": {
+    "disagreement_rate": 0.0009177283524076874,
+    "samples_with_disagreement": 17,
+    "avg_nulls_agree": 0.4964607986167396,
+    "avg_nulls_disagree": 0.47058823529411764
+  },
+  "confidence_analysis": {},
+  "feature_importance": {},
+  "sample_analysis": {
+    "baseline": {
+      "ambiguous_samples": 304,
+      "ambiguous_accuracy": 0.9769736842105263,
+      "normal_accuracy": 0.9685510428100987,
+      "accuracy_difference": -0.008422641400427588
+    },
+    "null_aware": {
+      "ambiguous_samples": 304,
+      "ambiguous_accuracy": 0.9769736842105263,
+      "normal_accuracy": 0.9684961580680571,
+      "accuracy_difference": -0.008477526142469216
+    },
+    "null_pattern": {
+      "ambiguous_samples": 304,
+      "ambiguous_accuracy": 0.9769736842105263,
+      "normal_accuracy": 0.9683315038419319,
+      "accuracy_difference": -0.008642180368594432
+    }
+  },
+  "overfitting_indicators": {
+    "cv_lb_gap": {
+      "baseline": {
+        "cv_score": 0.9686893987752235,
+        "expected_lb": 0.95,
+        "gap": 0.018689398775223576,
+        "overfitting_severity": "low"
+      },
+      "null_aware": {
+        "cv_score": 0.9686353885211452,
+        "expected_lb": 0.89,
+        "gap": 0.07863538852114516,
+        "overfitting_severity": "high"
+      },
+      "null_pattern": {
+        "cv_score": 0.9684734306275742,
+        "expected_lb": 0.88,
+        "gap": 0.08847343062757418,
+        "overfitting_severity": "high"
+      }
+    },
+    "confidence_patterns": {
+      "baseline": {
+        "overconfidence_rate": 0.9625350896134744,
+        "avg_confidence": 0.9703805263422837,
+        "confidence_std": 0.40650892070310307
+      },
+      "null_aware": {
+        "overconfidence_rate": 0.9604297128050098,
+        "avg_confidence": 0.9704603729030522,
+        "confidence_std": 0.40665806416639694
+      },
+      "null_pattern": {
+        "overconfidence_rate": 0.9590261282660333,
+        "avg_confidence": 0.9703238108723896,
+        "confidence_std": 0.40638560009296193
+      }
+    },
+    "feature_importance_concentration": {
+      "baseline": {
+        "top5_features_importance": 0.9956456422805786,
+        "gini_coefficient": -0.8185655912483574
+      },
+      "null_aware": {
+        "top5_features_importance": 0.9870245456695557,
+        "gini_coefficient": -0.9102336473925536
+      },
+      "null_pattern": {
+        "top5_features_importance": 0.985720157623291,
+        "gini_coefficient": -0.9228210206289617
+      }
+    }
+  },
+  "summary": {
+    "key_findings": [
+      "Null-aware models show significant CV-LB gap (8-12%)",
+      "Test set has 2778 samples with nulls",
+      "Model disagreement rate: 0.09%",
+      "Disagreements correlate with null count",
+      "Null-aware models are overconfident on samples with nulls"
+    ],
+    "overfitting_causes": [
+      "Null indicators create spurious patterns in training data",
+      "Test null distribution may differ from training",
+      "Models memorize specific null patterns rather than learning robust features",
+      "Feature engineering based on nulls doesn't generalize"
+    ],
+    "recommendations": [
+      "Use simpler imputation strategies",
+      "Avoid complex null-based feature engineering",
+      "Focus on robust features that work regardless of null patterns",
+      "Consider ensemble methods that are less sensitive to nulls",
+      "Validate on held-out data with different null patterns"
+    ]
+  }
+}

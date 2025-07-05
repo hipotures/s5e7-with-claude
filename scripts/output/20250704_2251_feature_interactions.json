@@ -1,0 +1,49 @@
+{
+  "baseline_cv": 0.9673399731260366,
+  "engineered_cv": 0.9669621199534808,
+  "improvement": -0.00037785317255578654,
+  "best_threshold": 0.35,
+  "ambiguous_cases_pct": 0.9609155689915785,
+  "top_10_features": [
+    {
+      "feature": "ambivert_score",
+      "importance": 0.8153208494186401
+    },
+    {
+      "feature": "Stage_fear",
+      "importance": 0.09540567547082901
+    },
+    {
+      "feature": "Time_spent_Alone_plus_Drained_after_socializing",
+      "importance": 0.007012025453150272
+    },
+    {
+      "feature": "Time_spent_Alone",
+      "importance": 0.0051474603824317455
+    },
+    {
+      "feature": "Drained_after_socializing",
+      "importance": 0.005059702787548304
+    },
+    {
+      "feature": "Social_event_attendance",
+      "importance": 0.004988376051187515
+    },
+    {
+      "feature": "moderate_social",
+      "importance": 0.004533843602985144
+    },
+    {
+      "feature": "Going_outside",
+      "importance": 0.004227045923471451
+    },
+    {
+      "feature": "social_to_alone_ratio",
+      "importance": 0.004059391561895609
+    },
+    {
+      "feature": "friends_to_posts_ratio",
+      "importance": 0.0036357278004288673
+    }
+  ]
+}

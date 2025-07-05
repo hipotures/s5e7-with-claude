@@ -1,0 +1,84 @@
+======================================================================
+OPTIMIZED PROVEN STRATEGY - TARGET 0.975
+======================================================================
+
+Loading data...
+Train shape: (18524, 9)
+Test shape: (6175, 8)
+
+============================================================
+TRAINING OPTIMIZED ENSEMBLE MODEL
+============================================================
+
+Fold 1/5
+  rf: 0.96923
+  et: 0.96923
+  xgb: 0.96923
+  lgb: 0.96977
+  lr: 0.96896
+  Ensemble: 0.97031
+
+Fold 2/5
+  rf: 0.96734
+  et: 0.96653
+  xgb: 0.96572
+  lgb: 0.96545
+  lr: 0.96545
+  Ensemble: 0.96680
+
+Fold 3/5
+  rf: 0.96545
+  et: 0.96491
+  xgb: 0.96599
+  lgb: 0.96491
+  lr: 0.96545
+  Ensemble: 0.96572
+
+Fold 4/5
+  rf: 0.97085
+  et: 0.97031
+  xgb: 0.96815
+  lgb: 0.96869
+  lr: 0.97085
+  Ensemble: 0.97058
+
+Fold 5/5
+  rf: 0.97138
+  et: 0.97111
+  xgb: 0.97057
+  lgb: 0.96976
+  lr: 0.97084
+  Ensemble: 0.97165
+
+Mean CV Score: 0.96901 (+/- 0.00232)
+
+============================================================
+APPLYING TO TEST DATA
+============================================================
+
+Applied special handling to 0 samples
+Behavioral ambiverts: 153
+With special markers: 0
+Uncertain predictions: 7
+
+Prediction Summary:
+Introverts: 1560 (25.3%)
+Extroverts: 4615 (74.7%)
+
+Submission saved to: output/optimized_strategy_submission_20250705_1143.csv
+
+Results saved to: output/optimized_strategy_results.json
+
+======================================================================
+FINAL ASSESSMENT
+======================================================================
+
+Mean CV: 0.96901
+Expected LB: ~0.96804
+
+⚠ Performance still below target. The 0.975708 ceiling
+  may indeed be a hard mathematical limit.
+
+======================================================================
+ANALYSIS COMPLETE
+======================================================================

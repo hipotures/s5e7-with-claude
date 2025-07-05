@@ -1,0 +1,76 @@
+======================================================================
+NO-NULL RECORDS BIAS ANALYSIS
+======================================================================
+
+Loading training data...
+
+============================================================
+TRAINING DATA ANALYSIS
+============================================================
+
+Overall distribution:
+  Introverts: 26.0%
+  Extroverts: 74.0%
+
+Personality distribution by null count:
+Null Count   Records    Introverts   Extroverts   Intro Rate  
+------------------------------------------------------------
+0            10189      1766         8422         17.3%       
+1            7516       2641         4874         35.2%       
+2            779        387          392          49.7%       
+3            38         27           11           71.1%       
+
+============================================================
+NO-NULL RECORDS DEEP DIVE
+============================================================
+
+No-null records: 10189 (55.0% of training data)
+Personality distribution in no-null records:
+  Introverts: 1767 (17.3%)
+  Extroverts: 8422 (82.7%)
+
+Comparison:
+  Actual introvert rate (training): 17.3%
+  Predicted introvert rate (test): 16.6%
+  Difference: -0.7 percentage points
+
+============================================================
+FEATURE ANALYSIS FOR NO-NULL RECORDS
+============================================================
+
+Feature means for no-null records:
+Feature                        Introverts   Extroverts   Difference  
+----------------------------------------------------------------------
+Time_spent_Alone               6.726        1.775        -4.951      
+Social_event_attendance        2.235        6.405        +4.169      
+Drained_after_socializing      0.876        0.018        -0.858      
+Stage_fear                     0.877        0.018        -0.859      
+Going_outside                  2.016        4.954        +2.939      
+Friends_circle_size            3.595        9.533        +5.937      
+Post_frequency                 2.121        6.210        +4.089      
+
+============================================================
+CREATING VISUALIZATIONS
+============================================================
+
+Visualization saved to: output/no_null_bias_analysis.png
+
+============================================================
+SUMMARY AND CONCLUSIONS
+============================================================
+
+✓ Model predictions align reasonably well with training data patterns
+
+Key findings:
+1. No-null records in training: 17.3% introverts, 82.7% extroverts
+2. Model predictions for no-null: 16.6% introverts
+3. The pattern IS real - no-null records are predominantly extroverts
+
+Feature insights for no-null records:
+1. Friends_circle_size: Extroverts score 5.937 higher
+2. Time_spent_Alone: Introverts score 4.951 higher
+3. Social_event_attendance: Extroverts score 4.169 higher
+
+Conclusion:
+The model's behavior is partially justified by the data, but may be over-relying on null patterns.
+Consider rebalancing the model to better handle no-null introverts.

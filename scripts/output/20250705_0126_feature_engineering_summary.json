@@ -1,0 +1,82 @@
+{
+  "n_features_created": 32,
+  "n_null_features": 23,
+  "cv_performance": {
+    "mean": 0.9795941652603014,
+    "std": 0.002511395606693455,
+    "scores": [
+      0.9762483130904184,
+      0.979757085020243,
+      0.977327935222672,
+      0.9827260458839406,
+      0.9819114470842333
+    ]
+  },
+  "top_features": [
+    {
+      "feature": "Stage_fear",
+      "importance": 0.9266447424888611
+    },
+    {
+      "feature": "Drained_after_socializing",
+      "importance": 0.017023364081978798
+    },
+    {
+      "feature": "null_count",
+      "importance": 0.009792868979275227
+    },
+    {
+      "feature": "Time_spent_Alone_is_null",
+      "importance": 0.005633458960801363
+    },
+    {
+      "feature": "weighted_null_score",
+      "importance": 0.005571239627897739
+    },
+    {
+      "feature": "Time_spent_Alone",
+      "importance": 0.004714836832135916
+    },
+    {
+      "feature": "Friends_circle_size_is_null",
+      "importance": 0.0034977742470800877
+    },
+    {
+      "feature": "Social_event_attendance",
+      "importance": 0.0033760021906346083
+    },
+    {
+      "feature": "social_nulls_count",
+      "importance": 0.0032725005876272917
+    },
+    {
+      "feature": "Going_outside",
+      "importance": 0.0032399508636444807
+    }
+  ],
+  "null_feature_importance": {
+    "total_importance": 0.03941746801137924,
+    "top_null_features": [
+      {
+        "feature": "null_count",
+        "importance": 0.009792868979275227
+      },
+      {
+        "feature": "Time_spent_Alone_is_null",
+        "importance": 0.005633458960801363
+      },
+      {
+        "feature": "weighted_null_score",
+        "importance": 0.005571239627897739
+      },
+      {
+        "feature": "Friends_circle_size_is_null",
+        "importance": 0.0034977742470800877
+      },
+      {
+        "feature": "social_nulls_count",
+        "importance": 0.0032725005876272917
+      }
+    ]
+  }
+}

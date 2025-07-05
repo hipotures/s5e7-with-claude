@@ -218,7 +218,7 @@ def objective_catboost(trial):
 
 # Run optimization for each model
 print("\n=== STARTING DEEP OPTUNA OPTIMIZATION ===")
-print("This will take 2-4 hours. Progress will be saved to scripts/output/")
+print("This will take 2-4 hours. Progress will be saved to output/")
 
 results = {}
 
@@ -245,7 +245,7 @@ print(f"XGBoost best score: {study_xgb.best_value:.6f}")
 print(f"Time taken: {xgb_time/60:.1f} minutes")
 
 # Save intermediate results
-with open('scripts/output/20250704_2313_optuna_intermediate.json', 'w') as f:
+with open('output/20250704_2313_optuna_intermediate.json', 'w') as f:
     json.dump(results, f, indent=2)
 
 # LightGBM optimization
@@ -271,7 +271,7 @@ print(f"LightGBM best score: {study_lgb.best_value:.6f}")
 print(f"Time taken: {lgb_time/60:.1f} minutes")
 
 # Save intermediate results
-with open('scripts/output/20250704_2313_optuna_intermediate.json', 'w') as f:
+with open('output/20250704_2313_optuna_intermediate.json', 'w') as f:
     json.dump(results, f, indent=2)
 
 # CatBoost optimization
@@ -300,7 +300,7 @@ print(f"Time taken: {cat_time/60:.1f} minutes")
 results['total_optimization_time'] = xgb_time + lgb_time + cat_time
 results['total_trials'] = results['xgboost']['n_trials'] + results['lightgbm']['n_trials'] + results['catboost']['n_trials']
 
-with open('scripts/output/20250704_2313_optuna_final_results.json', 'w') as f:
+with open('output/20250704_2313_optuna_final_results.json', 'w') as f:
     json.dump(results, f, indent=2)
 
 # Train final ensemble with best parameters

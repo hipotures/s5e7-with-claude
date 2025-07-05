@@ -1,0 +1,109 @@
+======================================================================
+AMBIVERT NULL PATTERN ANALYSIS
+======================================================================
+
+Loading data...
+
+DETECTING POTENTIAL AMBIVERTS
+============================================================
+Method 2 (special markers): 0 records
+Method 3 (behavioral pattern): 304 records
+
+Total potential ambiverts: 304 (1.6%)
+
+============================================================
+NULL PATTERN ANALYSIS BY PERSONALITY TYPE
+============================================================
+
+Group sizes:
+Clear Introverts: 4818
+Clear Extroverts: 13402
+Potential Ambiverts: 304
+
+1. NULL RATES BY FEATURE AND PERSONALITY:
+Feature                        Introverts   Extroverts   Ambiverts    Ambi Diff   
+--------------------------------------------------------------------------------
+Time_spent_Alone               0.058        0.068        0.000        -0.063      
+Social_event_attendance        0.093        0.055        0.000        -0.074      
+Drained_after_socializing      0.143        0.034        0.033        -0.055      
+Stage_fear                     0.154        0.084        0.082        -0.037      
+Going_outside                  0.104        0.070        0.079        -0.008      
+Friends_circle_size            0.073        0.052        0.000        -0.063      
+Post_frequency                 0.101        0.056        0.069        -0.010      
+
+2. DISTRIBUTION OF TOTAL NULL COUNTS:
+Null Count   Introverts      Extroverts      Ambiverts      
+------------------------------------------------------------
+0            36.6           % 61.2           % 74.3           %
+1            54.8           % 35.8           % 25.0           %
+2            8.0            % 2.9            % 0.7            %
+3            0.6            % 0.1            % 0.0            %
+4            0.0            % 0.0            % 0.0            %
+
+3. NULL PATTERN CONSISTENCY ANALYSIS:
+
+Null pattern entropy (higher = more random):
+Introverts: 3.192
+Extroverts: 2.237
+Ambiverts: 1.348
+
+4. NULL PATTERN CORRELATIONS:
+Introverts average null correlation: -0.059
+Extroverts average null correlation: -0.036
+Ambiverts average null correlation: -0.086
+
+============================================================
+TRAINING AMBIVERT NULL PATTERN DETECTOR
+============================================================
+
+Training set: 14819 samples (1.6% ambiverts)
+Validation set: 3705 samples (1.6% ambiverts)
+
+Model Performance:
+Training accuracy: 0.342
+Validation accuracy: 0.338
+
+Top 10 Most Important Features for Ambivert Detection:
+Social_event_attendance_is_null          0.227
+Friends_circle_size_is_null              0.217
+null_count                               0.208
+Time_spent_Alone_is_null                 0.197
+Drained_after_socializing_is_null        0.097
+has_psych_nulls                          0.036
+Going_outside_is_null                    0.013
+Post_frequency_is_null                   0.003
+has_social_nulls                         0.000
+Stage_fear_is_null                       0.000
+
+============================================================
+CREATING VISUALIZATIONS
+============================================================
+
+Visualization saved to: output/ambivert_null_pattern_analysis.png
+
+============================================================
+APPLYING TO TEST DATA
+============================================================
+
+Test data ambivert predictions:
+Predicted ambiverts: 4111 (66.6%)
+High probability (>0.7): 14
+Medium probability (0.5-0.7): 4097
+
+Results saved to: output/ambivert_null_pattern_results.json
+
+============================================================
+KEY CONCLUSIONS
+============================================================
+
+1. Ambiverts have lower null rates than average
+
+2. Null patterns are less random for ambiverts
+
+3. Most important null indicator: Social_event_attendance_is_null
+
+4. Recommendation: Consider using ambivert detection based on null patterns as an additional feature for personality prediction
+
+======================================================================
+ANALYSIS COMPLETE
+======================================================================

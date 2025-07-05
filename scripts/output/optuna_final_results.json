@@ -1,0 +1,116 @@
+{
+  "total_iterations": 4,
+  "total_time": 37.80907225608826,
+  "best_score": 0.9688632883850263,
+  "best_params": {
+    "alone_thresh": 2.956245175527025,
+    "social_thresh": 3.825886243661399,
+    "friends_thresh": 9,
+    "ambig_score_thresh": 0.3853078019061692,
+    "proba_low_thresh": 0.13256850430883482,
+    "proba_high_thresh": 0.5241544293114551,
+    "ambig_weight": 6.141895495476864,
+    "n_estimators": 1431,
+    "learning_rate": 0.009151965429851259,
+    "max_depth": 7,
+    "subsample": 0.8117812597134222,
+    "colsample_bytree": 0.7229786235576433,
+    "reg_lambda": 2.9399994780634064,
+    "reg_alpha": 3.824854562604693,
+    "gamma": 0.17155400613491073,
+    "min_child_weight": 6
+  },
+  "best_trial": 0,
+  "test_ambiguous_count": 176,
+  "test_ambiguous_pct": 2.8502024291497974,
+  "all_trials": [
+    {
+      "number": 0,
+      "value": 0.9688632883850263,
+      "params": {
+        "alone_thresh": 2.956245175527025,
+        "social_thresh": 3.825886243661399,
+        "friends_thresh": 9,
+        "ambig_score_thresh": 0.3853078019061692,
+        "proba_low_thresh": 0.13256850430883482,
+        "proba_high_thresh": 0.5241544293114551,
+        "ambig_weight": 6.141895495476864,
+        "n_estimators": 1431,
+        "learning_rate": 0.009151965429851259,
+        "max_depth": 7,
+        "subsample": 0.8117812597134222,
+        "colsample_bytree": 0.7229786235576433,
+        "reg_lambda": 2.9399994780634064,
+        "reg_alpha": 3.824854562604693,
+        "gamma": 0.17155400613491073,
+        "min_child_weight": 6
+      }
+    },
+    {
+      "number": 1,
+      "value": 0.9669463901417442,
+      "params": {
+        "alone_thresh": 3.131071690061239,
+        "social_thresh": 4.828035636336169,
+        "friends_thresh": 9,
+        "ambig_score_thresh": 0.2774205008514939,
+        "proba_low_thresh": 0.10586203439177248,
+        "proba_high_thresh": 0.5107368018078059,
+        "ambig_weight": 11.922281967060425,
+        "n_estimators": 2403,
+        "learning_rate": 0.009772832939253618,
+        "max_depth": 6,
+        "subsample": 0.7098967665571797,
+        "colsample_bytree": 0.7191640684081329,
+        "reg_lambda": 2.9685845246123392,
+        "reg_alpha": 5.339855630767838,
+        "gamma": 0.0959211881402984,
+        "min_child_weight": 5
+      }
+    },
+    {
+      "number": 2,
+      "value": 0.9652583717904997,
+      "params": {
+        "alone_thresh": 2.9453498846383974,
+        "social_thresh": 4.121514179907708,
+        "friends_thresh": 9,
+        "ambig_score_thresh": 0.20182964153266902,
+        "proba_low_thresh": 0.2017661088059061,
+        "proba_high_thresh": 0.5179885753598735,
+        "ambig_weight": 19.87803333625199,
+        "n_estimators": 2902,
+        "learning_rate": 0.008908045303700134,
+        "max_depth": 8,
+        "subsample": 0.8388751133480156,
+        "colsample_bytree": 0.6427922801588263,
+        "reg_lambda": 1.1221119164124478,
+        "reg_alpha": 4.262559906269322,
+        "gamma": 0.17996803660527205,
+        "min_child_weight": 5
+      }
+    },
+    {
+      "number": 3,
+      "value": 0.9682219928384678,
+      "params": {
+        "alone_thresh": 2.8314006140703167,
+        "social_thresh": 5.169895087261662,
+        "friends_thresh": 9,
+        "ambig_score_thresh": 0.3211538092772398,
+        "proba_low_thresh": 0.2212736715355574,
+        "proba_high_thresh": 0.5095206025868269,
+        "ambig_weight": 18.135481030261907,
+        "n_estimators": 1836,
+        "learning_rate": 0.006236802394977479,
+        "max_depth": 5,
+        "subsample": 0.8683632591461248,
+        "colsample_bytree": 0.6530711359240643,
+        "reg_lambda": 1.4052526562090628,
+        "reg_alpha": 5.132634656646842,
+        "gamma": 0.05543641507624415,
+        "min_child_weight": 3
+      }
+    }
+  ]
+}

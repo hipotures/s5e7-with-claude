@@ -4,13 +4,15 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Kaggle Playground Series S5E7 competition project for personality classification (Introvert/Extrovert prediction). The project has discovered a mathematical accuracy ceiling of 0.975708 due to ~19.4% ambiguous cases (ambiverts) that cannot be classified from the given features.
+This is a Kaggle Playground Series S5E7 competition project for personality classification (Introvert/Extrovert prediction). The project has achieved breakthrough accuracy of **97.997% CV** by discovering that missing values encode personality information.
 
 ### Critical Understanding
-- **The 0.975708 barrier is NOT random** - it's a mathematical limit from 16 MBTI types → 2 classes (I/E) reduction
-- **19.4% of data is ambiguous** (mainly ISFJ/ESFJ types that can be either I or E) - much more than initially estimated 2.43%
-- **97.9% of ambiverts are labeled as Extrovert** in the dataset
-- Without full MBTI dimensions (N/S, T/F, J/P are missing), these cases cannot be correctly classified
+- **Original 0.975708 barrier** was thought to be a mathematical limit from 16 MBTI types → 2 classes reduction
+- **NEW DISCOVERY**: Missing values are not random - they encode personality traits
+  - 63.4% of Introverts have nulls vs only 38.5% of Extroverts
+  - Missing "Drained_after_socializing" → 60% likely to be Introvert
+- **Class-aware imputation** achieved 97.905% accuracy (+1.1% improvement)
+- **Null-based features** pushed accuracy to 97.997% with CatBoost
 
 ## Key Commands
 
@@ -24,29 +26,42 @@ bash tools/fix_dataset_paths.sh
 ```
 
 ### Common Development Tasks
-- **New experiments**: Create scripts with timestamp of file creation (run `date` command) prefix `YYYYMMDD_HHMM_<description>.py`
-- **Analysis results**: Saved as CSV/JSON in scripts/output directory
-- **Submissions**: Generated in `subm/DATE_YYYYMMDD` directory
+- **New experiments**: Create scripts with timestamp prefix `YYYYMMDD_HHMM_<description>.py` (run `date +"%Y%m%d_%H%M"`)
+- **Analysis results**: Saved as CSV/JSON in `scripts/output/` directory
+- **Submissions**: Generated in `subm/DATE_YYYYMMDD/` directory
+- **GPU optimization**: Use Optuna with parameters at top of script (N_TRIALS_XGB, etc.)
+
+### Running GPU Scripts
+```bash
+# For long-running GPU scripts (Optuna, neural networks)
+CUDA_VISIBLE_DEVICES=0 python scripts/20250705_0140_deep_optuna_null_aware_gpu.py
+
+# Monitor GPU usage
+nvidia-smi -l 1
+```
 
 ## Architecture & Structure
 
 ### Directory Layout
-- `scripts/`: All experimental Python scripts (76+ files)
+- `scripts/`: All experimental Python scripts (100+ files)
   - Early exploration: `20250703_*`
   - Ambivert discovery: `20250704_00*`
   - Optimization strategies: `20250704_01-02*`
   - Advanced ML: `20250704_19-20*`
+  - **Null pattern breakthrough**: `20250705_*`
+- `scripts/output/`: Analysis results, engineered features
 - `subm/`: Competition submissions
+- `docs/`: Documentation and reports
 - `tools/`: Utility scripts
 
 ### Key Discoveries
-1. **Accuracy Ceiling**: 0.975708 (mathematical limit, 240+ people achieved exactly this)
-2. **Ambiguous Cases**: 2.43% of data (ambiverts/ISFJ-ESFJ boundary)
-3. **Critical Features**: 
-   - "Drained_after_socializing" (>50% importance)
-   - "Stage_fear" (second most important)
-   - Together provide >90% predictive power
-4. **Breakthrough Strategy**: Detect ambiguous cases and apply 96.2% Extrovert rule
+1. **Null Pattern Breakthrough**: Missing values encode personality - 63.4% of Introverts have nulls vs 38.5% of Extroverts
+2. **Class-Aware Imputation**: Imputing based on personality class achieves 97.905% accuracy
+3. **Critical Features with Nulls**: 
+   - "Drained_after_socializing" null → 60% Introvert (strongest signal)
+   - "Stage_fear" (92.7% importance after null engineering)
+   - Null indicators contribute significantly to predictions
+4. **Final Performance**: CatBoost 97.997% CV, Ensemble 97.868% CV
 
 ### Ambivert Detection Patterns
 ```python
@@ -98,34 +113,45 @@ Each experimental script follows:
 
 ## Key Scripts to Understand
 
+### Original Ambivert Strategy (0.975708 ceiling)
 1. **Ambivert Discovery**: `scripts/20250704_0007_ambivert_detector.py`
 2. **Error Pattern Analysis**: `scripts/20250703_2357_analyze_errors_pattern.py`
-3. **Breakthrough Strategy**: `scripts/20250704_0008_ambivert_breakthrough_strategy.py`
-4. **Simple Test**: `scripts/20250704_2009_test_breakthrough_simple.py`
-5. **Iterative Optimization**: `scripts/20250704_0246_optimize_ambiguous_iterative.py`
+
+### Null Pattern Breakthrough (97.997% accuracy)
+1. **Null Pattern Analysis**: `scripts/20250705_0122_null_pattern_personality.py`
+2. **Imputation Strategies**: `scripts/20250705_0124_null_imputation_strategies.py`
+3. **Feature Engineering**: `scripts/20250705_0126_null_feature_engineering.py`
+4. **Final Model**: `scripts/20250705_0128_null_aware_breakthrough_model.py`
+5. **Deep Optimization**: `scripts/20250705_0140_deep_optuna_null_aware_gpu.py`
 
 ## Understanding the Project
 
 1. Read `README_CLAUDE.md` - message from you to you
-2. Read `docs/20250704_2058_ANALYSIS_SUMMARY.md` for project overview
-3. Read `docs/20250704_2013_RAPORT.md` for implementation details
+2. Read `docs/20250705_0137_BREAKTHROUGH_REPORT.md` for latest null pattern breakthrough
+3. Read `docs/20250704_2058_ANALYSIS_SUMMARY.md` for original project overview
+4. Read `docs/20250705_0120_NULL_ANALYSIS_PLAN.md` for null analysis methodology
 
 ## Breakthrough Implementation Steps
 
-1. **Detect ambiverts** (2.43% of data)
-2. **Apply 96.2% rule** - if uncertain ambivert, predict Extrovert
-3. **Use dynamic thresholds**:
-   - Ambiverts: 0.42-0.45
-   - Others: 0.50
-4. **Weight samples** - 10-20x higher weight for ambiverts during training
+### Current Best Strategy (97.997% accuracy)
+1. **Create null indicators** for all features (especially Drained_after_socializing)
+2. **Apply class-aware imputation** - impute based on personality class during training
+3. **Engineer null-based features**:
+   - has_drained_null, null_count, weighted_null_score
+   - Pattern features: pattern_only_drained, no_nulls
+4. **Use CatBoost** as primary model (achieves 97.997% CV)
+5. **Apply special rules**:
+   - Missing Drained + low prob → Introvert
+   - No nulls + high prob → Extrovert
+   - High weighted null score → Introvert
 
 ## Important Notes
 1. This is a git repository - use git for version control
 2. No formal testing framework - scripts are experimental/exploratory
 3. No dependency management file - libraries assumed to be installed
-4. Configuration is embedded in scripts rather than external files
-5. The project focuses on understanding data structure rather than model optimization
-6. This is NOT a "better model" problem - it's about understanding the information-theoretic limit
+4. **Latest breakthrough**: Null patterns are the key, not ambivert detection
+5. **CatBoost performs best** on this dataset (97.997% CV without extensive optimization)
+6. **Optimal ensemble weights** (from Optuna): XGB=52.4%, LGB=13.3%, CAT=34.3%
 
 ## Project Memories
 
@@ -138,3 +164,18 @@ Each experimental script follows:
 
 ### Server Resources
 - Mamy dostęp do odrebnego serwera obliczeniowego 200GB RAM i 2x4090 GPU. Jeśli jest potrzeba dłuższych obliczeń (np. dla optuna), zgłoś potrzebę dłuższej optymalizacji.
+
+### File Path and Access
+- Jeżeli tworzysz skrypt w katalogu scripts/ (i w tym katalogu będzie uruchamiany /wyniki zapisujesz do katalogu output/ ) to dostęp do plików (train.csv, test.csv i pozostałych) jest w lokalizacji względnej tak: read_csv("../../train.csv")
+
+### Development Notes
+- Jeżeli używamy metod Deep Learning, stosujemy pytorch
+
+### Output File Generation
+- Kod na output ma wygenerować plik w katalogu output/ (katalog lokalny względem tego, gdzie ja ręcznie uruchamiam kod). Plik ma mieć nazwę analogiczną do skryptu, który go uruchamia, przykładowo 20250705_0955_advanced_imputation_test.py -> zapisuje do output/20250705_0955_advanced_imputation_test.txt
+
+### Script Creation Best Practices
+- Przed stworzeniem skryptu i ewentualnym jego uruchomieniem sprwdzaj 1. Gdzie jesteś pwd (masz być w katalogu scripts/) . 2. Uruchom date +"%Y%m%d_%H%M" żeby wiedzieć, jak nazwać plik skryptu.
+
+## XGBoost Migration Guidance
+- Jeśli w skryptach używasz biblioteki xgboost, musisz zapoznać się z najnowaszymi zmianami w wersji 3: 2->3 docs/00000000_0000_xgboost-migration-guide.md

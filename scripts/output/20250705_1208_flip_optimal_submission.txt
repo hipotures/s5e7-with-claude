@@ -1,0 +1,60 @@
+======================================================================
+FLIP OPTIMAL SUBMISSION - BREAK 0.975708
+======================================================================
+
+Loading optimal submission (0.975708)...
+Loading test data...
+Submission records: 6175
+Current distribution:
+  Introverts: 1553 (25.1%)
+  Extroverts: 4622 (74.9%)
+
+============================================================
+ANALYZING POTENTIAL MISCLASSIFICATIONS
+============================================================
+
+Found 2 potential introvert misclassifications
+Found 0 potential extrovert misclassifications
+Total potential errors: 2
+
+Top 10 flip candidates:
+ID       Current      Should Be    Confidence   Features
+--------------------------------------------------------------------------------
+19612    Extrovert    Introvert    0.50         Alone:5.0, Social:0.0, Friends:4.0
+23844    Extrovert    Introvert    0.30         Alone:11.0, Social:2.0, Friends:2.0
+
+============================================================
+CREATING FLIP STRATEGIES
+============================================================
+
+Created 5 flip strategies:
+  top5_confidence: 2 flips
+  extreme_introverts: 0 flips
+  balanced_3each: 2 flips
+  conservative_top3: 2 flips
+  aggressive_top8: 2 flips
+
+============================================================
+SAVING FLIP STRATEGIES
+============================================================
+Saved top5_confidence (2 flips) to output/optimal_flip_top5_confidence.csv
+Saved extreme_introverts (0 flips) to output/optimal_flip_extreme_introverts.csv
+Saved balanced_3each (2 flips) to output/optimal_flip_balanced_3each.csv
+Saved conservative_top3 (2 flips) to output/optimal_flip_conservative_top3.csv
+Saved aggressive_top8 (2 flips) to output/optimal_flip_aggressive_top8.csv
+
+Copying to submission folder...
+
+============================================================
+SUMMARY
+============================================================
+
+Target improvement: 0.976518 - 0.975708 = 0.00081
+Optimal flips needed: ~5 records
+
+Recommendation: Start with 'top5_confidence' or 'extreme_introverts'
+These target the most obvious misclassifications.
+
+======================================================================
+ANALYSIS COMPLETE
+======================================================================

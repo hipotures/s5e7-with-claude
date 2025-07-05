@@ -1,0 +1,30 @@
+{
+  "baseline_cv_accuracy": 0.968581582299327,
+  "ambiverts_detected_pct": 1.6411142301878643,
+  "extrovert_rate_ambiverts": 97.69736842105263,
+  "misclassified_pct": 2.8017706758799394,
+  "best_threshold": 0.4,
+  "edge_cases_count": 5,
+  "top_features": [
+    {
+      "feature": "Drained_after_socializing",
+      "importance": 0.8967003226280212
+    },
+    {
+      "feature": "Stage_fear",
+      "importance": 0.09173665195703506
+    },
+    {
+      "feature": "Time_spent_Alone",
+      "importance": 0.003110686782747507
+    },
+    {
+      "feature": "Social_event_attendance",
+      "importance": 0.0026866253465414047
+    },
+    {
+      "feature": "Going_outside",
+      "importance": 0.0019692585337907076
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "total_samples": 18524,
+  "theoretical_errors_at_975708": 449,
+  "samples_all_models_wrong": 376,
+  "high_disagreement_samples": 307,
+  "boundary_samples": 21,
+  "mislabeled_patterns": {
+    "clear_extrovert_labeled_introvert": 40,
+    "clear_introvert_labeled_extrovert": 63
+  },
+  "error_by_probability": {
+    "0-0.1": {
+      "count": 4196,
+      "errors": 12,
+      "error_rate": 0.002859866539561487
+    },
+    "0.1-0.3": {
+      "count": 493,
+      "errors": 134,
+      "error_rate": 0.2718052738336714
+    },
+    "0.3-0.5": {
+      "count": 76,
+      "errors": 8,
+      "error_rate": 0.10526315789473684
+    },
+    "0.5-0.7": {
+      "count": 62,
+      "errors": 6,
+      "error_rate": 0.0967741935483871
+    },
+    "0.7-0.9": {
+      "count": 311,
+      "errors": 129,
+      "error_rate": 0.41479099678456594
+    },
+    "0.9-1.0": {
+      "count": 13386,
+      "errors": 89,
+      "error_rate": 0.00664873748692664
+    }
+  }
+}

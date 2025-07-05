@@ -1,0 +1,84 @@
+======================================================================
+NULL PATTERN - PREDICTION CONSISTENCY ANALYSIS
+======================================================================
+
+Loading test data...
+Test shape: (6175, 8)
+Using submission: output/submission_return_to_ambivert.csv
+
+============================================================
+NULL PATTERNS IN TEST DATA
+============================================================
+
+Test data null statistics:
+Records with no nulls: 3397 (55.0%)
+Records with 1+ nulls: 2778 (45.0%)
+Average null count: 0.50
+
+============================================================
+PREDICTION ANALYSIS BY NULL COUNT
+============================================================
+
+Predictions by null count:
+Null Count   Records    Intro Rate   Extro Rate  
+--------------------------------------------------
+0            3397.0     16.6%        83.4%       
+1            2487.0     34.5%        65.5%       
+2            284.0      48.2%        51.8%       
+
+============================================================
+PSYCHOLOGICAL FEATURES NULL ANALYSIS
+============================================================
+
+Predictions by psychological null presence:
+No psych nulls: 5162 records, 21.5% predicted as Introvert
+Has psych nulls: 1013 records, 44.4% predicted as Introvert
+
+Detailed null analysis:
+
+Drained_after_socializing:
+  With null: 432 records, 56.5% predicted as Introvert
+  No null: 5743 records, 22.9% predicted as Introvert
+  Ratio: 2.46x more likely to be Introvert with null
+
+Stage_fear:
+  With null: 598 records, 36.0% predicted as Introvert
+  No null: 5577 records, 24.2% predicted as Introvert
+  Ratio: 1.49x more likely to be Introvert with null
+
+============================================================
+CONSISTENCY CHECK: EXPECTED VS ACTUAL
+============================================================
+
+Expected patterns (from training data):
+- Drained_after_socializing null: 4.2x more likely to be Introvert
+- Stage_fear null: 1.8x more likely to be Introvert
+- Overall: Introverts should have 2-4x more nulls
+
+Actual prediction patterns:
+
+High null (2+): 48.5% predicted as Introvert
+No nulls: 16.6% predicted as Introvert
+Ratio: 2.91x
+
+============================================================
+CREATING VISUALIZATIONS
+============================================================
+
+Visualization saved to: output/null_prediction_consistency_analysis.png
+
+============================================================
+SUMMARY AND RECOMMENDATIONS
+============================================================
+
+✓ CONSISTENT: Model predictions align with null patterns!
+  - High null records are 2.91x more likely to be predicted as Introvert
+
+Recommendations:
+2. Drained_after_socializing null pattern is under-utilized
+   - Expected: 4.2x more introverts, Actual: 2.45x
+   - Consider special handling for this critical null
+
+3. Potential accuracy improvement:
+   - 150 high-null records predicted as Extrovert
+   - Potential improvement: up to 2.43%

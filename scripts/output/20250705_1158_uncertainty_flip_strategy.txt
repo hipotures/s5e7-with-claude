@@ -1,0 +1,87 @@
+======================================================================
+UNCERTAINTY FLIP STRATEGY
+======================================================================
+
+Loading data...
+
+============================================================
+TRAINING STRONG BASE MODEL
+============================================================
+Validation accuracy: 0.96491
+
+============================================================
+ANALYZING PREDICTION UNCERTAINTY
+============================================================
+
+Total predictions: 6175
+Predictions with probability 0.45-0.55: 5
+Predictions with probability 0.48-0.52: 1
+Predictions with probability 0.49-0.51: 1
+
+Top 10 most uncertain predictions:
+ID       Prob     Pred         Features
+----------------------------------------------------------------------
+23491    0.5049   Extrovert    Alone:11.0, Social:1.0, Friends:4.0
+20017    0.5206   Extrovert    Alone:0.0, Social:3.0, Friends:5.0
+18878    0.5212   Extrovert    Alone:1.0, Social:6.0, Friends:15.0
+23330    0.4787   Introvert    Alone:5.0, Social:9.0, Friends:12.0
+22507    0.5326   Extrovert    Alone:nan, Social:8.0, Friends:12.0
+19774    0.5555   Extrovert    Alone:6.0, Social:9.0, Friends:13.0
+23781    0.4439   Introvert    Alone:nan, Social:2.0, Friends:5.0
+22286    0.5685   Extrovert    Alone:5.0, Social:7.0, Friends:7.0
+20472    0.4309   Introvert    Alone:6.0, Social:0.0, Friends:4.0
+22653    0.4250   Introvert    Alone:4.0, Social:8.0, Friends:3.0
+
+============================================================
+TESTING FLIP STRATEGIES
+============================================================
+
+Original distribution:
+Introverts: 1558 (25.2%)
+Extroverts: 4617 (74.8%)
+
+Testing different flip counts:
+Flips      New Intro    New Extro    Intro %   
+--------------------------------------------------
+1          1559         4616         25.2%     
+2          1560         4615         25.3%     
+3          1561         4614         25.3%     
+4          1560         4615         25.3%     
+5          1561         4614         25.3%     
+10         1560         4615         25.3%     
+15         1559         4616         25.2%     
+20         1558         4617         25.2%     
+25         1559         4616         25.2%     
+30         1560         4615         25.3%     
+40         1566         4609         25.4%     
+50         1564         4611         25.3%     
+75         1561         4614         25.3%     
+100        1554         4621         25.2%     
+
+============================================================
+TESTING PROBABILITY-BASED FLIPS
+============================================================
+
+Range           Count      New Intro %    
+----------------------------------------
+0.490-0.510     1          25.2%          
+0.480-0.520     1          25.2%          
+0.470-0.530     4          25.3%          
+0.450-0.550     5          25.3%          
+0.495-0.505     1          25.2%          
+
+============================================================
+CREATING VISUALIZATIONS
+============================================================
+Visualization saved to: output/uncertainty_analysis.png
+
+No optimal flip count found, trying standard values...
+
+============================================================
+CREATING FLIPPED SUBMISSIONS
+============================================================
+Created submission with 5 flips: output/uncertainty_flip_5_submission.csv
+Created submission with 10 flips: output/uncertainty_flip_10_submission.csv
+Created submission with 15 flips: output/uncertainty_flip_15_submission.csv
+Created submission with 20 flips: output/uncertainty_flip_20_submission.csv
+Created submission with 30 flips: output/uncertainty_flip_30_submission.csv

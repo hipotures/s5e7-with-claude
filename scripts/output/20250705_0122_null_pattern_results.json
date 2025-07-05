@@ -1,0 +1,289 @@
+{
+  "null_correlations": {
+    "Time_spent_Alone_is_null": 0.014529765821521217,
+    "Stage_fear_is_null": -0.10189450855148639,
+    "Social_event_attendance_is_null": -0.07083387654626351,
+    "Going_outside_is_null": -0.05565349979087676,
+    "Drained_after_socializing_is_null": -0.19771230428428277,
+    "Friends_circle_size_is_null": -0.042192186107622834,
+    "Post_frequency_is_null": -0.07695748237797814
+  },
+  "chi_square_results": {
+    "Time_spent_Alone": {
+      "chi2": 3.7768186131631705,
+      "p_value": 0.05196737970208917
+    },
+    "Stage_fear": {
+      "chi2": 191.55955883848924,
+      "p_value": 1.451844720848194e-43
+    },
+    "Social_event_attendance": {
+      "chi2": 92.28334906887657,
+      "p_value": 7.51136402815173e-22
+    },
+    "Going_outside": {
+      "chi2": 56.90585084578731,
+      "p_value": 4.571836187449397e-14
+    },
+    "Drained_after_socializing": {
+      "chi2": 722.2396237585533,
+      "p_value": 4.3617277247561475e-159
+    },
+    "Friends_circle_size": {
+      "chi2": 32.562376585550965,
+      "p_value": 1.1542772415849176e-08
+    },
+    "Post_frequency": {
+      "chi2": 109.0132437125155,
+      "p_value": 1.6120516035432185e-25
+    }
+  },
+  "bayesian_analysis": {
+    "Time_spent_Alone": {
+      "P(E|Null)": 0.7638655462184873,
+      "P(I|Null)": 0.23613445378151265,
+      "P(E|NotNull)": 0.7378562362986039,
+      "Null_Count": 1190,
+      "Null_Rate": 0.06424098466853811
+    },
+    "Stage_fear": {
+      "P(E|Null)": 0.606973058637084,
+      "P(I|Null)": 0.39302694136291605,
+      "P(E|NotNull)": 0.7546148758342853,
+      "Null_Count": 1893,
+      "Null_Rate": 0.10219175124163248
+    },
+    "Social_event_attendance": {
+      "P(E|Null)": 0.6203389830508474,
+      "P(I|Null)": 0.37966101694915255,
+      "P(E|NotNull)": 0.7476360701107011,
+      "Null_Count": 1180,
+      "Null_Rate": 0.06370114446123948
+    },
+    "Going_outside": {
+      "P(E|Null)": 0.6562073669849932,
+      "P(I|Null)": 0.34379263301500684,
+      "P(E|NotNull)": 0.7466877711337788,
+      "Null_Count": 1466,
+      "Null_Rate": 0.07914057438998057
+    },
+    "Drained_after_socializing": {
+      "P(E|Null)": 0.402088772845953,
+      "P(I|Null)": 0.597911227154047,
+      "P(E|NotNull)": 0.7618417266187051,
+      "Null_Count": 1149,
+      "Null_Rate": 0.06202763981861369
+    },
+    "Friends_circle_size": {
+      "P(E|Null)": 0.6641366223908919,
+      "P(I|Null)": 0.3358633776091081,
+      "P(E|NotNull)": 0.7440755580995994,
+      "Null_Count": 1054,
+      "Null_Rate": 0.05689915784927661
+    },
+    "Post_frequency": {
+      "P(E|Null)": 0.6147151898734177,
+      "P(I|Null)": 0.38528481012658233,
+      "P(E|NotNull)": 0.748667439165701,
+      "Null_Count": 1264,
+      "Null_Rate": 0.06823580220254805
+    }
+  },
+  "mutual_information": {
+    "Time_spent_Alone_is_null": 0.0,
+    "Stage_fear_is_null": 0.0068693463641607,
+    "Social_event_attendance_is_null": 0.004145894333610345,
+    "Going_outside_is_null": 0.0005968369345605851,
+    "Drained_after_socializing_is_null": 0.016555053236076533,
+    "Friends_circle_size_is_null": 0.011080865835833231,
+    "Post_frequency_is_null": 0.0
+  },
+  "cluster_analysis": [
+    {
+      "cluster": 0,
+      "size": 10189,
+      "extrovert_ratio": 0.8265776818137207,
+      "avg_nulls": 0.0,
+      "pattern": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "cluster": 1,
+      "size": 1198,
+      "extrovert_ratio": 0.6869782971619366,
+      "avg_nulls": 1.0,
+      "pattern": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "cluster": 2,
+      "size": 1630,
+      "extrovert_ratio": 0.6214723926380368,
+      "avg_nulls": 1.0,
+      "pattern": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "cluster": 3,
+      "size": 939,
+      "extrovert_ratio": 0.6656017039403621,
+      "avg_nulls": 1.0,
+      "pattern": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "cluster": 4,
+      "size": 1011,
+      "extrovert_ratio": 0.6518298714144412,
+      "avg_nulls": 1.0,
+      "pattern": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "cluster": 5,
+      "size": 976,
+      "extrovert_ratio": 0.4047131147540984,
+      "avg_nulls": 1.0,
+      "pattern": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "cluster": 6,
+      "size": 944,
+      "extrovert_ratio": 0.8125,
+      "avg_nulls": 1.0,
+      "pattern": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "cluster": 7,
+      "size": 818,
+      "extrovert_ratio": 0.7237163814180929,
+      "avg_nulls": 1.0,
+      "pattern": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "cluster": 8,
+      "size": 417,
+      "extrovert_ratio": 0.5035971223021583,
+      "avg_nulls": 2.067146282973621,
+      "pattern": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "cluster": 9,
+      "size": 402,
+      "extrovert_ratio": 0.48009950248756217,
+      "avg_nulls": 2.0348258706467663,
+      "pattern": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "pattern_results": {
+    "only_drained_null": {
+      "count": 976,
+      "percentage": 5.268840423234723,
+      "extrovert_rate": 0.4047131147540984,
+      "lift": 0.5469096145325654
+    },
+    "only_stage_fear_null": {
+      "count": 1630,
+      "percentage": 8.799395378967825,
+      "extrovert_rate": 0.6214723926380368,
+      "lift": 0.8398275576189687
+    },
+    "social_nulls": {
+      "count": 2187,
+      "percentage": 11.806305333621248,
+      "extrovert_rate": 0.6470050297210791,
+      "lift": 0.8743311212447015
+    },
+    "no_nulls": {
+      "count": 10189,
+      "percentage": 55.004318721658386,
+      "extrovert_rate": 0.8265776818137207,
+      "lift": 1.1169968673158388
+    },
+    "high_nulls": {
+      "count": 2,
+      "percentage": 0.010796804145972793,
+      "extrovert_rate": 0.0,
+      "lift": 0.0
+    }
+  },
+  "test_null_summary": {
+    "total_null_rate": 0.44987854251012144,
+    "avg_nulls_per_sample": 0.49813765182186237
+  }
+}

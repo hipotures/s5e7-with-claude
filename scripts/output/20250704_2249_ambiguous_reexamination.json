@@ -1,0 +1,8 @@
+{
+  "original_detection_pct": 1.6,
+  "refined_detection_pct": 28.502024291497975,
+  "moderate_confidence_pct": 0.7557354925775978,
+  "total_ambiguous_clusters_pct": 56.62618083670716,
+  "optimal_threshold": 0.4,
+  "key_finding": "Social_event_attendance=10 is a strong ambivert marker"
+}

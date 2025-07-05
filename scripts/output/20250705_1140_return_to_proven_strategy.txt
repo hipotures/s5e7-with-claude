@@ -1,0 +1,61 @@
+======================================================================
+RETURN TO PROVEN STRATEGY - NO OVERFITTING
+======================================================================
+
+Loading data...
+Train shape: (18524, 9)
+Test shape: (6175, 8)
+
+Training data distribution:
+Introverts: 26.0%
+Extroverts: 74.0%
+
+============================================================
+TRAINING SIMPLE ROBUST MODEL
+============================================================
+
+Detected 246 potential ambiverts (1.3%)
+
+Fold 1/5
+  Accuracy: 0.97004
+
+Fold 2/5
+  Accuracy: 0.96707
+
+Fold 3/5
+  Accuracy: 0.96680
+
+Fold 4/5
+  Accuracy: 0.97139
+
+Fold 5/5
+  Accuracy: 0.97165
+
+Mean CV Score: 0.96939 (+/- 0.00208)
+
+============================================================
+APPLYING TO TEST DATA
+============================================================
+
+Detected 77 potential ambiverts in test (1.2%)
+
+Prediction Summary:
+Introverts: 1558 (25.2%)
+Extroverts: 4617 (74.8%)
+
+Submission saved to: output/proven_strategy_submission_20250705_1140.csv
+
+Results saved to: output/proven_strategy_results.json
+
+======================================================================
+FINAL ASSESSMENT
+======================================================================
+
+Mean CV: 0.96939
+Expected LB: ~0.96745
+
+⚠ Performance below expected. May need parameter tuning.
+
+======================================================================
+ANALYSIS COMPLETE
+======================================================================

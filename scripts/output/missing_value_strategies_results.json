@@ -1,0 +1,153 @@
+{
+  "missing_correlations": {
+    "Time_spent_Alone": 0.014529765821521217,
+    "Social_event_attendance": -0.07083387654626351,
+    "Drained_after_socializing": -0.19771230428428277,
+    "Stage_fear": -0.10189450855148639,
+    "Going_outside": -0.05565349979087676,
+    "Friends_circle_size": -0.042192186107622834,
+    "Post_frequency": -0.07695748237797814
+  },
+  "chi2_tests": {
+    "Time_spent_Alone": {
+      "chi2": 3.7768186131631705,
+      "p_value": 0.05196737970208917
+    },
+    "Social_event_attendance": {
+      "chi2": 92.28334906887657,
+      "p_value": 7.51136402815173e-22
+    },
+    "Drained_after_socializing": {
+      "chi2": 722.2396237585533,
+      "p_value": 4.3617277247561475e-159
+    },
+    "Stage_fear": {
+      "chi2": 191.55955883848924,
+      "p_value": 1.451844720848194e-43
+    },
+    "Going_outside": {
+      "chi2": 56.90585084578732,
+      "p_value": 4.5718361874493793e-14
+    },
+    "Friends_circle_size": {
+      "chi2": 32.56237658555097,
+      "p_value": 1.1542772415849138e-08
+    },
+    "Post_frequency": {
+      "chi2": 109.01324371251549,
+      "p_value": 1.6120516035432298e-25
+    }
+  },
+  "strategy1_missing_indicators": {
+    "RandomForest": {
+      "mean": 0.9682035396682436,
+      "std": 0.0021534428346797387,
+      "scores": [
+        0.9686909581646423,
+        0.9651821862348178,
+        0.9662618083670715,
+        0.970310391363023,
+        0.9705723542116631
+      ]
+    },
+    "XGBoost": {
+      "mean": 0.9661521556008313,
+      "std": 0.002227700322599121,
+      "scores": [
+        0.9681511470985156,
+        0.9630229419703104,
+        0.9641025641025641,
+        0.9668016194331984,
+        0.968682505399568
+      ]
+    },
+    "LightGBM": {
+      "mean": 0.9684734452013071,
+      "std": 0.0018477852705734332,
+      "scores": [
+        0.9695006747638326,
+        0.9665317139001349,
+        0.965991902834008,
+        0.9697705802968961,
+        0.9705723542116631
+      ]
+    }
+  },
+  "strategy2_pattern_submodels": {
+    "mean": 0.9660982327891501,
+    "std": 0.00252149634663243,
+    "scores": [
+      0.9668016194331984,
+      0.9638326585695006,
+      0.962753036437247,
+      0.9673414304993252,
+      0.9697624190064795
+    ],
+    "n_patterns": 8,
+    "n_submodels": 8
+  },
+  "strategy3_advanced_features": {
+    "mean": 0.9649105755750066,
+    "std": 0.002368963566493057,
+    "scores": [
+      0.9668016194331984,
+      0.9622132253711201,
+      0.962753036437247,
+      0.9643724696356275,
+      0.9684125269978402
+    ],
+    "top_features": [
+      {
+        "feature": "Drained_after_socializing",
+        "importance": 0.7084202170372009
+      },
+      {
+        "feature": "Stage_fear",
+        "importance": 0.1968584507703781
+      },
+      {
+        "feature": "Time_spent_Alone",
+        "importance": 0.042239781469106674
+      },
+      {
+        "feature": "Social_event_attendance",
+        "importance": 0.006925898138433695
+      },
+      {
+        "feature": "Going_outside",
+        "importance": 0.004244115669280291
+      },
+      {
+        "feature": "total_missing",
+        "importance": 0.004243437200784683
+      },
+      {
+        "feature": "Time_spent_Alone_missing",
+        "importance": 0.0038155207876116037
+      },
+      {
+        "feature": "Stage_fear_missing",
+        "importance": 0.0036978088319301605
+      },
+      {
+        "feature": "Drained_after_socializing_missing",
+        "importance": 0.003603980178013444
+      },
+      {
+        "feature": "pattern_code",
+        "importance": 0.003465244546532631
+      }
+    ]
+  },
+  "baseline": {
+    "mean": 0.9657743315757411,
+    "std": 0.0025433029124905925,
+    "scores": [
+      0.9676113360323887,
+      0.9630229419703104,
+      0.9630229419703104,
+      0.9657219973009447,
+      0.9694924406047516
+    ]
+  }
+}
