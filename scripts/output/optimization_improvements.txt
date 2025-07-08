@@ -1,0 +1,63 @@
+DODATKOWE POMYSŁY OPTYMALIZACYJNE
+==================================
+
+1. EARLY STOPPING dla słabych datasetów
+   - Jeśli po 10% czasu score < baseline, pomiń
+   - Skupienie zasobów na obiecujących datasetach
+
+2. ADAPTIVE TIME ALLOCATION
+   - Datasety z większym improvement dostają bonus czasu
+   - np. train_corrected_02.csv pokazuje +0.1% → dostaje extra 10 min
+
+3. PARALLEL DATASET EVALUATION
+   - Pierwsze 5 minut: wszystkie datasety po 1 trial
+   - Ranking i alokacja czasu proporcjonalnie do potencjału
+
+4. SMART PARAMETER INHERITANCE
+   - Najlepsze parametry z dataset_01 jako start dla dataset_02
+   - Szybsza konwergencja dla podobnych datasetów
+
+5. ENSEMBLE VOTING
+   - Top 3 datasety → ensemble predictions
+   - Ważone głosowanie based on CV score
+
+6. NULL PATTERN FEATURES (nie używane obecnie!)
+   - Dodać null_count, has_drained_null jako features
+   - Może poprawić wyniki na corrected datasets
+
+7. CLUSTER-AWARE SAMPLING
+   - Różne wagi dla różnych klastrów
+   - Szczególnie dla problematycznych klastrów 2 & 7
+
+8. DYNAMIC AMBIGUOUS WEIGHT
+   - Zamiast stałej wagi 5-20, uzależnić od datasetu
+   - Corrected datasets mogą potrzebować innych wag
+
+9. SUBMISSION BLENDING
+   - Średnia ważona top 3 submissions
+   - Lub geometryczna średnia prawdopodobieństw
+
+10. ADVERSARIAL VALIDATION
+    - Sprawdzić które train samples są najbardziej podobne do test
+    - Dać im wyższe wagi podczas treningu
+
+11. PSEUDO-LABELING
+    - Użyć wysokopewne predykcje z test jako dodatkowe dane
+    - Tylko dla samples z prob > 0.95 lub < 0.05
+
+12. FEATURE INTERACTIONS
+    - alone_time * gets_drained
+    - social_events / friends_count
+    - Mogą uchwycić subtelne wzorce
+
+13. CALIBRATION
+    - Platt scaling lub isotonic regression
+    - Poprawia prawdopodobieństwa → lepsze flipping
+
+14. STRATIFIED VALIDATION
+    - Upewnić się że każdy fold ma podobny % ambiguous samples
+    - Bardziej stabilne CV scores
+
+15. GPU MEMORY OPTIMIZATION
+    - Batch prediction dla oszczędności pamięci
+    - Pozwoli na większe n_estimators

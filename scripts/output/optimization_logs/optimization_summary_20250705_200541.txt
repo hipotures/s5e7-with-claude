@@ -1,0 +1,43 @@
+OPTIMIZATION SUMMARY
+============================================================
+
+train_corrected_01.csv:
+  Best Score: 0.973224
+  Best Model: cat
+  Total Trials: 6
+
+train_corrected_02.csv:
+  Best Score: 0.972954
+  Best Model: cat
+  Total Trials: 3
+
+train_corrected_03.csv:
+  Best Score: 0.968527
+  Best Model: xgb
+  Total Trials: 4
+
+train_corrected_04.csv:
+  Best Score: 0.973440
+  Best Model: cat
+  Total Trials: 7
+
+train_corrected_05.csv:
+  Best Score: 0.970093
+  Best Model: gbm
+  Total Trials: 6
+
+train_corrected_06.csv:
+  Best Score: 0.973872
+  Best Model: cat
+  Total Trials: 7
+
+train_corrected_07.csv:
+  Best Score: 0.974034
+  Best Model: gbm
+  Total Trials: 5
+
+train_corrected_08.csv:
+  Best Score: 0.968743
+  Best Model: cat
+  Total Trials: 4
+

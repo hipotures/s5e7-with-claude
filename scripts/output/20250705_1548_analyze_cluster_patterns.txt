@@ -1,0 +1,99 @@
+======================================================================
+CLUSTER PATTERN ANALYSIS
+======================================================================
+
+Loading data...
+======================================================================
+ANALYZING CLUSTER PATTERNS
+======================================================================
+
+Clustering test data...
+
+
+CLUSTER 2 ANALYSIS:
+--------------------------------------------------
+Total samples: 254
+Predicted as Introvert: 249 (98.0%)
+Predicted as Extrovert: 5 (2.0%)
+
+Feature averages:
+  Time_spent_Alone: 7.52 (±2.22)
+  Social_event_attendance: 1.51 (±1.10)
+  Friends_circle_size: 2.75 (±1.60)
+
+Moderate alone + low social predicted as Extrovert: 0
+
+
+CLUSTER 7 ANALYSIS:
+--------------------------------------------------
+Total samples: 227
+Predicted as Introvert: 1 (0.4%)
+Predicted as Extrovert: 226 (99.6%)
+
+Feature averages:
+  Time_spent_Alone: 1.64 (±1.34)
+  Social_event_attendance: 1.17 (±1.47)
+  Friends_circle_size: 10.12 (±2.86)
+
+Extreme alone time predicted as Extrovert: 1
+Examples:
+  ID 18876: Alone=10.0, Social=nan, Friends=10.0
+
+
+CLUSTER 6 ANALYSIS:
+--------------------------------------------------
+Total samples: 208
+Predicted as Introvert: 207 (99.5%)
+Predicted as Extrovert: 1 (0.5%)
+
+Feature averages:
+  Time_spent_Alone: 7.21 (±2.25)
+  Social_event_attendance: 1.54 (±1.18)
+  Friends_circle_size: 2.91 (±1.59)
+
+
+INTROVERT INCONSISTENCY PATTERN:
+--------------------------------------------------
+Found 4 cases with low everything but predicted as Extrovert
+
+Examples:
+  ID 20363 (Cluster 14): Alone=3.0, Social=2.0, Friends=3.0, Outside=4.0
+  ID 20934 (Cluster 1): Alone=2.0, Social=2.0, Friends=5.0, Outside=3.0
+  ID 20950 (Cluster 14): Alone=2.0, Social=2.0, Friends=5.0, Outside=5.0
+  ID 21008 (Cluster 7): Alone=3.0, Social=1.0, Friends=5.0, Outside=6.0
+
+Creating visualization...
+Saved visualization to: output/cluster_pattern_analysis.png
+
+======================================================================
+COMPARING SUBMISSIONS
+======================================================================
+
+Found 13 differences between submissions
+
+Flip summary:
+Base Intro → Cluster Extro: 0
+Base Extro → Cluster Intro: 13
+
+First 10 differences:
+  ID 18876: Extrovert → Introvert
+  ID 19612: Extrovert → Introvert
+  ID 19774: Extrovert → Introvert
+  ID 20017: Extrovert → Introvert
+  ID 21359: Extrovert → Introvert
+  ID 21800: Extrovert → Introvert
+  ID 21932: Extrovert → Introvert
+  ID 22291: Extrovert → Introvert
+  ID 23336: Extrovert → Introvert
+  ID 23350: Extrovert → Introvert
+
+======================================================================
+CREATING MANUAL FLIP LIST
+======================================================================
+
+Saved 5 flip candidates to: output/manual_flip_candidates.csv
+Created pattern-based flip submission: output/pattern_based_flip_submission.csv
+
+======================================================================
+ANALYSIS COMPLETE
+======================================================================

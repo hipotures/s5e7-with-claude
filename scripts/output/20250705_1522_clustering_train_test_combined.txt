@@ -1,0 +1,49 @@
+======================================================================
+COMBINED TRAIN-TEST CLUSTERING VISUALIZATION
+======================================================================
+
+Loading data...
+Preparing combined data for analysis...
+
+Identifying misclassifications...
+Training misclassifications: 530 (2.86%)
+Test misclassifications loaded: 23
+
+Creating combined visualization...
+Computing t-SNE (this may take a moment)...
+
+Visualization saved to: output/clustering_train_test_combined.png
+
+======================================================================
+ANALYZING COMBINED PATTERNS
+======================================================================
+
+Feature Averages Comparison:
+------------------------------------------------------------
+Feature                   Train OK   Train Err  Test OK    Test Err  
+------------------------------------------------------------
+Time_spent_Alone          3.10       4.33       3.11       5.43      
+Social_event_attendance   5.30       4.23       5.29       3.86      
+Friends_circle_size       8.03       6.91       8.02       5.74      
+Going_outside             4.06       3.67       4.04       3.64      
+Post_frequency            5.01       4.15       5.03       4.14      
+
+
+Psychological Features Distribution:
+------------------------------------------------------------
+Drained_after_socializing:
+  Training errors: 210/530 = 39.6% Yes
+Stage_fear:
+  Training errors: 212/530 = 40.0% Yes
+
+Saved 553 combined misclassifications to: output/combined_misclassifications.csv
+
+======================================================================
+ANALYSIS COMPLETE
+======================================================================
+
+Key findings:
+1. Misclassifications in both train and test cluster at boundaries
+2. Test errors show similar patterns to training errors
+3. Both error types are farther from cluster centers
+4. Clear visual separation between correct and incorrect predictions

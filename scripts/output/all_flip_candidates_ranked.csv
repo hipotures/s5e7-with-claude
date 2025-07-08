@@ -1,0 +1,194 @@
+id,flip_score,current_prediction,flip_to,reasons,Time_alone,Social,Friends,Outside,Post,Drained,Stage_fear
+23547,6,Extrovert,Introvert,Extreme alone time (11.0h) | Conflict: High alone time but no draining | Out-of-range alone time,11.0,9.0,13.0,6.0,4.0,No,No
+24005,6,Introvert,Extrovert,High posting (10.0) + no draining | High social (9.0) + no draining | Conflict: High alone time but no draining,9.0,9.0,12.0,7.0,10.0,No,No
+22547,6,Extrovert,Introvert,Extreme alone time (11.0h) | Conflict: High alone time but no draining | Out-of-range alone time,11.0,5.0,6.0,4.0,5.0,No,No
+20765,5,Extrovert,Introvert,Extreme alone time (10.0h) | Conflict: High alone time but no draining,10.0,8.0,12.0,4.0,3.0,No,No
+22660,5,Extrovert,Introvert,Extreme alone time (10.0h) | Conflict: High alone time but no draining,10.0,5.0,14.0,4.0,3.0,No,
+22782,5,Extrovert,Introvert,Extreme alone time (9.0h) | Conflict: High alone time but no draining,9.0,5.0,12.0,7.0,3.0,No,No
+23711,5,Extrovert,Introvert,Extreme alone time (9.0h) | Conflict: High alone time but no draining,9.0,9.0,11.0,3.0,7.0,No,No
+19367,5,Extrovert,Introvert,Extreme alone time (9.0h) | Conflict: High alone time but no draining,9.0,5.0,14.0,6.0,3.0,No,No
+21138,3,Extrovert,Introvert,Drained + stage fear combo,2.0,8.0,5.0,2.0,7.0,Yes,Yes
+23350,3,Introvert,Extrovert,High social (9.0) + no draining | Conflict: High alone time but no draining,8.0,9.0,10.0,6.0,7.0,No,No
+20950,3,Introvert,Extrovert,Low alone time (2.0h) + no draining,2.0,2.0,5.0,5.0,4.0,No,No
+21008,3,Introvert,Extrovert,High posting (10.0) + no draining,3.0,1.0,5.0,6.0,10.0,No,No
+19774,2,Introvert,Extrovert,High social (9.0) + no draining,6.0,9.0,13.0,3.0,5.0,No,No
+23844,2,Introvert,Extrovert,Conflict: High alone time but no draining | Out-of-range alone time,11.0,2.0,2.0,4.0,3.0,No,No
+21359,2,Introvert,Extrovert,Conflict: High alone time but no draining | Out-of-range alone time,11.0,3.0,4.0,1.0,2.0,No,No
+18591,1,Introvert,Extrovert,Out-of-range alone time,11.0,1.0,5.0,3.0,3.0,Yes,Yes
+18531,1,Introvert,Extrovert,Out-of-range alone time,11.0,2.0,4.0,1.0,1.0,Yes,Yes
+18921,1,Introvert,Extrovert,Out-of-range alone time,11.0,1.0,4.0,2.0,1.0,Yes,Yes
+18933,1,Introvert,Extrovert,Out-of-range alone time,11.0,3.0,5.0,1.0,,Yes,Yes
+18972,1,Introvert,Extrovert,Out-of-range alone time,11.0,2.0,0.0,3.0,2.0,Yes,Yes
+18542,1,Introvert,Extrovert,Out-of-range alone time,11.0,2.0,0.0,0.0,2.0,,Yes
+18670,1,Introvert,Extrovert,Out-of-range alone time,11.0,,1.0,1.0,2.0,Yes,Yes
+18673,1,Introvert,Extrovert,Out-of-range alone time,11.0,0.0,3.0,0.0,1.0,Yes,Yes
+18707,1,Introvert,Extrovert,Out-of-range alone time,11.0,3.0,1.0,0.0,2.0,Yes,Yes
+18544,1,Introvert,Extrovert,Out-of-range alone time,11.0,3.0,5.0,1.0,1.0,Yes,Yes
+18724,1,Introvert,Extrovert,Out-of-range alone time,11.0,1.0,1.0,1.0,2.0,Yes,Yes
+18746,1,Introvert,Extrovert,Out-of-range alone time,11.0,2.0,1.0,2.0,1.0,,Yes
+18766,1,Introvert,Extrovert,Out-of-range alone time,11.0,2.0,3.0,1.0,,Yes,Yes
+18857,1,Introvert,Extrovert,Out-of-range alone time,11.0,1.0,,1.0,0.0,Yes,Yes
+18864,1,Introvert,Extrovert,Out-of-range alone time,11.0,0.0,3.0,0.0,2.0,Yes,Yes
+18876,1,Introvert,Extrovert,Conflict: High alone time but no draining,10.0,,10.0,6.0,7.0,No,No
+18883,1,Introvert,Extrovert,Out-of-range alone time,11.0,1.0,5.0,0.0,3.0,Yes,Yes
+18615,1,Introvert,Extrovert,Out-of-range alone time,11.0,0.0,5.0,3.0,3.0,Yes,Yes
+19376,1,Introvert,Extrovert,Out-of-range alone time,11.0,3.0,3.0,0.0,1.0,,
+19385,1,Introvert,Extrovert,Out-of-range alone time,11.0,0.0,5.0,0.0,4.0,Yes,Yes
+19417,1,Introvert,Extrovert,Conflict: High alone time but no draining,8.0,3.0,4.0,2.0,0.0,No,Yes
+19393,1,Introvert,Extrovert,Out-of-range alone time,11.0,1.0,3.0,,,Yes,Yes
+19579,1,Introvert,Extrovert,Out-of-range alone time,11.0,2.0,0.0,1.0,,Yes,Yes
+19582,1,Introvert,Extrovert,Out-of-range alone time,11.0,,5.0,,0.0,Yes,Yes
+19612,1,Introvert,Extrovert,Conflict: Drained but no stage fear,5.0,0.0,4.0,0.0,3.0,Yes,No
+19482,1,Introvert,Extrovert,Conflict: Drained but no stage fear,10.0,0.0,1.0,0.0,2.0,Yes,No
+19731,1,Introvert,Extrovert,Out-of-range alone time,11.0,,1.0,2.0,2.0,Yes,
+19738,1,Introvert,Extrovert,Out-of-range alone time,11.0,,3.0,1.0,2.0,Yes,Yes
+19768,1,Introvert,Extrovert,Conflict: High alone time but no draining,9.0,0.0,1.0,0.0,0.0,No,Yes
+19849,1,Introvert,Extrovert,Out-of-range alone time,11.0,3.0,4.0,3.0,1.0,Yes,Yes
+19946,1,Introvert,Extrovert,Out-of-range alone time,11.0,3.0,1.0,0.0,1.0,Yes,
+19972,1,Introvert,Extrovert,Out-of-range alone time,11.0,3.0,5.0,,1.0,Yes,Yes
+19994,1,Introvert,Extrovert,Out-of-range alone time,11.0,0.0,2.0,2.0,0.0,,Yes
+20020,1,Introvert,Extrovert,Out-of-range alone time,11.0,2.0,,1.0,2.0,Yes,Yes
+20047,1,Introvert,Extrovert,Out-of-range alone time,11.0,2.0,2.0,3.0,0.0,Yes,Yes
+20083,1,Introvert,Extrovert,Out-of-range alone time,11.0,2.0,2.0,0.0,0.0,,Yes
+20098,1,Introvert,Extrovert,Out-of-range alone time,11.0,2.0,4.0,1.0,2.0,,Yes
+18943,1,Introvert,Extrovert,Out-of-range alone time,11.0,3.0,5.0,2.0,2.0,,Yes
+19055,1,Introvert,Extrovert,Out-of-range alone time,11.0,1.0,5.0,2.0,3.0,Yes,Yes
+19158,1,Introvert,Extrovert,Out-of-range alone time,11.0,0.0,4.0,0.0,0.0,Yes,Yes
+19228,1,Introvert,Extrovert,Out-of-range alone time,11.0,1.0,2.0,2.0,0.0,Yes,Yes
+18982,1,Introvert,Extrovert,Out-of-range alone time,11.0,1.0,,0.0,0.0,Yes,Yes
+19257,1,Introvert,Extrovert,Out-of-range alone time,11.0,2.0,1.0,2.0,2.0,Yes,Yes
+19272,1,Introvert,Extrovert,Out-of-range alone time,11.0,3.0,0.0,2.0,2.0,,Yes
+19299,1,Introvert,Extrovert,Out-of-range alone time,11.0,2.0,5.0,0.0,2.0,Yes,
+19273,1,Introvert,Extrovert,Out-of-range alone time,11.0,1.0,3.0,2.0,2.0,Yes,
+19303,1,Introvert,Extrovert,Out-of-range alone time,11.0,1.0,2.0,3.0,1.0,Yes,Yes
+19339,1,Introvert,Extrovert,Out-of-range alone time,11.0,2.0,,0.0,2.0,Yes,Yes
+19365,1,Introvert,Extrovert,Out-of-range alone time,11.0,3.0,4.0,,2.0,,Yes
+18718,1,Introvert,Extrovert,Out-of-range alone time,11.0,,5.0,1.0,1.0,Yes,Yes
+20485,1,Introvert,Extrovert,Out-of-range alone time,11.0,0.0,3.0,2.0,1.0,,Yes
+20477,1,Introvert,Extrovert,Out-of-range alone time,11.0,0.0,5.0,2.0,1.0,Yes,
+20373,1,Introvert,Extrovert,Out-of-range alone time,11.0,0.0,5.0,4.0,0.0,Yes,Yes
+20358,1,Introvert,Extrovert,Out-of-range alone time,11.0,3.0,5.0,3.0,0.0,Yes,Yes
+20348,1,Introvert,Extrovert,Out-of-range alone time,11.0,3.0,1.0,1.0,0.0,Yes,
+20272,1,Introvert,Extrovert,Out-of-range alone time,11.0,,1.0,0.0,2.0,Yes,Yes
+20220,1,Introvert,Extrovert,Out-of-range alone time,11.0,2.0,4.0,,0.0,Yes,Yes
+20213,1,Introvert,Extrovert,Out-of-range alone time,11.0,0.0,0.0,2.0,1.0,Yes,Yes
+20144,1,Introvert,Extrovert,Out-of-range alone time,11.0,2.0,3.0,0.0,0.0,Yes,Yes
+20126,1,Introvert,Extrovert,Out-of-range alone time,11.0,2.0,4.0,2.0,3.0,Yes,Yes
+20120,1,Introvert,Extrovert,Out-of-range alone time,11.0,0.0,,2.0,,Yes,Yes
+20117,1,Introvert,Extrovert,Out-of-range alone time,11.0,0.0,,,2.0,Yes,
+20112,1,Introvert,Extrovert,Out-of-range alone time,11.0,2.0,2.0,2.0,1.0,Yes,Yes
+20613,1,Introvert,Extrovert,Out-of-range alone time,11.0,3.0,0.0,2.0,2.0,Yes,Yes
+20599,1,Introvert,Extrovert,Out-of-range alone time,11.0,,4.0,2.0,0.0,Yes,
+20541,1,Introvert,Extrovert,Conflict: Drained but no stage fear,7.0,1.0,4.0,2.0,0.0,Yes,No
+20946,1,Introvert,Extrovert,Out-of-range alone time,11.0,3.0,2.0,2.0,,Yes,Yes
+20790,1,Introvert,Extrovert,Out-of-range alone time,11.0,2.0,,2.0,2.0,Yes,Yes
+20766,1,Introvert,Extrovert,Out-of-range alone time,11.0,0.0,1.0,0.0,0.0,Yes,Yes
+21034,1,Introvert,Extrovert,Out-of-range alone time,11.0,1.0,0.0,2.0,0.0,Yes,Yes
+21058,1,Introvert,Extrovert,Out-of-range alone time,11.0,1.0,3.0,0.0,,Yes,Yes
+21073,1,Introvert,Extrovert,Out-of-range alone time,11.0,1.0,4.0,3.0,1.0,Yes,Yes
+21094,1,Introvert,Extrovert,Out-of-range alone time,11.0,2.0,5.0,,2.0,Yes,Yes
+21035,1,Introvert,Extrovert,Out-of-range alone time,11.0,2.0,0.0,0.0,0.0,,Yes
+20695,1,Introvert,Extrovert,Out-of-range alone time,11.0,2.0,1.0,2.0,2.0,,
+20701,1,Introvert,Extrovert,Out-of-range alone time,11.0,1.0,5.0,0.0,2.0,Yes,
+20727,1,Introvert,Extrovert,Out-of-range alone time,11.0,3.0,3.0,2.0,3.0,Yes,Yes
+20722,1,Introvert,Extrovert,Out-of-range alone time,11.0,3.0,2.0,1.0,1.0,Yes,
+20728,1,Introvert,Extrovert,Out-of-range alone time,11.0,4.0,4.0,,9.0,Yes,Yes
+20620,1,Introvert,Extrovert,Out-of-range alone time,11.0,,5.0,1.0,0.0,Yes,Yes
+20654,1,Introvert,Extrovert,Out-of-range alone time,11.0,2.0,2.0,1.0,0.0,Yes,Yes
+20595,1,Introvert,Extrovert,Out-of-range alone time,11.0,3.0,5.0,0.0,0.0,,Yes
+21216,1,Introvert,Extrovert,Out-of-range alone time,11.0,3.0,1.0,0.0,1.0,,Yes
+21279,1,Introvert,Extrovert,Out-of-range alone time,11.0,0.0,,1.0,2.0,Yes,Yes
+21330,1,Introvert,Extrovert,Out-of-range alone time,11.0,,3.0,0.0,0.0,Yes,Yes
+21299,1,Introvert,Extrovert,Out-of-range alone time,11.0,2.0,5.0,1.0,3.0,,Yes
+21333,1,Introvert,Extrovert,Out-of-range alone time,11.0,,3.0,2.0,0.0,Yes,Yes
+21389,1,Introvert,Extrovert,Out-of-range alone time,11.0,3.0,2.0,2.0,0.0,Yes,Yes
+21428,1,Introvert,Extrovert,Out-of-range alone time,11.0,2.0,0.0,2.0,1.0,Yes,Yes
+21478,1,Introvert,Extrovert,Out-of-range alone time,11.0,1.0,,0.0,1.0,,Yes
+21593,1,Introvert,Extrovert,Out-of-range alone time,11.0,3.0,,2.0,,Yes,Yes
+21622,1,Introvert,Extrovert,Out-of-range alone time,11.0,3.0,3.0,1.0,0.0,Yes,Yes
+21668,1,Introvert,Extrovert,Out-of-range alone time,11.0,3.0,3.0,,2.0,Yes,Yes
+21692,1,Introvert,Extrovert,Out-of-range alone time,11.0,2.0,0.0,1.0,2.0,Yes,Yes
+21737,1,Introvert,Extrovert,Out-of-range alone time,11.0,2.0,3.0,2.0,,Yes,Yes
+21785,1,Introvert,Extrovert,Out-of-range alone time,11.0,3.0,12.0,1.0,2.0,Yes,Yes
+21800,1,Introvert,Extrovert,Conflict: High alone time but no draining,10.0,3.0,5.0,4.0,1.0,No,No
+21855,1,Introvert,Extrovert,Out-of-range alone time,11.0,3.0,0.0,0.0,0.0,Yes,Yes
+21901,1,Introvert,Extrovert,Out-of-range alone time,11.0,2.0,5.0,2.0,,Yes,Yes
+21910,1,Introvert,Extrovert,Out-of-range alone time,11.0,0.0,1.0,0.0,,Yes,Yes
+21923,1,Introvert,Extrovert,Out-of-range alone time,11.0,,1.0,2.0,0.0,Yes,Yes
+21932,1,Introvert,Extrovert,Conflict: High alone time but no draining,8.0,3.0,5.0,4.0,,No,No
+21941,1,Introvert,Extrovert,Out-of-range alone time,11.0,0.0,5.0,0.0,2.0,Yes,Yes
+21971,1,Introvert,Extrovert,Out-of-range alone time,11.0,3.0,5.0,0.0,2.0,Yes,
+22065,1,Introvert,Extrovert,Out-of-range alone time,11.0,1.0,5.0,0.0,,Yes,Yes
+22075,1,Introvert,Extrovert,Out-of-range alone time,11.0,1.0,,0.0,2.0,,Yes
+21116,1,Introvert,Extrovert,Out-of-range alone time,11.0,,0.0,1.0,2.0,Yes,Yes
+21123,1,Introvert,Extrovert,Out-of-range alone time,11.0,,3.0,0.0,2.0,Yes,Yes
+21161,1,Introvert,Extrovert,Out-of-range alone time,11.0,2.0,,2.0,0.0,Yes,Yes
+21166,1,Introvert,Extrovert,Out-of-range alone time,11.0,0.0,2.0,0.0,,Yes,Yes
+21168,1,Introvert,Extrovert,Out-of-range alone time,11.0,,5.0,2.0,2.0,Yes,Yes
+21172,1,Introvert,Extrovert,Out-of-range alone time,11.0,1.0,3.0,2.0,3.0,Yes,Yes
+21184,1,Introvert,Extrovert,Out-of-range alone time,11.0,5.0,1.0,0.0,1.0,Yes,Yes
+20602,1,Introvert,Extrovert,Out-of-range alone time,11.0,1.0,2.0,0.0,1.0,,Yes
+22464,1,Introvert,Extrovert,Out-of-range alone time,11.0,,5.0,0.0,0.0,Yes,Yes
+22447,1,Introvert,Extrovert,Out-of-range alone time,11.0,,,2.0,1.0,Yes,Yes
+22428,1,Introvert,Extrovert,Out-of-range alone time,11.0,3.0,2.0,2.0,3.0,Yes,Yes
+22396,1,Introvert,Extrovert,Out-of-range alone time,11.0,,2.0,1.0,2.0,Yes,Yes
+22374,1,Introvert,Extrovert,Out-of-range alone time,11.0,,4.0,1.0,2.0,Yes,Yes
+22243,1,Introvert,Extrovert,Out-of-range alone time,11.0,3.0,1.0,3.0,3.0,Yes,Yes
+22189,1,Extrovert,Introvert,Conflict: High alone time but no draining,8.0,6.0,7.0,3.0,9.0,No,No
+22122,1,Introvert,Extrovert,Out-of-range alone time,11.0,2.0,3.0,3.0,2.0,Yes,Yes
+22627,1,Introvert,Extrovert,Out-of-range alone time,11.0,0.0,2.0,1.0,3.0,Yes,Yes
+22618,1,Introvert,Extrovert,Out-of-range alone time,11.0,1.0,,1.0,2.0,Yes,Yes
+22740,1,Introvert,Extrovert,Out-of-range alone time,11.0,2.0,2.0,2.0,3.0,Yes,Yes
+22630,1,Introvert,Extrovert,Out-of-range alone time,11.0,2.0,4.0,0.0,2.0,Yes,Yes
+22539,1,Introvert,Extrovert,Out-of-range alone time,11.0,1.0,2.0,1.0,0.0,Yes,Yes
+22569,1,Introvert,Extrovert,Out-of-range alone time,11.0,,5.0,2.0,3.0,Yes,Yes
+22524,1,Introvert,Extrovert,Conflict: High alone time but no draining,8.0,3.0,5.0,0.0,3.0,No,Yes
+22513,1,Introvert,Extrovert,Out-of-range alone time,11.0,3.0,0.0,1.0,1.0,Yes,Yes
+22891,1,Introvert,Extrovert,Out-of-range alone time,11.0,0.0,,2.0,2.0,Yes,Yes
+22925,1,Introvert,Extrovert,Out-of-range alone time,11.0,1.0,5.0,2.0,0.0,Yes,
+23036,1,Extrovert,Introvert,Conflict: High alone time but no draining,8.0,4.0,14.0,,4.0,No,No
+23022,1,Introvert,Extrovert,Out-of-range alone time,11.0,3.0,,1.0,1.0,Yes,Yes
+23118,1,Introvert,Extrovert,Out-of-range alone time,11.0,,5.0,2.0,1.0,Yes,Yes
+23141,1,Introvert,Extrovert,Out-of-range alone time,11.0,1.0,5.0,2.0,1.0,Yes,Yes
+23179,1,Introvert,Extrovert,Out-of-range alone time,11.0,,3.0,2.0,1.0,Yes,Yes
+23101,1,Introvert,Extrovert,Out-of-range alone time,11.0,3.0,3.0,2.0,0.0,Yes,Yes
+23180,1,Introvert,Extrovert,Out-of-range alone time,11.0,2.0,2.0,0.0,2.0,,Yes
+23195,1,Introvert,Extrovert,Out-of-range alone time,11.0,1.0,5.0,0.0,0.0,Yes,
+23244,1,Introvert,Extrovert,Out-of-range alone time,11.0,2.0,5.0,0.0,3.0,Yes,Yes
+23218,1,Introvert,Extrovert,Out-of-range alone time,11.0,2.0,4.0,2.0,0.0,Yes,
+22770,1,Introvert,Extrovert,Out-of-range alone time,11.0,,5.0,0.0,1.0,,Yes
+22832,1,Introvert,Extrovert,Out-of-range alone time,11.0,2.0,1.0,2.0,0.0,,Yes
+22839,1,Introvert,Extrovert,Out-of-range alone time,11.0,3.0,2.0,2.0,1.0,Yes,Yes
+22523,1,Introvert,Extrovert,Out-of-range alone time,11.0,0.0,5.0,2.0,2.0,Yes,Yes
+23484,1,Introvert,Extrovert,Out-of-range alone time,11.0,0.0,0.0,1.0,2.0,Yes,Yes
+23418,1,Introvert,Extrovert,Conflict: High alone time but no draining,8.0,2.0,4.0,3.0,,No,No
+23336,1,Introvert,Extrovert,Conflict: High alone time but no draining,9.0,2.0,4.0,4.0,3.0,No,No
+23281,1,Introvert,Extrovert,Out-of-range alone time,11.0,,4.0,2.0,2.0,,Yes
+23572,1,Introvert,Extrovert,Out-of-range alone time,11.0,,4.0,2.0,2.0,Yes,Yes
+23573,1,Introvert,Extrovert,Out-of-range alone time,11.0,0.0,5.0,1.0,,Yes,Yes
+23621,1,Introvert,Extrovert,Out-of-range alone time,11.0,3.0,2.0,3.0,1.0,Yes,Yes
+23541,1,Introvert,Extrovert,Out-of-range alone time,11.0,1.0,0.0,3.0,,Yes,Yes
+23671,1,Introvert,Extrovert,Out-of-range alone time,11.0,3.0,3.0,,0.0,Yes,Yes
+23760,1,Introvert,Extrovert,Out-of-range alone time,11.0,1.0,3.0,2.0,,Yes,Yes
+23799,1,Introvert,Extrovert,Out-of-range alone time,11.0,2.0,,1.0,0.0,Yes,Yes
+23770,1,Introvert,Extrovert,Out-of-range alone time,11.0,2.0,4.0,0.0,3.0,Yes,Yes
+23813,1,Introvert,Extrovert,Out-of-range alone time,11.0,3.0,4.0,2.0,2.0,Yes,Yes
+23911,1,Introvert,Extrovert,Out-of-range alone time,11.0,,3.0,2.0,1.0,Yes,
+23949,1,Introvert,Extrovert,Out-of-range alone time,11.0,1.0,2.0,1.0,0.0,Yes,
+23491,1,Introvert,Extrovert,Out-of-range alone time,11.0,1.0,4.0,3.0,0.0,Yes,Yes
+23963,1,Introvert,Extrovert,Out-of-range alone time,11.0,0.0,4.0,3.0,0.0,Yes,Yes
+23990,1,Introvert,Extrovert,Out-of-range alone time,11.0,0.0,1.0,3.0,0.0,Yes,Yes
+24047,1,Introvert,Extrovert,Out-of-range alone time,11.0,4.0,4.0,0.0,0.0,Yes,Yes
+24106,1,Introvert,Extrovert,Out-of-range alone time,11.0,2.0,1.0,0.0,1.0,Yes,
+24163,1,Introvert,Extrovert,Out-of-range alone time,11.0,0.0,3.0,,2.0,Yes,Yes
+24218,1,Introvert,Extrovert,Out-of-range alone time,11.0,2.0,1.0,2.0,2.0,,Yes
+24226,1,Introvert,Extrovert,Out-of-range alone time,11.0,2.0,4.0,1.0,0.0,Yes,Yes
+24290,1,Introvert,Extrovert,Out-of-range alone time,11.0,5.0,5.0,2.0,0.0,Yes,Yes
+24322,1,Introvert,Extrovert,Out-of-range alone time,11.0,0.0,3.0,3.0,2.0,Yes,Yes
+24334,1,Introvert,Extrovert,Out-of-range alone time,11.0,3.0,0.0,,1.0,Yes,Yes
+24366,1,Introvert,Extrovert,Out-of-range alone time,11.0,0.0,1.0,2.0,2.0,,Yes
+24370,1,Introvert,Extrovert,Out-of-range alone time,11.0,3.0,1.0,1.0,1.0,Yes,Yes
+24388,1,Introvert,Extrovert,Out-of-range alone time,11.0,3.0,3.0,3.0,0.0,Yes,Yes
+24468,1,Introvert,Extrovert,Out-of-range alone time,11.0,0.0,2.0,0.0,0.0,Yes,Yes
+24528,1,Introvert,Extrovert,Out-of-range alone time,11.0,0.0,,0.0,2.0,,Yes
+24611,1,Introvert,Extrovert,Out-of-range alone time,11.0,2.0,3.0,0.0,3.0,Yes,Yes

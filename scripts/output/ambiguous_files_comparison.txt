@@ -1,0 +1,87 @@
+COMPARISON: most_ambiguous_2.43pct.csv vs enhanced_ambiguous_450.csv
+====================================================================
+
+1. STRUCTURAL DIFFERENCES
+-------------------------
+
+ORIGINAL (most_ambiguous_2.43pct.csv):
+- Columns: id, Time_spent_Alone, Stage_fear, Social_event_attendance, Going_outside, 
+          Drained_after_socializing, Friends_circle_size, Post_frequency, Personality,
+          is_extrovert, high_alone_time, low_social_events, many_friends, high_posting,
+          gets_drained, has_stage_fear, isfj_pattern, infp_pattern, enfj_pattern,
+          typical_introvert_score, typical_extrovert_score, ambiguity_score
+- Total columns: 21
+- Note: Contains many derived features and pattern indicators
+
+ENHANCED (enhanced_ambiguous_450.csv):
+- Columns: id, Time_spent_Alone, Social_event_attendance, Going_outside, 
+          Friends_circle_size, Post_frequency, Stage_fear, Drained_after_socializing,
+          Personality, ambiguity_score, composite_ambiguity
+- Total columns: 11
+- Note: Simpler structure with composite_ambiguity as key addition
+
+2. SAMPLE OVERLAP
+-----------------
+- Both files: 450 samples each
+- Common samples: 120 (26.7%)
+- Unique to original: 330 (73.3%)
+- Unique to enhanced: 330 (73.3%)
+
+3. KEY DIFFERENCES IN APPROACH
+------------------------------
+
+ORIGINAL APPROACH:
+- Based purely on ambiguity_score (boundary proximity)
+- All samples have ambiguity_score = 0.0 or very low
+- Includes many engineered features (patterns, flags)
+- Contains special values like 3.1377639321564557 (ambivert markers)
+
+ENHANCED APPROACH:
+- Uses composite_ambiguity combining multiple sources:
+  * Original ambiguity score
+  * Null pattern contradictions
+  * Cluster membership (error-prone clusters)
+  * Extreme boundary cases
+  * Mixed behavioral profiles
+- Samples have varying ambiguity_scores (not all zero)
+- Includes samples with missing values (nulls)
+- More diverse representation of ambiguity
+
+4. SPECIFIC EXAMPLES
+--------------------
+
+Original sample (ID 107):
+- ambiguity_score: 0.0
+- Extrovert with balanced intro/extro scores (0.5/0.5)
+- No missing values
+- Special Time_spent_Alone value: 3.1377639321564557
+
+Enhanced sample (ID 9067):
+- ambiguity_score: 0.333
+- composite_ambiguity: 3.4 (highest)
+- Extrovert with 2 missing values (Stage_fear, Drained_after_socializing)
+- From cluster 7 (problematic cluster)
+
+5. PHILOSOPHICAL DIFFERENCE
+---------------------------
+
+ORIGINAL: "These 450 samples are exactly on the introvert/extrovert boundary"
+- Pure mathematical boundary based on score equality
+- Clean, deterministic selection
+
+ENHANCED: "These 450 samples are ambiguous for multiple reasons"
+- Behavioral ambiguity (original method)
+- Null pattern contradictions (extroverts with nulls)
+- Cluster-based risk (error-prone groups)
+- Mixed signals (high intro AND extro traits)
+- Composite approach capturing different types of uncertainty
+
+6. WHY THEY ACHIEVE SAME CV SCORE
+---------------------------------
+Both approaches identify edge cases that need special handling:
+- Original: Mathematical edge cases (score = 0.5)
+- Enhanced: Practical edge cases (multiple ambiguity sources)
+
+During CV, both sets get upweighted similarly, leading to similar local performance.
+The difference may only appear on unseen test data where the enhanced approach's
+diversity could provide better generalization.

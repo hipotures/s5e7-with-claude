@@ -1,0 +1,61 @@
+ENHANCED AMBIGUOUS SAMPLES COMPARISON REPORT
+==========================================
+Date: 2025-07-05 17:00
+
+Original vs Enhanced Ambiguous Samples
+--------------------------------------
+
+1. ORIGINAL AMBIGUOUS SAMPLES (most_ambiguous_2.43pct.csv)
+   - Count: 450 samples
+   - Method: Lowest ambiguity scores (boundary proximity)
+   - Created by: 20250704_0019_find_exact_mapping_rule.py
+   - Used in: Achieved 0.96950 accuracy with XGBoost optimization
+
+2. ENHANCED AMBIGUOUS SAMPLES (enhanced_ambiguous_450.csv)
+   - Count: 450 samples
+   - Method: Composite ambiguity score combining:
+     * Original boundary proximity
+     * Null pattern insights (63.4% introverts have nulls)
+     * Cluster-based patterns (clusters 2 & 7)
+     * Extreme boundary cases (50/50 probability)
+     * Mixed behavioral profiles
+   - Overlap with original: 28.9% (130/450 samples)
+
+3. EXTENDED AMBIGUOUS SAMPLES (enhanced_ambiguous_600.csv)
+   - Count: 600 samples
+   - Purpose: Capture more diverse ambiguous patterns
+   - Breakdown:
+     * From original 450: 130
+     * With null ambiguity: 288
+     * From problematic clusters: 83
+     * Boundary cases: 583
+     * Mixed profiles: 152
+     * Multiple ambiguity sources: 600
+
+KEY INSIGHTS
+------------
+1. The original method only captured 1 out of 450 samples when recreated,
+   suggesting the ambiguity calculation has nuances or the data has changed.
+
+2. The enhanced method identifies different types of ambiguity:
+   - Behavioral ambiguity (original method)
+   - Null pattern ambiguity (contradictory null patterns)
+   - Cluster-based ambiguity (from error-prone clusters)
+   - Probability boundary cases (near 50/50)
+   - Mixed profiles (high intro AND extro traits)
+
+3. All 600 enhanced samples have multiple ambiguity sources, making them
+   more likely to be true edge cases.
+
+RECOMMENDATIONS
+---------------
+1. Test both 450 and 600 sample versions in optimization
+2. Use higher weights for samples with multiple ambiguity sources
+3. Consider cluster-specific strategies for samples from clusters 2 & 7
+4. Pay special attention to null pattern contradictions
+
+FILES CREATED
+-------------
+- /mnt/ml/kaggle/playground-series-s5e7/enhanced_ambiguous_450.csv
+- /mnt/ml/kaggle/playground-series-s5e7/enhanced_ambiguous_600.csv
+- output/ambiguity_analysis_full.csv (full analysis of all training samples)

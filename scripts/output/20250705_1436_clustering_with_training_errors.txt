@@ -1,0 +1,60 @@
+======================================================================
+CLUSTERING VISUALIZATION WITH TRAINING ERRORS
+======================================================================
+
+Loading data...
+Preparing data for analysis...
+
+Training XGBoost to identify training errors...
+Found 530 misclassified training samples (2.86%)
+
+Confusion Matrix:
+True Introvert, Pred Introvert: 4536
+True Introvert, Pred Extrovert: 289 (False Positives)
+True Extrovert, Pred Introvert: 241 (False Negatives)
+True Extrovert, Pred Extrovert: 13458
+
+Loaded 23 test misclassifications
+
+Creating comprehensive visualization...
+Computing t-SNE (this may take a moment)...
+
+Visualization saved to: output/clustering_with_training_errors.png
+
+======================================================================
+ANALYZING ERROR PATTERNS
+======================================================================
+
+Misclassified Sample Statistics:
+----------------------------------------
+Time_spent_Alone:
+  All samples: 3.14
+  Errors only: 4.33 (+37.9%)
+Social_event_attendance:
+  All samples: 5.27
+  Errors only: 4.23 (-19.6%)
+Friends_circle_size:
+  All samples: 8.00
+  Errors only: 6.91 (-13.6%)
+Going_outside:
+  All samples: 4.04
+  Errors only: 3.67 (-9.2%)
+Post_frequency:
+  All samples: 4.98
+  Errors only: 4.15 (-16.7%)
+
+Psychological Features in Errors:
+Drained after socializing: Yes=210, No=285
+Stage fear: Yes=212, No=273
+
+Saved 530 training misclassifications to: output/training_misclassifications.csv
+
+======================================================================
+ANALYSIS COMPLETE
+======================================================================
+
+Key findings:
+1. Training errors are concentrated at decision boundaries
+2. Misclassified samples often have ambiguous feature combinations
+3. Error patterns in training may predict test set difficulties
+4. Clustering reveals natural groupings with varying error rates

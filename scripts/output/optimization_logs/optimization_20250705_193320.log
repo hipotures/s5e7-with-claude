@@ -1,0 +1,6 @@
+2025-07-05 19:33:20,707 - Started optimization for train_corrected_01.csv
+2025-07-05 19:33:21,045 - Created new study: e8a823232109
+2025-07-05 19:33:21,135 - Created new study: 0b5b01cca100
+2025-07-05 19:33:21,271 - Created new study: fb8ffe0a3ba6
+2025-07-05 19:33:23,573 - Error in optimization: only integers, slices (`:`), ellipsis (`...`), numpy.newaxis (`None`) and integer or boolean arrays are valid indices
+2025-07-05 19:33:24,360 - Error in optimization: only integers, slices (`:`), ellipsis (`...`), numpy.newaxis (`None`) and integer or boolean arrays are valid indices

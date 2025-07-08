@@ -1,0 +1,42 @@
+2025-07-05 19:39:46,472 - Started optimization for train_corrected_01.csv
+2025-07-05 19:39:46,696 - Loaded existing study: e8a823232109
+2025-07-05 19:39:46,709 - Loaded existing study: 0b5b01cca100
+2025-07-05 19:39:46,721 - Loaded existing study: fb8ffe0a3ba6
+2025-07-05 19:39:51,484 - train_corrected_01.csv - xgb - Trial 0: 0.969499
+2025-07-05 19:40:02,631 - train_corrected_01.csv - gbm - Trial 0: 0.971335
+2025-07-05 19:40:08,035 - train_corrected_01.csv - cat - Trial 0: 0.972900
+2025-07-05 19:40:11,625 - train_corrected_01.csv - xgb - Trial 1: 0.971443
+2025-07-05 19:40:26,193 - train_corrected_01.csv - gbm - Trial 1: 0.969013
+2025-07-05 19:40:41,909 - train_corrected_01.csv - cat - Trial 1: 0.972900
+2025-07-05 19:40:50,060 - train_corrected_01.csv - xgb - Trial 2: 0.967826
+2025-07-05 19:40:58,625 - train_corrected_01.csv - gbm - Trial 2: 0.971227
+2025-07-05 19:41:11,403 - train_corrected_01.csv - cat - Trial 2: 0.972900
+2025-07-05 19:41:16,923 - train_corrected_01.csv - xgb - Trial 3: 0.969337
+2025-07-05 19:41:20,115 - train_corrected_01.csv - gbm - Trial 3: 0.971551
+2025-07-05 19:41:25,145 - train_corrected_01.csv - cat - Trial 3: 0.969283
+2025-07-05 19:41:29,610 - train_corrected_01.csv - xgb - Trial 4: 0.972630
+2025-07-05 19:41:33,963 - train_corrected_01.csv - gbm - Trial 4: 0.969661
+2025-07-05 19:41:37,849 - train_corrected_01.csv - cat - Trial 4: 0.972630
+2025-07-05 19:41:40,998 - train_corrected_01.csv - xgb - Trial 5: 0.972468
+2025-07-05 19:41:44,624 - train_corrected_01.csv - gbm - Trial 5: 0.970903
+2025-07-05 19:41:46,019 - train_corrected_01.csv - cat - Trial 5: 0.972846
+2025-07-05 19:41:56,622 - train_corrected_01.csv - xgb - Trial 6: 0.971119
+2025-07-05 19:42:04,851 - train_corrected_01.csv - gbm - Trial 6: 0.970579
+2025-07-05 19:42:22,002 - train_corrected_01.csv - cat - Trial 6: 0.973116
+2025-07-05 19:42:28,395 - train_corrected_01.csv - xgb - Trial 7: 0.971605
+2025-07-05 19:42:31,043 - train_corrected_01.csv - gbm - Trial 7: 0.971929
+2025-07-05 19:42:35,712 - train_corrected_01.csv - cat - Trial 7: 0.973440
+2025-07-05 19:42:39,777 - train_corrected_01.csv - xgb - Trial 8: 0.967286
+2025-07-05 19:42:42,814 - train_corrected_01.csv - gbm - Trial 8: 0.970903
+2025-07-05 19:42:44,642 - train_corrected_01.csv - cat - Trial 8: 0.972576
+2025-07-05 19:42:48,460 - train_corrected_01.csv - xgb - Trial 9: 0.972954
+2025-07-05 19:42:50,084 - train_corrected_01.csv - gbm - Trial 9: 0.972468
+2025-07-05 19:42:58,219 - train_corrected_01.csv - cat - Trial 9: 0.971983
+2025-07-05 19:43:01,954 - train_corrected_01.csv - xgb - Trial 10: 0.973332
+2025-07-05 19:43:03,529 - train_corrected_01.csv - gbm - Trial 10: 0.972414
+2025-07-05 19:43:07,681 - train_corrected_01.csv - cat - Trial 10: 0.972684
+2025-07-05 19:43:11,165 - train_corrected_01.csv - xgb - Trial 11: 0.972954
+2025-07-05 19:43:12,703 - train_corrected_01.csv - gbm - Trial 11: 0.972090
+2025-07-05 19:43:17,772 - train_corrected_01.csv - cat - Trial 11: 0.973224
+2025-07-05 19:43:27,378 - train_corrected_01.csv - xgb - Trial 12: 0.970255
+2025-07-05 19:43:29,208 - train_corrected_01.csv - gbm - Trial 12: 0.972090

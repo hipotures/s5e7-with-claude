@@ -1,0 +1,127 @@
+======================================================================
+FINAL FLIP STRATEGY
+======================================================================
+======================================================================
+ANALYZING SUBMISSIONS
+======================================================================
+
+Loaded base_975708: 6175 records
+  Introverts: 1553
+  Extroverts: 4622
+
+Loaded cluster_aware: 6175 records
+  Introverts: 1566
+  Extroverts: 4609
+
+Loaded pattern_based_flip: 6175 records
+  Introverts: 1558
+  Extroverts: 4617
+
+
+Comparing base_975708 vs cluster_aware:
+  Differences: 13
+  Base Intro → Cluster Extro: 0
+  Base Extro → Cluster Intro: 13
+
+
+Comparing base_975708 vs pattern_based_flip:
+  Differences: 5
+  Flipped IDs:
+    ID 18876: Extrovert → Introvert
+    ID 20363: Extrovert → Introvert
+    ID 20934: Extrovert → Introvert
+    ID 20950: Extrovert → Introvert
+    ID 21008: Extrovert → Introvert
+
+======================================================================
+CREATING TARGETED SUBMISSIONS
+======================================================================
+
+Loaded 5 manual flip candidates
+
+Flip candidates:
+  ID 18876: cluster7_extreme_alone (alone=10.0, social=nan, friends=10.0)
+  ID 20363: inconsistent_introvert (alone=3.0, social=2.0, friends=3.0)
+  ID 20934: inconsistent_introvert (alone=2.0, social=2.0, friends=5.0)
+  ID 20950: inconsistent_introvert (alone=2.0, social=2.0, friends=5.0)
+  ID 21008: inconsistent_introvert (alone=3.0, social=1.0, friends=5.0)
+
+
+Verifying candidates against test data:
+  ID 18876: VERIFIED (alone=10.0)
+  ID 20363: VERIFIED (inconsistent pattern)
+  ID 20934: VERIFIED (inconsistent pattern)
+  ID 20950: VERIFIED (inconsistent pattern)
+  ID 21008: VERIFIED (inconsistent pattern)
+
+Verified 5 candidates
+
+ALL_5_FLIPS: Flipping 5 predictions
+  ID 18876: Extrovert → Introvert
+  ID 20363: Extrovert → Introvert
+  ID 20934: Extrovert → Introvert
+  ID 20950: Extrovert → Introvert
+  ID 21008: Extrovert → Introvert
+  Saved to: output/final_flip_all_5_flips_submission.csv
+
+TOP_3_FLIPS: Flipping 3 predictions
+  ID 18876: Extrovert → Introvert
+  ID 20363: Extrovert → Introvert
+  ID 20934: Extrovert → Introvert
+  Saved to: output/final_flip_top_3_flips_submission.csv
+
+ONLY_EXTREME_ALONE: Flipping 1 predictions
+  ID 18876: Extrovert → Introvert
+  Saved to: output/final_flip_only_extreme_alone_submission.csv
+
+ONLY_INCONSISTENT: Flipping 4 predictions
+  ID 20363: Extrovert → Introvert
+  ID 20934: Extrovert → Introvert
+  ID 20950: Extrovert → Introvert
+  ID 21008: Extrovert → Introvert
+  Saved to: output/final_flip_only_inconsistent_submission.csv
+
+======================================================================
+CREATING ENSEMBLE SUBMISSION
+======================================================================
+
+Agreements: 6159 (99.7%)
+Disagreements: 16 (0.3%)
+
+Disagreement cases:
+  ID 19612: Cluster=Introvert, Pattern=Extrovert
+  ID 19774: Cluster=Introvert, Pattern=Extrovert
+  ID 20017: Cluster=Introvert, Pattern=Extrovert
+  ID 20363: Cluster=Extrovert, Pattern=Introvert
+  ID 20934: Cluster=Extrovert, Pattern=Introvert
+  ID 20950: Cluster=Extrovert, Pattern=Introvert
+  ID 21008: Cluster=Extrovert, Pattern=Introvert
+  ID 21359: Cluster=Introvert, Pattern=Extrovert
+  ID 21800: Cluster=Introvert, Pattern=Extrovert
+  ID 21932: Cluster=Introvert, Pattern=Extrovert
+  ID 22291: Cluster=Introvert, Pattern=Extrovert
+  ID 23336: Cluster=Introvert, Pattern=Extrovert
+  ID 23350: Cluster=Introvert, Pattern=Extrovert
+  ID 23418: Cluster=Introvert, Pattern=Extrovert
+  ID 23844: Cluster=Introvert, Pattern=Extrovert
+  ID 24005: Cluster=Introvert, Pattern=Extrovert
+
+Created ensemble submission: output/ensemble_cluster_pattern_submission.csv
+
+======================================================================
+SUMMARY
+======================================================================
+
+Created submissions:
+1. final_flip_all_5_flips_submission.csv - All 5 pattern-based flips
+2. final_flip_top_3_flips_submission.csv - Top 3 flips
+3. final_flip_only_extreme_alone_submission.csv - Only ID 18876
+4. final_flip_only_inconsistent_submission.csv - Only inconsistent introverts
+5. ensemble_cluster_pattern_submission.csv - Best of both approaches
+
+Recommendation: Try 'ensemble_cluster_pattern_submission.csv' first
+It combines the cluster-aware strategy with targeted pattern flips
+
+======================================================================
+ANALYSIS COMPLETE
+======================================================================

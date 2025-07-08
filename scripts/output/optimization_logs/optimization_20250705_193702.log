@@ -1,0 +1,5 @@
+2025-07-05 19:37:02,172 - Started optimization for train_corrected_01.csv
+2025-07-05 19:37:02,395 - Loaded existing study: e8a823232109
+2025-07-05 19:37:02,407 - Loaded existing study: 0b5b01cca100
+2025-07-05 19:37:02,419 - Loaded existing study: fb8ffe0a3ba6
+2025-07-05 19:37:03,674 - Error in optimization: arrays used as indices must be of integer (or boolean) type

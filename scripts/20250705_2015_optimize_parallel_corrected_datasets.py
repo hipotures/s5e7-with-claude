@@ -45,7 +45,7 @@ optuna.logging.set_verbosity(optuna.logging.WARNING)
 # ==============================================================================
 
 # Time limit per dataset (in seconds)
-TIME_PER_DATASET = 60  # 1 hour per dataset
+TIME_PER_DATASET = 3600  # 1 hour per dataset
 
 # CPU thread limit for CatBoost (to leave CPU resources for GPU models)
 CATBOOST_THREAD_COUNT = 16  # Adjust based on your CPU
@@ -74,10 +74,11 @@ LOGS_DIR = "output/optimization_logs"
 STUDIES_DIR = "output/optuna_studies"
 
 # Resource assignment - PARALLEL EXECUTION
+# Fixed assignment: each model gets dedicated resource for better balance
 MODEL_RESOURCE_ASSIGNMENT = {
-    'xgb': ['gpu0', 'gpu1'],
-    'gbm': ['gpu0', 'gpu1'],
-    'cat': ['cpu']
+    'xgb': ['gpu0'],  # XGBoost always on GPU 0
+    'gbm': ['gpu1'],  # LightGBM always on GPU 1
+    'cat': ['cpu']    # CatBoost always on CPU
 }
 
 # Model configuration
@@ -550,6 +551,13 @@ def create_model(model_type, params):
 def worker_process(task_queue: mp.Queue, result_queue: mp.Queue, data_dict: dict):
     """Worker process that pulls tasks from queue and trains models"""
     
+    # Try to set process name
+    try:
+        import setproctitle
+        setproctitle.setproctitle("optuna-worker")
+    except ImportError:
+        pass
+    
     while True:
         try:
             # Get task from queue (blocking with timeout)
@@ -562,6 +570,13 @@ def worker_process(task_queue: mp.Queue, result_queue: mp.Queue, data_dict: dict
             
             # Set GPU environment
             set_gpu_environment(task.resource)
+            
+            # Update process name with model type
+            try:
+                import setproctitle
+                setproctitle.setproctitle(f"optuna-{task.model_type}-{task.resource}")
+            except ImportError:
+                pass
             
             # Load dataset for this task
             train_df, test_df, ambiguous_ids = load_data(task.dataset_name)
@@ -873,10 +888,15 @@ class ParallelOptimizationScheduler:
                             
                             if result.success:
                                 study.tell(trial, result.score)
+                                
+                                # Check if new best BEFORE updating tracker
+                                current_best = self.tracker.results[dataset_name].get('best_score', 0)
+                                is_new_best = result.score > current_best
+                                
                                 self.tracker.complete_task(result)
                                 
                                 # Save submission if new best
-                                if result.score > self.tracker.results[dataset_name]['best_score']:
+                                if is_new_best:
                                     save_submission(result.predictions, result.score, 
                                                   model_name, dataset_name)
                             else:
@@ -908,9 +928,14 @@ class ParallelOptimizationScheduler:
                         
                         if result.success:
                             study.tell(trial, result.score)
+                            
+                            # Check if new best BEFORE updating tracker
+                            current_best = self.tracker.results[dataset_name].get('best_score', 0)
+                            is_new_best = result.score > current_best
+                            
                             self.tracker.complete_task(result)
                             
-                            if result.score > self.tracker.results[dataset_name]['best_score']:
+                            if is_new_best:
                                 save_submission(result.predictions, result.score, 
                                               model_name, dataset_name)
                         else:
@@ -978,6 +1003,9 @@ class ParallelOptimizationScheduler:
         # Save final summary
         self._save_summary()
         
+        # Show final results and wait for ESC
+        self._show_final_results()
+        
     def _save_summary(self):
         """Save optimization summary"""
         timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
@@ -998,6 +1026,102 @@ class ParallelOptimizationScheduler:
                     for model_name, model_data in result['models'].items():
                         f.write(f"  {model_name}: {model_data['trials']} trials, "
                                f"best score: {model_data['best_score']:.6f}\n")
+    
+    def _show_final_results(self):
+        """Show final results and wait for ESC key"""
+        from rich.console import Console
+        from rich.layout import Layout
+        from rich.panel import Panel
+        from rich.align import Align
+        
+        console = Console()
+        
+        # Create final display
+        data = self.tracker.get_display_data()
+        
+        # Mark all as completed
+        for dataset in data['results']:
+            data['results'][dataset]['status'] = 'Completed'
+        
+        # Create layout
+        layout = Layout()
+        
+        # Create middle row layout
+        middle_row = Layout()
+        middle_row.split_row(
+            Layout(create_resource_status_panel(data)),
+            Layout(create_running_tasks_panel(data))
+        )
+        
+        layout.split_column(
+            Layout(create_summary_table(data), size=len(CORRECTED_DATASETS) + 5),
+            Layout(self._create_final_summary_panel(data), size=10),
+            Layout(middle_row, size=8),
+            Layout(create_recent_trials_table(data))
+        )
+        
+        # Display with message
+        console.clear()
+        console.print(layout)
+        console.print("\n[bold yellow]Optimization Complete! Press ESC to exit...[/bold yellow]")
+        
+        # Wait for ESC
+        try:
+            import sys
+            if sys.platform != 'win32':
+                # Linux/Mac - use getch
+                import termios, tty
+                fd = sys.stdin.fileno()
+                old_settings = termios.tcgetattr(fd)
+                try:
+                    tty.setraw(sys.stdin.fileno())
+                    while True:
+                        ch = sys.stdin.read(1)
+                        if ord(ch) == 27:  # ESC
+                            break
+                finally:
+                    termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)
+            else:
+                # Windows
+                import msvcrt
+                while True:
+                    if msvcrt.kbhit():
+                        key = msvcrt.getch()
+                        if key == b'\x1b':  # ESC
+                            break
+        except:
+            # Fallback - just wait for Enter
+            console.print("\n[dim]Press Enter to exit...[/dim]")
+            input()
+    
+    def _create_final_summary_panel(self, data):
+        """Create final summary panel"""
+        # Find best overall score
+        best_score = 0
+        best_dataset = None
+        best_model = None
+        total_trials = 0
+        
+        for dataset, result in data['results'].items():
+            total_trials += result.get('total_trials', 0)
+            if result['best_score'] > best_score:
+                best_score = result['best_score']
+                best_dataset = dataset
+                best_model = result['best_model']
+        
+        # Calculate gap to target
+        target = 0.975708
+        gap = target - best_score
+        
+        content = f"""
+[bold]Best Overall Score:[/bold] {best_score:.6f} ({best_model})
+[bold]Best Dataset:[/bold] {best_dataset}
+[bold]Gap to Target:[/bold] {gap:.6f} ({gap*100:.4f}%)
+[bold]Total Trials:[/bold] {total_trials}
+[bold]Total Time:[/bold] {data['elapsed_time']/60:.1f} minutes
+"""
+        
+        return Panel(content.strip(), title="Final Summary", border_style="green")
 
 # ==============================================================================
 # MAIN FUNCTION

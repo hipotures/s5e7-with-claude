@@ -1,0 +1,47 @@
+2025-07-06 11:51:36,368 - INFO - OOF Score for train_corrected_07.csv (gbm): 0.976841
+2025-07-06 11:52:27,991 - INFO - OOF Score for train_corrected_04.csv (cat): 0.977759
+2025-07-06 11:55:56,148 - INFO - OOF Score for train_corrected_06.csv (cat): 0.977813
+2025-07-06 11:56:02,724 - INFO - OOF Score for train_corrected_01.csv (xgb): 0.973656
+2025-07-06 11:56:04,734 - INFO - OOF Score for train_corrected_02.csv (xgb): 0.973116
+2025-07-06 11:56:37,771 - INFO - OOF Score for train_corrected_05.csv (cat): 0.975059
+2025-07-06 11:56:37,774 - ERROR - Error during ensemble creation: Found input variables with inconsistent numbers of samples: [111144, 18524]
+Traceback (most recent call last):
+  File "/mnt/ml/competitions/2025/playground-series-s5e7/WORKSPACE/scripts/20250706_0157_create_ensemble_from_optuna.py", line 717, in main
+    create_ensemble()
+  File "/mnt/ml/competitions/2025/playground-series-s5e7/WORKSPACE/scripts/20250706_0157_create_ensemble_from_optuna.py", line 574, in create_ensemble
+    optimal_weights, oof_score = optimize_ensemble_weights(oof_predictions, y_true_list)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/ml/competitions/2025/playground-series-s5e7/WORKSPACE/scripts/20250706_0157_create_ensemble_from_optuna.py", line 514, in optimize_ensemble_weights
+    result = minimize(
+             ^^^^^^^^^
+  File "/home/xai/ML/venv-ag-20250704/lib/python3.12/site-packages/scipy/optimize/_minimize.py", line 797, in minimize
+    res = _minimize_slsqp(fun, x0, args, jac, bounds,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xai/ML/venv-ag-20250704/lib/python3.12/site-packages/scipy/optimize/_slsqp_py.py", line 419, in _minimize_slsqp
+    sf = _prepare_scalar_function(func, x, jac=jac, args=args, epsilon=eps,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xai/ML/venv-ag-20250704/lib/python3.12/site-packages/scipy/optimize/_optimize.py", line 310, in _prepare_scalar_function
+    sf = ScalarFunction(fun, x0, args, grad, hess,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xai/ML/venv-ag-20250704/lib/python3.12/site-packages/scipy/optimize/_differentiable_functions.py", line 274, in __init__
+    self._update_fun()
+  File "/home/xai/ML/venv-ag-20250704/lib/python3.12/site-packages/scipy/optimize/_differentiable_functions.py", line 353, in _update_fun
+    fx = self._wrapped_fun(self.x)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xai/ML/venv-ag-20250704/lib/python3.12/site-packages/scipy/_lib/_util.py", line 583, in __call__
+    fx = self.f(np.copy(x), *self.args)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/ml/competitions/2025/playground-series-s5e7/WORKSPACE/scripts/20250706_0157_create_ensemble_from_optuna.py", line 505, in ensemble_score
+    score = accuracy_score(all_y_true, (ensemble_pred > 0.5).astype(int))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xai/ML/venv-ag-20250704/lib/python3.12/site-packages/sklearn/utils/_param_validation.py", line 216, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xai/ML/venv-ag-20250704/lib/python3.12/site-packages/sklearn/metrics/_classification.py", line 227, in accuracy_score
+    y_type, y_true, y_pred = _check_targets(y_true, y_pred)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xai/ML/venv-ag-20250704/lib/python3.12/site-packages/sklearn/metrics/_classification.py", line 98, in _check_targets
+    check_consistent_length(y_true, y_pred)
+  File "/home/xai/ML/venv-ag-20250704/lib/python3.12/site-packages/sklearn/utils/validation.py", line 475, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [111144, 18524]

@@ -1,0 +1,6 @@
+id,pattern,current,should_be,alone,social,friends
+18876,cluster7_extreme_alone,Extrovert,Introvert,10.0,,10.0
+20363,inconsistent_introvert,Extrovert,Introvert,3.0,2.0,3.0
+20934,inconsistent_introvert,Extrovert,Introvert,2.0,2.0,5.0
+20950,inconsistent_introvert,Extrovert,Introvert,2.0,2.0,5.0
+21008,inconsistent_introvert,Extrovert,Introvert,3.0,1.0,5.0

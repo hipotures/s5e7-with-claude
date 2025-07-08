@@ -1,0 +1,18 @@
+2025-07-05 19:57:10,086 - Started optimization for train_corrected_01.csv
+2025-07-05 19:57:10,377 - Loaded existing study: e8a823232109 (xgb + train_corrected_01.csv)
+2025-07-05 19:57:10,458 - Loaded existing study: 0b5b01cca100 (gbm + train_corrected_01.csv)
+2025-07-05 19:57:10,535 - Loaded existing study: fb8ffe0a3ba6 (cat + train_corrected_01.csv)
+2025-07-05 19:57:14,690 - train_corrected_01.csv - xgb - Trial 0: 0.971713
+2025-07-05 19:57:17,344 - train_corrected_01.csv - gbm - Trial 0: 0.971767
+2025-07-05 19:57:19,778 - train_corrected_01.csv - cat - Trial 0: 0.972792
+2025-07-05 19:57:24,878 - Error in optimization: Should not reach.
+2025-07-05 19:57:30,918 - train_corrected_01.csv - gbm - Trial 1: 0.972414
+2025-07-05 19:57:34,369 - train_corrected_01.csv - cat - Trial 1: 0.973008
+2025-07-05 19:57:51,242 - train_corrected_01.csv - xgb - Trial 1: 0.972846
+2025-07-05 19:57:53,048 - Started optimization for train_corrected_02.csv
+2025-07-05 19:57:53,095 - Loaded existing study: e395d73ff34a (xgb + train_corrected_02.csv)
+2025-07-05 19:57:53,115 - Loaded existing study: 6f44e3526073 (gbm + train_corrected_02.csv)
+2025-07-05 19:57:53,129 - Loaded existing study: a86ba52ec1b7 (cat + train_corrected_02.csv)
+2025-07-05 19:57:57,111 - train_corrected_02.csv - xgb - Trial 0: 0.971551
+2025-07-05 19:58:02,874 - train_corrected_02.csv - gbm - Trial 0: 0.969931
+2025-07-05 19:58:05,440 - train_corrected_02.csv - cat - Trial 0: 0.971713

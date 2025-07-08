@@ -1,0 +1,6 @@
+2025-07-06 12:21:16,365 - INFO - OOF Score for train_corrected_07.csv (gbm): 0.976841
+2025-07-06 12:22:08,274 - INFO - OOF Score for train_corrected_04.csv (cat): 0.977759
+2025-07-06 12:25:36,791 - INFO - OOF Score for train_corrected_06.csv (cat): 0.977759
+2025-07-06 12:25:43,236 - INFO - OOF Score for train_corrected_01.csv (xgb): 0.973656
+2025-07-06 12:25:45,152 - INFO - OOF Score for train_corrected_02.csv (xgb): 0.973116
+2025-07-06 12:26:18,136 - INFO - OOF Score for train_corrected_05.csv (cat): 0.974897

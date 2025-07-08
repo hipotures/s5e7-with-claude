@@ -1,0 +1,29 @@
+2025-07-05 19:50:08,105 - Started optimization for train_corrected_01.csv
+2025-07-05 19:50:08,330 - Loaded existing study: e8a823232109 (xgb + train_corrected_01.csv)
+2025-07-05 19:50:08,344 - Loaded existing study: 0b5b01cca100 (gbm + train_corrected_01.csv)
+2025-07-05 19:50:08,358 - Loaded existing study: fb8ffe0a3ba6 (cat + train_corrected_01.csv)
+2025-07-05 19:50:18,553 - train_corrected_01.csv - xgb - Trial 0: 0.970417
+2025-07-05 19:50:22,020 - train_corrected_01.csv - gbm - Trial 0: 0.969823
+2025-07-05 19:50:24,817 - train_corrected_01.csv - cat - Trial 0: 0.973332
+2025-07-05 19:50:26,959 - train_corrected_01.csv - xgb - Trial 1: 0.973170
+2025-07-05 19:50:33,338 - train_corrected_01.csv - gbm - Trial 1: 0.971928
+2025-07-05 19:50:37,922 - train_corrected_01.csv - cat - Trial 1: 0.973386
+2025-07-05 19:50:40,178 - train_corrected_01.csv - xgb - Trial 2: 0.973440
+2025-07-05 19:50:41,785 - Started optimization for train_corrected_02.csv
+2025-07-05 19:50:41,831 - Loaded existing study: e395d73ff34a (xgb + train_corrected_02.csv)
+2025-07-05 19:50:41,845 - Loaded existing study: 6f44e3526073 (gbm + train_corrected_02.csv)
+2025-07-05 19:50:41,859 - Loaded existing study: a86ba52ec1b7 (cat + train_corrected_02.csv)
+2025-07-05 19:50:54,925 - train_corrected_02.csv - xgb - Trial 0: 0.969445
+2025-07-05 19:51:04,575 - train_corrected_02.csv - gbm - Trial 0: 0.972846
+2025-07-05 19:51:18,835 - train_corrected_02.csv - cat - Trial 0: 0.972306
+2025-07-05 19:51:21,225 - Started optimization for train_corrected_03.csv
+2025-07-05 19:51:21,351 - Created new study: 1a1c64eaa34a (xgb + train_corrected_03.csv)
+2025-07-05 19:51:21,438 - Created new study: 8af215c7bc60 (gbm + train_corrected_03.csv)
+2025-07-05 19:51:21,519 - Created new study: 89af4b6e5beb (cat + train_corrected_03.csv)
+2025-07-05 19:51:32,470 - train_corrected_03.csv - xgb - Trial 0: 0.964856
+2025-07-05 19:51:36,120 - train_corrected_03.csv - gbm - Trial 0: 0.965504
+2025-07-05 19:52:19,713 - train_corrected_03.csv - cat - Trial 0: 0.968257
+2025-07-05 19:52:40,344 - Started optimization for train_corrected_04.csv
+2025-07-05 19:52:40,466 - Created new study: 2e256c7c79f0 (xgb + train_corrected_04.csv)
+2025-07-05 19:52:40,552 - Created new study: 665fee4fcd5f (gbm + train_corrected_04.csv)
+2025-07-05 19:52:40,632 - Created new study: 481d1b8f2096 (cat + train_corrected_04.csv)

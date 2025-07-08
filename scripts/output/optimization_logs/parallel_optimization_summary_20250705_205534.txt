@@ -1,0 +1,83 @@
+PARALLEL OPTIMIZATION SUMMARY
+============================================================
+
+
+Dataset: train_corrected_01.csv
+Best Score: 0.973494
+Best Model: xgb
+Total Trials: 7
+
+Model Details:
+  xgb: 4 trials, best score: 0.973494
+  cat: 2 trials, best score: 0.973386
+  gbm: 1 trials, best score: 0.972252
+
+Dataset: train_corrected_02.csv
+Best Score: 0.973332
+Best Model: xgb
+Total Trials: 9
+
+Model Details:
+  xgb: 7 trials, best score: 0.973332
+  gbm: 1 trials, best score: 0.969553
+  cat: 1 trials, best score: 0.973170
+
+Dataset: train_corrected_03.csv
+Best Score: 0.969499
+Best Model: cat
+Total Trials: 9
+
+Model Details:
+  xgb: 5 trials, best score: 0.968959
+  gbm: 1 trials, best score: 0.965288
+  cat: 3 trials, best score: 0.969499
+
+Dataset: train_corrected_04.csv
+Best Score: 0.974628
+Best Model: cat
+Total Trials: 7
+
+Model Details:
+  xgb: 3 trials, best score: 0.973926
+  cat: 3 trials, best score: 0.974628
+  gbm: 1 trials, best score: 0.972144
+
+Dataset: train_corrected_05.csv
+Best Score: 0.970201
+Best Model: cat
+Total Trials: 9
+
+Model Details:
+  xgb: 4 trials, best score: 0.969877
+  cat: 4 trials, best score: 0.970201
+  gbm: 1 trials, best score: 0.966746
+
+Dataset: train_corrected_06.csv
+Best Score: 0.974682
+Best Model: cat
+Total Trials: 9
+
+Model Details:
+  xgb: 5 trials, best score: 0.973818
+  cat: 3 trials, best score: 0.974682
+  gbm: 1 trials, best score: 0.974088
+
+Dataset: train_corrected_07.csv
+Best Score: 0.975275
+Best Model: cat
+Total Trials: 8
+
+Model Details:
+  cat: 4 trials, best score: 0.975275
+  xgb: 3 trials, best score: 0.974736
+  gbm: 1 trials, best score: 0.973656
+
+Dataset: train_corrected_08.csv
+Best Score: 0.969283
+Best Model: xgb
+Total Trials: 7
+
+Model Details:
+  xgb: 4 trials, best score: 0.969283
+  cat: 2 trials, best score: 0.969283
+  gbm: 1 trials, best score: 0.965882

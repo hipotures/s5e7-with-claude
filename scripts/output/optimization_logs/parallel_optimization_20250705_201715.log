@@ -1,0 +1,71 @@
+2025-07-05 20:17:15,197 - Started 3 worker processes
+2025-07-05 20:17:15,198 - Started optimization for train_corrected_01.csv
+2025-07-05 20:17:15,430 - Loaded existing study: e8a823232109 (xgb + train_corrected_01.csv)
+2025-07-05 20:17:15,444 - Loaded existing study: 0b5b01cca100 (gbm + train_corrected_01.csv)
+2025-07-05 20:17:15,457 - Loaded existing study: fb8ffe0a3ba6 (cat + train_corrected_01.csv)
+2025-07-05 20:17:15,615 - Started xgb trial 84 on gpu0
+2025-07-05 20:17:15,615 - Scheduled: xgb trial 84 on gpu0
+2025-07-05 20:17:15,705 - Started gbm trial 30 on gpu1
+2025-07-05 20:17:15,705 - Scheduled: gbm trial 30 on gpu1
+2025-07-05 20:17:15,864 - Started cat trial 49 on cpu
+2025-07-05 20:17:15,864 - Scheduled: cat trial 49 on cpu
+2025-07-05 20:17:22,904 - train_corrected_01.csv - xgb - Trial 84: 0.973116
+2025-07-05 20:17:23,354 - Started xgb trial 85 on gpu0
+2025-07-05 20:17:23,354 - Scheduled: xgb trial 85 on gpu0
+2025-07-05 20:17:28,074 - train_corrected_01.csv - cat - Trial 49: 0.972900
+2025-07-05 20:17:28,426 - Started cat trial 50 on cpu
+2025-07-05 20:17:28,426 - Scheduled: cat trial 50 on cpu
+2025-07-05 20:17:30,746 - train_corrected_01.csv - xgb - Trial 85: 0.973062
+2025-07-05 20:17:31,020 - Started xgb trial 86 on gpu0
+2025-07-05 20:17:31,020 - Scheduled: xgb trial 86 on gpu0
+2025-07-05 20:17:40,155 - train_corrected_01.csv - xgb - Trial 86: 0.972468
+2025-07-05 20:17:40,404 - Started xgb trial 87 on gpu0
+2025-07-05 20:17:40,404 - Scheduled: xgb trial 87 on gpu0
+2025-07-05 20:17:43,728 - train_corrected_01.csv - cat - Trial 50: 0.973332
+2025-07-05 20:17:43,920 - Started cat trial 51 on cpu
+2025-07-05 20:17:43,920 - Scheduled: cat trial 51 on cpu
+2025-07-05 20:17:48,752 - train_corrected_01.csv - gbm - Trial 30: 0.972738
+2025-07-05 20:17:48,973 - Started xgb trial 88 on gpu1
+2025-07-05 20:17:48,973 - Scheduled: xgb trial 88 on gpu1
+2025-07-05 20:17:48,980 - train_corrected_01.csv - xgb - Trial 87: 0.972954
+2025-07-05 20:17:49,252 - Started xgb trial 89 on gpu0
+2025-07-05 20:17:49,252 - Scheduled: xgb trial 89 on gpu0
+2025-07-05 20:17:52,873 - train_corrected_01.csv - cat - Trial 51: 0.972900
+2025-07-05 20:17:53,057 - Started cat trial 52 on cpu
+2025-07-05 20:17:53,057 - Scheduled: cat trial 52 on cpu
+2025-07-05 20:17:54,479 - train_corrected_01.csv - xgb - Trial 89: 0.971821
+2025-07-05 20:17:54,764 - Started xgb trial 90 on gpu0
+2025-07-05 20:17:54,764 - Scheduled: xgb trial 90 on gpu0
+2025-07-05 20:17:57,279 - train_corrected_01.csv - xgb - Trial 88: 0.972414
+2025-07-05 20:17:57,519 - Started xgb trial 91 on gpu1
+2025-07-05 20:17:57,519 - Scheduled: xgb trial 91 on gpu1
+2025-07-05 20:18:00,636 - train_corrected_01.csv - cat - Trial 52: 0.972630
+2025-07-05 20:18:00,827 - Started cat trial 53 on cpu
+2025-07-05 20:18:00,827 - Scheduled: cat trial 53 on cpu
+2025-07-05 20:18:04,451 - train_corrected_01.csv - xgb - Trial 90: 0.973224
+2025-07-05 20:18:04,658 - Started xgb trial 92 on gpu0
+2025-07-05 20:18:04,658 - Scheduled: xgb trial 92 on gpu0
+2025-07-05 20:18:05,174 - train_corrected_01.csv - xgb - Trial 91: 0.973440
+2025-07-05 20:18:05,561 - Started xgb trial 93 on gpu1
+2025-07-05 20:18:05,561 - Scheduled: xgb trial 93 on gpu1
+2025-07-05 20:18:11,999 - train_corrected_01.csv - xgb - Trial 93: 0.972954
+2025-07-05 20:18:12,342 - Started xgb trial 94 on gpu1
+2025-07-05 20:18:12,342 - Scheduled: xgb trial 94 on gpu1
+2025-07-05 20:18:15,155 - train_corrected_01.csv - xgb - Trial 92: 0.972198
+2025-07-05 20:18:15,360 - Started xgb trial 95 on gpu0
+2025-07-05 20:18:15,360 - Scheduled: xgb trial 95 on gpu0
+2025-07-05 20:18:17,306 - train_corrected_01.csv - xgb - Trial 94: 0.973386
+2025-07-05 20:18:20,122 - train_corrected_01.csv - xgb - Trial 95: 0.973386
+2025-07-05 20:18:20,252 - train_corrected_01.csv - cat - Trial 53: 0.973224
+2025-07-05 20:18:20,253 - Started optimization for train_corrected_02.csv
+2025-07-05 20:18:20,268 - Loaded existing study: e395d73ff34a (xgb + train_corrected_02.csv)
+2025-07-05 20:18:20,283 - Loaded existing study: 6f44e3526073 (gbm + train_corrected_02.csv)
+2025-07-05 20:18:20,297 - Loaded existing study: a86ba52ec1b7 (cat + train_corrected_02.csv)
+2025-07-05 20:18:20,355 - Started xgb trial 7 on gpu0
+2025-07-05 20:18:20,355 - Scheduled: xgb trial 7 on gpu0
+2025-07-05 20:18:20,419 - Started gbm trial 5 on gpu1
+2025-07-05 20:18:20,419 - Scheduled: gbm trial 5 on gpu1
+2025-07-05 20:18:20,477 - Started cat trial 4 on cpu
+2025-07-05 20:18:20,477 - Scheduled: cat trial 4 on cpu
+2025-07-05 20:18:29,110 - Stopped all worker processes
+2025-07-05 20:18:29,112 - Stopped all worker processes

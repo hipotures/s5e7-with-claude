@@ -1,0 +1,6 @@
+2025-07-05 19:56:48,925 - Started optimization for train_corrected_01.csv
+2025-07-05 19:56:49,740 - Loaded existing study: e8a823232109 (xgb + train_corrected_01.csv)
+2025-07-05 19:56:49,759 - Loaded existing study: 0b5b01cca100 (gbm + train_corrected_01.csv)
+2025-07-05 19:56:49,778 - Loaded existing study: fb8ffe0a3ba6 (cat + train_corrected_01.csv)
+2025-07-05 19:56:52,261 - train_corrected_01.csv - xgb - Trial 0: 0.973062
+2025-07-05 19:56:56,924 - train_corrected_01.csv - gbm - Trial 0: 0.970957
