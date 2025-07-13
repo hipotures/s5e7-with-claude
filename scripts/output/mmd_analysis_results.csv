@@ -1,0 +1,9 @@
+comparison,kernel,mmd
+Train vs Test,rbf_gamma0.1,0.0
+Train vs Test,rbf_gamma0.5,0.0
+Train vs Test,rbf_gamma1.0,0.0
+Train vs Test,rbf_gamma2.0,0.0033342458032191795
+Train vs Test,linear,0.0
+Train vs Test,polynomial,0.0
+Intro vs Extro,rbf,0.30394063627679213
+Intro vs Extro,linear,4.346634056443216

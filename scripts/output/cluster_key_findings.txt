@@ -1,0 +1,13 @@
+CLUSTERS WITH HIGHEST UNCERTAINTY:
+  - GMM Cluster 4: 14.3% uncertain (119 samples)
+  - DBSCAN Cluster -1: 13.2% uncertain (53 samples)
+  - HIERARCHICAL Cluster 1: 4.7% uncertain (3332 samples)
+
+CLUSTERS WITH HIGHEST ERROR RATES:
+  - GMM Cluster 4: 11.8% errors
+  - DBSCAN Cluster 3: 5.9% errors
+  - HIERARCHICAL Cluster 1: 5.9% errors
+
+KEY PATTERNS:
+  - GMM identified 1 small clusters (<200 samples) with high uncertainty
+  - Uncertain clusters have avg alone time: 7.5, avg social events: 3.9

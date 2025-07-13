@@ -1,0 +1,70 @@
+============================================================
+LOADING DATA
+============================================================
+
+Original train shape: (18524, 9)
+Test shape: (6175, 8)
+
+Original class distribution:
+Personality
+Extrovert    13699
+Introvert     4825
+Name: count, dtype: int64
+Personality
+Extrovert    0.739527
+Introvert    0.260473
+Name: proportion, dtype: float64
+
+============================================================
+APPLYING BALANCING METHODS
+============================================================
+
+Original: 18524 samples
+
+Applying SMOTE...
+SMOTE: 27398 samples
+Class distribution: [13699 13699]
+
+Applying ADASYN...
+ADASYN: 26958 samples
+Class distribution: [13699 13259]
+
+Applying SMOTE-ENN...
+SMOTE-ENN: 24639 samples
+Class distribution: [11776 12863]
+
+============================================================
+TRAINING YDF MODELS
+============================================================
+
+original Dataset:
+Train model on 14819 examples
+Model trained in 0:00:00.176903
+  Fold 1: 0.969231
+Train model on 14819 examples
+Model trained in 0:00:00.184936
+  Fold 2: 0.965992
+Train model on 14819 examples
+Model trained in 0:00:00.182523
+  Fold 3: 0.965182
+Train model on 14819 examples
+Model trained in 0:00:00.188466
+  Fold 4: 0.970580
+Train model on 14820 examples
+Model trained in 0:00:00.182908
+  Fold 5: 0.971382
+  Mean CV: 0.968473 (±0.002468)
+  Training final model on full original dataset...
+Train model on 18524 examples
+Model trained in 0:00:00.219863
+  Feature importance:
+Traceback (most recent call last):
+  File "/mnt/ml/competitions/2025/playground-series-s5e7/WORKSPACE/scripts/20250112_1215_test_smote_ydf.py", line 271, in <module>
+    main()
+  File "/mnt/ml/competitions/2025/playground-series-s5e7/WORKSPACE/scripts/20250112_1215_test_smote_ydf.py", line 256, in main
+    predictions, cv_scores = train_ydf_with_balancing(balanced_data, X_test, feature_cols)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/ml/competitions/2025/playground-series-s5e7/WORKSPACE/scripts/20250112_1215_test_smote_ydf.py", line 188, in train_ydf_with_balancing
+    print(f"    {feat_name}: {imp_value:.4f}")
+                             ^^^^^^^^^^^^^^^
+TypeError: unsupported format string passed to list.__format__

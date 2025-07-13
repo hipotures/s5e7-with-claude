@@ -1,0 +1,31 @@
+============================================================
+YDF MULTI-SEED ENSEMBLE
+============================================================
+
+Train shape: (18524, 9)
+Test shape: (6175, 8)
+
+Class distribution:
+Personality
+Extrovert    0.739527
+Introvert    0.260473
+Name: proportion, dtype: float64
+
+============================================================
+TRAINING YDF WITH 20 SEEDS
+============================================================
+
+Seed 1/20 (random_seed=42):
+Traceback (most recent call last):
+  File "/mnt/ml/competitions/2025/playground-series-s5e7/WORKSPACE/scripts/20250112_1245_ydf_multi_seed_ensemble.py", line 277, in <module>
+    main()
+  File "/mnt/ml/competitions/2025/playground-series-s5e7/WORKSPACE/scripts/20250112_1245_ydf_multi_seed_ensemble.py", line 242, in main
+    pred_matrix, seeds = train_ydf_multi_seed(train_ydf, test_ydf, n_seeds=20)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/ml/competitions/2025/playground-series-s5e7/WORKSPACE/scripts/20250112_1245_ydf_multi_seed_ensemble.py", line 62, in train_ydf_multi_seed
+    learner = ydf.RandomForestLearner(
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xai/ML/venv-ag-20250704/lib/python3.12/site-packages/ydf/utils/func_helpers.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: RandomForestLearner.__init__() got an unexpected keyword argument 'subsample'

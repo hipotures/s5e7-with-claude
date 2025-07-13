@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Checkboxes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .checkbox-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 20px;
+            background: #f0f0f0;
+            border-radius: 5px;
+        }
+        .checkbox-group label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+        }
+        .checkbox-group input[type="checkbox"] {
+            margin-right: 10px;
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+        #result {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e0e0e0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Test Checkboxes - Uncertainty Filter</h2>
+    
+    <div class="checkbox-group">
+        <label>
+            <input type="checkbox" class="uncertainty-filter" value="0" checked>
+            Certain (conf > 30%)
+        </label>
+        <label>
+            <input type="checkbox" class="uncertainty-filter" value="1" checked>
+            Low Confidence (10-30%)
+        </label>
+        <label>
+            <input type="checkbox" class="uncertainty-filter" value="2" checked>
+            Very Low Confidence (< 10%)
+        </label>
+        <label>
+            <input type="checkbox" class="uncertainty-filter" value="3" checked>
+            High Confidence Errors
+        </label>
+    </div>
+    
+    <div id="result">
+        Selected levels: <span id="selected">0, 1, 2, 3</span>
+    </div>
+    
+    <script>
+        function updateSelection() {
+            const checkboxes = document.querySelectorAll('.uncertainty-filter');
+            const selected = [];
+            
+            checkboxes.forEach(cb => {
+                if (cb.checked) {
+                    selected.push(cb.value);
+                }
+            });
+            
+            document.getElementById('selected').textContent = selected.join(', ');
+        }
+        
+        // Add event listeners
+        document.querySelectorAll('.uncertainty-filter').forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                console.log('Checkbox clicked:', this.value, 'checked:', this.checked);
+                updateSelection();
+            });
+        });
+        
+        // Test if checkboxes are clickable
+        console.log('Checkboxes found:', document.querySelectorAll('.uncertainty-filter').length);
+    </script>
+</body>
+</html>

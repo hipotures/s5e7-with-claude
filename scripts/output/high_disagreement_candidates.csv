@@ -1,0 +1,6 @@
+id,equal_weight,pattern,model_social,model_personal,model_behavioral,model_binary,model_external
+20363,Extrovert,IEEEI,Introvert,Extrovert,Extrovert,Extrovert,Introvert
+21138,Extrovert,EIEIE,Extrovert,Introvert,Extrovert,Introvert,Extrovert
+22660,Extrovert,EEIEE,Extrovert,Extrovert,Introvert,Extrovert,Extrovert
+23865,Extrovert,IEEEI,Introvert,Extrovert,Extrovert,Extrovert,Introvert
+24005,Extrovert,EEIEE,Extrovert,Extrovert,Introvert,Extrovert,Extrovert

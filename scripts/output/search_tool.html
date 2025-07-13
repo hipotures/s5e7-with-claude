@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample Search Tool</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .search-box { margin: 20px 0; }
+        input { padding: 5px; width: 200px; }
+        button { padding: 5px 10px; }
+        .result { margin-top: 20px; padding: 10px; border: 1px solid #ccc; }
+        .removed { background-color: #ffe6e6; }
+        .kept { background-color: #e6f3ff; }
+        .test { background-color: #fff4e6; }
+    </style>
+</head>
+<body>
+    <h1>Sample Search Tool</h1>
+    <div class="search-box">
+        <input type="number" id="sampleId" placeholder="Enter Sample ID">
+        <button onclick="searchSample()">Search</button>
+    </div>
+    <div id="result"></div>
+    
+    <h2>Quick Links:</h2>
+    <ul>
+        <li><a href="interactive_clustering.html">Full Interactive Visualization</a></li>
+        <li><a href="interactive_pca_focused.html">Focused PCA Plot</a></li>
+    </ul>
+    
+    <script>
+        // This would need the data embedded or loaded via AJAX
+        function searchSample() {
+            const id = document.getElementById('sampleId').value;
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = `<p>Search functionality would require embedding data or server setup.</p>
+                                   <p>Please use the interactive visualizations to click on points.</p>`;
+        }
+    </script>
+</body>
+</html>
+    
