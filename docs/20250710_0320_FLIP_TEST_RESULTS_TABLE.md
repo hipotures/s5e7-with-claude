@@ -34,13 +34,23 @@ Data: 2025-07-10 03:20
 | 22 | 23547 | E→I | 0.975708 | **0** | MMD outlier |
 | 23 | 21138 | E→I | 0.974898 | **-1** | ❌ MMD outlier + gradient |
 | 24 | 20728 | I→E | 0.974898 | **-1** | ❌ MMD outlier |
+| 25 | 21359 | E→I | 0.974898 | **-1** | ❌ CORRECTED_DISAGREEMENT |
+| 26 | 19612 | E→I | 0.975708 | **0** | CORRECTED_DISAGREEMENT |
+| 27 | 20017 | E→I | 0.975708 | **0** | CORRECTED_DISAGREEMENT |
+| 28 | 19876 | E→I | 0.975708 | **0** | CORRECTED_DISAGREEMENT |
+| 29 | 19774 | E→I | 0.975708 | **0** | CORRECTED_DISAGREEMENT |
+| 30 | 18876 | E→I | 0.975708 | **0** | CORRECTED_DISAGREEMENT |
+| 31 | 18604 | E→I | 0.975708 | **0** | CORRECTED_DISAGREEMENT |
+| 32 | 19514 | E→I | 0.975708 | **0** | CORRECTED_DISAGREEMENT |
+| 33 | 18754 | E→I | 0.975708 | **0** | CORRECTED_DISAGREEMENT |
+| 34 | 19477 | E→I | 0.975708 | **0** | CORRECTED_DISAGREEMENT |
 
 ## Podsumowanie:
 
 | Status | Liczba | Procent | Opis |
 |--------|--------|---------|------|
-| **0** | 19 | 79.2% | Nie w public test set |
-| **-1** | 5 | 20.8% | Błędne flipy (false positives) |
+| **0** | 28 | 82.4% | Nie w public test set |
+| **-1** | 6 | 17.6% | Błędne flipy (false positives) |
 | **+1** | 0 | 0% | Prawdziwy błąd znaleziony (score wzrósł) |
 
 ## Kluczowe ID:
@@ -48,14 +58,15 @@ Data: 2025-07-10 03:20
 ### ✅ Potwierdzone błędy (0):
 - Żaden
 
-### ❌ Potwierdzone NIE-błędy (5):
+### ❌ Potwierdzone NIE-błędy (6):
 - **20934**: Jest poprawnie Extrovert
 - **18634**: Jest poprawnie Extrovert
 - **20932**: Jest poprawnie Introvert
 - **21138**: Jest poprawnie Extrovert (MMD outlier)
 - **20728**: Jest poprawnie Introvert (MMD outlier)
+- **21359**: Jest poprawnie Extrovert (CORRECTED_DISAGREEMENT)
 
-### ❓ Nieznany status (19):
+### ❓ Nieznany status (28):
 - Wszystkie pozostałe - mogą być błędami w private test set
 
 ## Analiza metod:
@@ -63,3 +74,4 @@ Data: 2025-07-10 03:20
 - **Sequential/Pattern**: 0/6 trafień (0% skuteczność)
 - **Boundary analysis**: 0/4 trafień (0% skuteczność, 2 false positives)
 - **MMD outliers**: 0/3 trafień (0% skuteczność, 2 false positives)
+- **CORRECTED_DISAGREEMENT**: 0/10 trafień (0% skuteczność, 1 false positive)
