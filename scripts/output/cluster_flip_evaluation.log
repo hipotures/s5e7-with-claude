@@ -1,0 +1,846 @@
+============================================================
+CLUSTER-BASED FLIP EVALUATION
+============================================================
+
+Found 371 anomalies in highly unanimous clusters (>90%)
+
+Evaluating top anomalies with cluster-based CV...
+
+Evaluating 1/20: Index 1703
+  Introvert in Extrovert-majority cluster (unanimity: 96.7%)
+Train model on 16280 examples
+Model trained in 0:00:00.062262
+Train model on 16280 examples
+Model trained in 0:00:00.059844
+Train model on 16910 examples
+Model trained in 0:00:00.062608
+Train model on 16910 examples
+Model trained in 0:00:00.061556
+Train model on 16270 examples
+Model trained in 0:00:00.055942
+Train model on 16270 examples
+Model trained in 0:00:00.061216
+Train model on 16370 examples
+Model trained in 0:00:00.057920
+Train model on 16370 examples
+Model trained in 0:00:00.061438
+Train model on 17838 examples
+Model trained in 0:00:00.063325
+Train model on 17838 examples
+Model trained in 0:00:00.066861
+Train model on 15919 examples
+Model trained in 0:00:00.059354
+Train model on 15919 examples
+Model trained in 0:00:00.057151
+Train model on 17765 examples
+Model trained in 0:00:00.062850
+Train model on 17765 examples
+Model trained in 0:00:00.063969
+Train model on 16269 examples
+Model trained in 0:00:00.059522
+Train model on 16269 examples
+Model trained in 0:00:00.059926
+Train model on 16806 examples
+Model trained in 0:00:00.060895
+Train model on 16806 examples
+Model trained in 0:00:00.061657
+  Mean improvement: +0.000000 ± 0.000000
+  Positive in 0/9 clusters
+
+Evaluating 2/20: Index 1834
+  Introvert in Extrovert-majority cluster (unanimity: 96.7%)
+Train model on 16280 examples
+Model trained in 0:00:00.059546
+Train model on 16280 examples
+Model trained in 0:00:00.059450
+Train model on 16910 examples
+Model trained in 0:00:00.062580
+Train model on 16910 examples
+Model trained in 0:00:00.063678
+Train model on 16270 examples
+Model trained in 0:00:00.058018
+Train model on 16270 examples
+Model trained in 0:00:00.056761
+Train model on 16370 examples
+Model trained in 0:00:00.060513
+Train model on 16370 examples
+Model trained in 0:00:00.061730
+Train model on 17838 examples
+Model trained in 0:00:00.068229
+Train model on 17838 examples
+Model trained in 0:00:00.067742
+Train model on 15919 examples
+Model trained in 0:00:00.058327
+Train model on 15919 examples
+Model trained in 0:00:00.057486
+Train model on 17765 examples
+Model trained in 0:00:00.065389
+Train model on 17765 examples
+Model trained in 0:00:00.064884
+Train model on 16269 examples
+Model trained in 0:00:00.060701
+Train model on 16269 examples
+Model trained in 0:00:00.058555
+Train model on 16806 examples
+Model trained in 0:00:00.060878
+Train model on 16806 examples
+Model trained in 0:00:00.059749
+  Mean improvement: +0.000162 ± 0.000458
+  Positive in 1/9 clusters
+
+Evaluating 3/20: Index 2176
+  Introvert in Extrovert-majority cluster (unanimity: 96.7%)
+Train model on 16280 examples
+Model trained in 0:00:00.061693
+Train model on 16280 examples
+Model trained in 0:00:00.058910
+Train model on 16910 examples
+Model trained in 0:00:00.061803
+Train model on 16910 examples
+Model trained in 0:00:00.059611
+Train model on 16270 examples
+Model trained in 0:00:00.058880
+Train model on 16270 examples
+Model trained in 0:00:00.058879
+Train model on 16370 examples
+Model trained in 0:00:00.061249
+Train model on 16370 examples
+Model trained in 0:00:00.061308
+Train model on 17838 examples
+Model trained in 0:00:00.066464
+Train model on 17838 examples
+Model trained in 0:00:00.066010
+Train model on 15919 examples
+Model trained in 0:00:00.060079
+Train model on 15919 examples
+Model trained in 0:00:00.060503
+Train model on 17765 examples
+Model trained in 0:00:00.069498
+Train model on 17765 examples
+Model trained in 0:00:00.067637
+Train model on 16269 examples
+Model trained in 0:00:00.058509
+Train model on 16269 examples
+Model trained in 0:00:00.062044
+Train model on 16806 examples
+Model trained in 0:00:00.062632
+Train model on 16806 examples
+Model trained in 0:00:00.065397
+  Mean improvement: -0.005124 ± 0.014492
+  Positive in 0/9 clusters
+
+Evaluating 4/20: Index 2197
+  Introvert in Extrovert-majority cluster (unanimity: 96.7%)
+Train model on 16280 examples
+Model trained in 0:00:00.060763
+Train model on 16280 examples
+Model trained in 0:00:00.060379
+Train model on 16910 examples
+Model trained in 0:00:00.060875
+Train model on 16910 examples
+Model trained in 0:00:00.062487
+Train model on 16270 examples
+Model trained in 0:00:00.061193
+Train model on 16270 examples
+Model trained in 0:00:00.061641
+Train model on 16370 examples
+Model trained in 0:00:00.059469
+Train model on 16370 examples
+Model trained in 0:00:00.061689
+Train model on 17838 examples
+Model trained in 0:00:00.065798
+Train model on 17838 examples
+Model trained in 0:00:00.062439
+Train model on 15919 examples
+Model trained in 0:00:00.059002
+Train model on 15919 examples
+Model trained in 0:00:00.057491
+Train model on 17765 examples
+Model trained in 0:00:00.064433
+Train model on 17765 examples
+Model trained in 0:00:00.064254
+Train model on 16269 examples
+Model trained in 0:00:00.060616
+Train model on 16269 examples
+Model trained in 0:00:00.060198
+Train model on 16806 examples
+Model trained in 0:00:00.060731
+Train model on 16806 examples
+Model trained in 0:00:00.061978
+  Mean improvement: +0.007303 ± 0.020246
+  Positive in 2/9 clusters
+
+Evaluating 5/20: Index 2653
+  Introvert in Extrovert-majority cluster (unanimity: 96.7%)
+Train model on 16280 examples
+Model trained in 0:00:00.061037
+Train model on 16280 examples
+Model trained in 0:00:00.061782
+Train model on 16910 examples
+Model trained in 0:00:00.059764
+Train model on 16910 examples
+Model trained in 0:00:00.064122
+Train model on 16270 examples
+Model trained in 0:00:00.059413
+Train model on 16270 examples
+Model trained in 0:00:00.060068
+Train model on 16370 examples
+Model trained in 0:00:00.060824
+Train model on 16370 examples
+Model trained in 0:00:00.057434
+Train model on 17838 examples
+Model trained in 0:00:00.065743
+Train model on 17838 examples
+Model trained in 0:00:00.065775
+Train model on 15919 examples
+Model trained in 0:00:00.056262
+Train model on 15919 examples
+Model trained in 0:00:00.055827
+Train model on 17765 examples
+Model trained in 0:00:00.065326
+Train model on 17765 examples
+Model trained in 0:00:00.065759
+Train model on 16269 examples
+Model trained in 0:00:00.060898
+Train model on 16269 examples
+Model trained in 0:00:00.064870
+Train model on 16806 examples
+Model trained in 0:00:00.060714
+Train model on 16806 examples
+Model trained in 0:00:00.062885
+  Mean improvement: +0.000146 ± 0.000414
+  Positive in 1/9 clusters
+
+Evaluating 6/20: Index 3833
+  Introvert in Extrovert-majority cluster (unanimity: 96.7%)
+Train model on 16280 examples
+Model trained in 0:00:00.062438
+Train model on 16280 examples
+Model trained in 0:00:00.060480
+Train model on 16910 examples
+Model trained in 0:00:00.059853
+Train model on 16910 examples
+Model trained in 0:00:00.060528
+Train model on 16270 examples
+Model trained in 0:00:00.061626
+Train model on 16270 examples
+Model trained in 0:00:00.060310
+Train model on 16370 examples
+Model trained in 0:00:00.060494
+Train model on 16370 examples
+Model trained in 0:00:00.060706
+Train model on 17838 examples
+Model trained in 0:00:00.065231
+Train model on 17838 examples
+Model trained in 0:00:00.064962
+Train model on 15919 examples
+Model trained in 0:00:00.059172
+Train model on 15919 examples
+Model trained in 0:00:00.056911
+Train model on 17765 examples
+Model trained in 0:00:00.064901
+Train model on 17765 examples
+Model trained in 0:00:00.064389
+Train model on 16269 examples
+Model trained in 0:00:00.061923
+Train model on 16269 examples
+Model trained in 0:00:00.061275
+Train model on 16806 examples
+Model trained in 0:00:00.060999
+Train model on 16806 examples
+Model trained in 0:00:00.063764
+  Mean improvement: +0.000000 ± 0.000000
+  Positive in 0/9 clusters
+
+Evaluating 7/20: Index 4463
+  Introvert in Extrovert-majority cluster (unanimity: 96.7%)
+Train model on 16280 examples
+Model trained in 0:00:00.057976
+Train model on 16280 examples
+Model trained in 0:00:00.059735
+Train model on 16910 examples
+Model trained in 0:00:00.058773
+Train model on 16910 examples
+Model trained in 0:00:00.061460
+Train model on 16270 examples
+Model trained in 0:00:00.061257
+Train model on 16270 examples
+Model trained in 0:00:00.059998
+Train model on 16370 examples
+Model trained in 0:00:00.059509
+Train model on 16370 examples
+Model trained in 0:00:00.061017
+Train model on 17838 examples
+Model trained in 0:00:00.065509
+Train model on 17838 examples
+Model trained in 0:00:00.068300
+Train model on 15919 examples
+Model trained in 0:00:00.057911
+Train model on 15919 examples
+Model trained in 0:00:00.060334
+Train model on 17765 examples
+Model trained in 0:00:00.065794
+Train model on 17765 examples
+Model trained in 0:00:00.066149
+Train model on 16269 examples
+Model trained in 0:00:00.061731
+Train model on 16269 examples
+Model trained in 0:00:00.061034
+Train model on 16806 examples
+Model trained in 0:00:00.060639
+Train model on 16806 examples
+Model trained in 0:00:00.062401
+  Mean improvement: -0.009500 ± 0.027389
+  Positive in 1/9 clusters
+
+Evaluating 8/20: Index 4519
+  Introvert in Extrovert-majority cluster (unanimity: 96.7%)
+Train model on 16280 examples
+Model trained in 0:00:00.058273
+Train model on 16280 examples
+Model trained in 0:00:00.058670
+Train model on 16910 examples
+Model trained in 0:00:00.060507
+Train model on 16910 examples
+Model trained in 0:00:00.064392
+Train model on 16270 examples
+Model trained in 0:00:00.060286
+Train model on 16270 examples
+Model trained in 0:00:00.062628
+Train model on 16370 examples
+Model trained in 0:00:00.057794
+Train model on 16370 examples
+Model trained in 0:00:00.060588
+Train model on 17838 examples
+Model trained in 0:00:00.066857
+Train model on 17838 examples
+Model trained in 0:00:00.065443
+Train model on 15919 examples
+Model trained in 0:00:00.058442
+Train model on 15919 examples
+Model trained in 0:00:00.058239
+Train model on 17765 examples
+Model trained in 0:00:00.069075
+Train model on 17765 examples
+Model trained in 0:00:00.064657
+Train model on 16269 examples
+Model trained in 0:00:00.059846
+Train model on 16269 examples
+Model trained in 0:00:00.060156
+Train model on 16806 examples
+Model trained in 0:00:00.065133
+Train model on 16806 examples
+Model trained in 0:00:00.060542
+  Mean improvement: +0.000000 ± 0.000000
+  Positive in 0/9 clusters
+
+Evaluating 9/20: Index 4548
+  Introvert in Extrovert-majority cluster (unanimity: 96.7%)
+Train model on 16280 examples
+Model trained in 0:00:00.058585
+Train model on 16280 examples
+Model trained in 0:00:00.057318
+Train model on 16910 examples
+Model trained in 0:00:00.060388
+Train model on 16910 examples
+Model trained in 0:00:00.062436
+Train model on 16270 examples
+Model trained in 0:00:00.058558
+Train model on 16270 examples
+Model trained in 0:00:00.057873
+Train model on 16370 examples
+Model trained in 0:00:00.058620
+Train model on 16370 examples
+Model trained in 0:00:00.061998
+Train model on 17838 examples
+Model trained in 0:00:00.067688
+Train model on 17838 examples
+Model trained in 0:00:00.064498
+Train model on 15919 examples
+Model trained in 0:00:00.057057
+Train model on 15919 examples
+Model trained in 0:00:00.060466
+Train model on 17765 examples
+Model trained in 0:00:00.062549
+Train model on 17765 examples
+Model trained in 0:00:00.063519
+Train model on 16269 examples
+Model trained in 0:00:00.059473
+Train model on 16269 examples
+Model trained in 0:00:00.061104
+Train model on 16806 examples
+Model trained in 0:00:00.062770
+Train model on 16806 examples
+Model trained in 0:00:00.065043
+  Mean improvement: +0.001757 ± 0.004969
+  Positive in 1/9 clusters
+
+Evaluating 10/20: Index 4637
+  Introvert in Extrovert-majority cluster (unanimity: 96.7%)
+Train model on 16280 examples
+Model trained in 0:00:00.060083
+Train model on 16280 examples
+Model trained in 0:00:00.061110
+Train model on 16910 examples
+Model trained in 0:00:00.063460
+Train model on 16910 examples
+Model trained in 0:00:00.062174
+Train model on 16270 examples
+Model trained in 0:00:00.056840
+Train model on 16270 examples
+Model trained in 0:00:00.059194
+Train model on 16370 examples
+Model trained in 0:00:00.058743
+Train model on 16370 examples
+Model trained in 0:00:00.061440
+Train model on 17838 examples
+Model trained in 0:00:00.065963
+Train model on 17838 examples
+Model trained in 0:00:00.062885
+Train model on 15919 examples
+Model trained in 0:00:00.060128
+Train model on 15919 examples
+Model trained in 0:00:00.057585
+Train model on 17765 examples
+Model trained in 0:00:00.066576
+Train model on 17765 examples
+Model trained in 0:00:00.064656
+Train model on 16269 examples
+Model trained in 0:00:00.058314
+Train model on 16269 examples
+Model trained in 0:00:00.059262
+Train model on 16806 examples
+Model trained in 0:00:00.062535
+Train model on 16806 examples
+Model trained in 0:00:00.061296
+  Mean improvement: +0.000977 ± 0.003533
+  Positive in 2/9 clusters
+
+Evaluating 11/20: Index 4677
+  Introvert in Extrovert-majority cluster (unanimity: 96.7%)
+Train model on 16280 examples
+Model trained in 0:00:00.060128
+Train model on 16280 examples
+Model trained in 0:00:00.058595
+Train model on 16910 examples
+Model trained in 0:00:00.060099
+Train model on 16910 examples
+Model trained in 0:00:00.061961
+Train model on 16270 examples
+Model trained in 0:00:00.057581
+Train model on 16270 examples
+Model trained in 0:00:00.060407
+Train model on 16370 examples
+Model trained in 0:00:00.059545
+Train model on 16370 examples
+Model trained in 0:00:00.059059
+Train model on 17838 examples
+Model trained in 0:00:00.064451
+Train model on 17838 examples
+Model trained in 0:00:00.064933
+Train model on 15919 examples
+Model trained in 0:00:00.056496
+Train model on 15919 examples
+Model trained in 0:00:00.057785
+Train model on 17765 examples
+Model trained in 0:00:00.064547
+Train model on 17765 examples
+Model trained in 0:00:00.066389
+Train model on 16269 examples
+Model trained in 0:00:00.059499
+Train model on 16269 examples
+Model trained in 0:00:00.059021
+Train model on 16806 examples
+Model trained in 0:00:00.062282
+Train model on 16806 examples
+Model trained in 0:00:00.059074
+  Mean improvement: -0.000324 ± 0.000916
+  Positive in 0/9 clusters
+
+Evaluating 12/20: Index 4898
+  Introvert in Extrovert-majority cluster (unanimity: 96.7%)
+Train model on 16280 examples
+Model trained in 0:00:00.058601
+Train model on 16280 examples
+Model trained in 0:00:00.059021
+Train model on 16910 examples
+Model trained in 0:00:00.062783
+Train model on 16910 examples
+Model trained in 0:00:00.059245
+Train model on 16270 examples
+Model trained in 0:00:00.058142
+Train model on 16270 examples
+Model trained in 0:00:00.060911
+Train model on 16370 examples
+Model trained in 0:00:00.057083
+Train model on 16370 examples
+Model trained in 0:00:00.058239
+Train model on 17838 examples
+Model trained in 0:00:00.064741
+Train model on 17838 examples
+Model trained in 0:00:00.063805
+Train model on 15919 examples
+Model trained in 0:00:00.059081
+Train model on 15919 examples
+Model trained in 0:00:00.057551
+Train model on 17765 examples
+Model trained in 0:00:00.066319
+Train model on 17765 examples
+Model trained in 0:00:00.064583
+Train model on 16269 examples
+Model trained in 0:00:00.060712
+Train model on 16269 examples
+Model trained in 0:00:00.058296
+Train model on 16806 examples
+Model trained in 0:00:00.058408
+Train model on 16806 examples
+Model trained in 0:00:00.059939
+  Mean improvement: +0.000129 ± 0.000366
+  Positive in 1/9 clusters
+
+Evaluating 13/20: Index 4943
+  Introvert in Extrovert-majority cluster (unanimity: 96.7%)
+Train model on 16280 examples
+Model trained in 0:00:00.060304
+Train model on 16280 examples
+Model trained in 0:00:00.061862
+Train model on 16910 examples
+Model trained in 0:00:00.060579
+Train model on 16910 examples
+Model trained in 0:00:00.057883
+Train model on 16270 examples
+Model trained in 0:00:00.062065
+Train model on 16270 examples
+Model trained in 0:00:00.059686
+Train model on 16370 examples
+Model trained in 0:00:00.063649
+Train model on 16370 examples
+Model trained in 0:00:00.062189
+Train model on 17838 examples
+Model trained in 0:00:00.066768
+Train model on 17838 examples
+Model trained in 0:00:00.064730
+Train model on 15919 examples
+Model trained in 0:00:00.054039
+Train model on 15919 examples
+Model trained in 0:00:00.057317
+Train model on 17765 examples
+Model trained in 0:00:00.064749
+Train model on 17765 examples
+Model trained in 0:00:00.061485
+Train model on 16269 examples
+Model trained in 0:00:00.058964
+Train model on 16269 examples
+Model trained in 0:00:00.061107
+Train model on 16806 examples
+Model trained in 0:00:00.056830
+Train model on 16806 examples
+Model trained in 0:00:00.060794
+  Mean improvement: -0.009986 ± 0.027228
+  Positive in 0/9 clusters
+
+Evaluating 14/20: Index 5512
+  Introvert in Extrovert-majority cluster (unanimity: 96.7%)
+Train model on 16280 examples
+Model trained in 0:00:00.062411
+Train model on 16280 examples
+Model trained in 0:00:00.058349
+Train model on 16910 examples
+Model trained in 0:00:00.063286
+Train model on 16910 examples
+Model trained in 0:00:00.061759
+Train model on 16270 examples
+Model trained in 0:00:00.058844
+Train model on 16270 examples
+Model trained in 0:00:00.060046
+Train model on 16370 examples
+Model trained in 0:00:00.059298
+Train model on 16370 examples
+Model trained in 0:00:00.059961
+Train model on 17838 examples
+Model trained in 0:00:00.063627
+Train model on 17838 examples
+Model trained in 0:00:00.063821
+Train model on 15919 examples
+Model trained in 0:00:00.056418
+Train model on 15919 examples
+Model trained in 0:00:00.060289
+Train model on 17765 examples
+Model trained in 0:00:00.063042
+Train model on 17765 examples
+Model trained in 0:00:00.065145
+Train model on 16269 examples
+Model trained in 0:00:00.060316
+Train model on 16269 examples
+Model trained in 0:00:00.060970
+Train model on 16806 examples
+Model trained in 0:00:00.061757
+Train model on 16806 examples
+Model trained in 0:00:00.061654
+  Mean improvement: +0.000000 ± 0.000000
+  Positive in 0/9 clusters
+
+Evaluating 15/20: Index 5657
+  Introvert in Extrovert-majority cluster (unanimity: 96.7%)
+Train model on 16280 examples
+Model trained in 0:00:00.061074
+Train model on 16280 examples
+Model trained in 0:00:00.059290
+Train model on 16910 examples
+Model trained in 0:00:00.059470
+Train model on 16910 examples
+Model trained in 0:00:00.064391
+Train model on 16270 examples
+Model trained in 0:00:00.059602
+Train model on 16270 examples
+Model trained in 0:00:00.058722
+Train model on 16370 examples
+Model trained in 0:00:00.060872
+Train model on 16370 examples
+Model trained in 0:00:00.060263
+Train model on 17838 examples
+Model trained in 0:00:00.063303
+Train model on 17838 examples
+Model trained in 0:00:00.066159
+Train model on 15919 examples
+Model trained in 0:00:00.056379
+Train model on 15919 examples
+Model trained in 0:00:00.056070
+Train model on 17765 examples
+Model trained in 0:00:00.065884
+Train model on 17765 examples
+Model trained in 0:00:00.065072
+Train model on 16269 examples
+Model trained in 0:00:00.059630
+Train model on 16269 examples
+Model trained in 0:00:00.060647
+Train model on 16806 examples
+Model trained in 0:00:00.062776
+Train model on 16806 examples
+Model trained in 0:00:00.063179
+  Mean improvement: +0.002928 ± 0.008281
+  Positive in 1/9 clusters
+
+Evaluating 16/20: Index 5941
+  Introvert in Extrovert-majority cluster (unanimity: 96.7%)
+Train model on 16280 examples
+Model trained in 0:00:00.061739
+Train model on 16280 examples
+Model trained in 0:00:00.063185
+Train model on 16910 examples
+Model trained in 0:00:00.065282
+Train model on 16910 examples
+Model trained in 0:00:00.064781
+Train model on 16270 examples
+Model trained in 0:00:00.058669
+Train model on 16270 examples
+Model trained in 0:00:00.063866
+Train model on 16370 examples
+Model trained in 0:00:00.060984
+Train model on 16370 examples
+Model trained in 0:00:00.061638
+Train model on 17838 examples
+Model trained in 0:00:00.062578
+Train model on 17838 examples
+Model trained in 0:00:00.064319
+Train model on 15919 examples
+Model trained in 0:00:00.057632
+Train model on 15919 examples
+Model trained in 0:00:00.057318
+Train model on 17765 examples
+Model trained in 0:00:00.066773
+Train model on 17765 examples
+Model trained in 0:00:00.063891
+Train model on 16269 examples
+Model trained in 0:00:00.060696
+Train model on 16269 examples
+Model trained in 0:00:00.060663
+Train model on 16806 examples
+Model trained in 0:00:00.060227
+Train model on 16806 examples
+Model trained in 0:00:00.057859
+  Mean improvement: +0.000000 ± 0.000000
+  Positive in 0/9 clusters
+
+Evaluating 17/20: Index 6593
+  Introvert in Extrovert-majority cluster (unanimity: 96.7%)
+Train model on 16280 examples
+Model trained in 0:00:00.057342
+Train model on 16280 examples
+Model trained in 0:00:00.061669
+Train model on 16910 examples
+Model trained in 0:00:00.063480
+Train model on 16910 examples
+Model trained in 0:00:00.059368
+Train model on 16270 examples
+Model trained in 0:00:00.060223
+Train model on 16270 examples
+Model trained in 0:00:00.057052
+Train model on 16370 examples
+Model trained in 0:00:00.059085
+Train model on 16370 examples
+Model trained in 0:00:00.060760
+Train model on 17838 examples
+Model trained in 0:00:00.063078
+Train model on 17838 examples
+Model trained in 0:00:00.068194
+Train model on 15919 examples
+Model trained in 0:00:00.053987
+Train model on 15919 examples
+Model trained in 0:00:00.058467
+Train model on 17765 examples
+Model trained in 0:00:00.067146
+Train model on 17765 examples
+Model trained in 0:00:00.066332
+Train model on 16269 examples
+Model trained in 0:00:00.059864
+Train model on 16269 examples
+Model trained in 0:00:00.059503
+Train model on 16806 examples
+Model trained in 0:00:00.062099
+Train model on 16806 examples
+Model trained in 0:00:00.061065
+  Mean improvement: +0.001757 ± 0.004969
+  Positive in 1/9 clusters
+
+Evaluating 18/20: Index 7881
+  Introvert in Extrovert-majority cluster (unanimity: 96.7%)
+Train model on 16280 examples
+Model trained in 0:00:00.057803
+Train model on 16280 examples
+Model trained in 0:00:00.062447
+Train model on 16910 examples
+Model trained in 0:00:00.060957
+Train model on 16910 examples
+Model trained in 0:00:00.060942
+Train model on 16270 examples
+Model trained in 0:00:00.060338
+Train model on 16270 examples
+Model trained in 0:00:00.062719
+Train model on 16370 examples
+Model trained in 0:00:00.061056
+Train model on 16370 examples
+Model trained in 0:00:00.060693
+Train model on 17838 examples
+Model trained in 0:00:00.063673
+Train model on 17838 examples
+Model trained in 0:00:00.064722
+Train model on 15919 examples
+Model trained in 0:00:00.056930
+Train model on 15919 examples
+Model trained in 0:00:00.056975
+Train model on 17765 examples
+Model trained in 0:00:00.064119
+Train model on 17765 examples
+Model trained in 0:00:00.066531
+Train model on 16269 examples
+Model trained in 0:00:00.060180
+Train model on 16269 examples
+Model trained in 0:00:00.058884
+Train model on 16806 examples
+Model trained in 0:00:00.063609
+Train model on 16806 examples
+Model trained in 0:00:00.057708
+  Mean improvement: +0.000308 ± 0.000578
+  Positive in 2/9 clusters
+
+Evaluating 19/20: Index 8117
+  Introvert in Extrovert-majority cluster (unanimity: 96.7%)
+Train model on 16280 examples
+Model trained in 0:00:00.059117
+Train model on 16280 examples
+Model trained in 0:00:00.055942
+Train model on 16910 examples
+Model trained in 0:00:00.059647
+Train model on 16910 examples
+Model trained in 0:00:00.062934
+Train model on 16270 examples
+Model trained in 0:00:00.058256
+Train model on 16270 examples
+Model trained in 0:00:00.057306
+Train model on 16370 examples
+Model trained in 0:00:00.059299
+Train model on 16370 examples
+Model trained in 0:00:00.059465
+Train model on 17838 examples
+Model trained in 0:00:00.065283
+Train model on 17838 examples
+Model trained in 0:00:00.068481
+Train model on 15919 examples
+Model trained in 0:00:00.055362
+Train model on 15919 examples
+Model trained in 0:00:00.056636
+Train model on 17765 examples
+Model trained in 0:00:00.065617
+Train model on 17765 examples
+Model trained in 0:00:00.066154
+Train model on 16269 examples
+Model trained in 0:00:00.055714
+Train model on 16269 examples
+Model trained in 0:00:00.058227
+Train model on 16806 examples
+Model trained in 0:00:00.060698
+Train model on 16806 examples
+Model trained in 0:00:00.062978
+  Mean improvement: +0.008052 ± 0.022773
+  Positive in 1/9 clusters
+
+Evaluating 20/20: Index 8145
+  Introvert in Extrovert-majority cluster (unanimity: 96.7%)
+Train model on 16280 examples
+Model trained in 0:00:00.060358
+Train model on 16280 examples
+Model trained in 0:00:00.060289
+Train model on 16910 examples
+Model trained in 0:00:00.064192
+Train model on 16910 examples
+Model trained in 0:00:00.062951
+Train model on 16270 examples
+Model trained in 0:00:00.060533
+Train model on 16270 examples
+Model trained in 0:00:00.060420
+Train model on 16370 examples
+Model trained in 0:00:00.062478
+Train model on 16370 examples
+Model trained in 0:00:00.059701
+Train model on 17838 examples
+Model trained in 0:00:00.065281
+Train model on 17838 examples
+Model trained in 0:00:00.068409
+Train model on 15919 examples
+Model trained in 0:00:00.056685
+Train model on 15919 examples
+Model trained in 0:00:00.057247
+Train model on 17765 examples
+Model trained in 0:00:00.067328
+Train model on 17765 examples
+Model trained in 0:00:00.064583
+Train model on 16269 examples
+Model trained in 0:00:00.061076
+Train model on 16269 examples
+Model trained in 0:00:00.062531
+Train model on 16806 examples
+Model trained in 0:00:00.062997
+Train model on 16806 examples
+Model trained in 0:00:00.061220
+  Mean improvement: +0.001757 ± 0.004969
+  Positive in 1/9 clusters
+
+============================================================
+SUMMARY OF FLIP EVALUATION
+============================================================
+
+Found 11 flips with positive mean improvement:
+
+1. Index 8117:
+   Introvert → Extrovert
+   Mean improvement: +0.008052
+   Positive in 1/9 clusters
+Traceback (most recent call last):
+  File "/mnt/ml/competitions/playground-series-s5e7/WORKSPACE/scripts/20250714_0340_cluster_flip_evaluation.py", line 195, in <module>
+    sorted_improvements = sorted(enumerate(result['improvements']), 
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/ml/competitions/playground-series-s5e7/WORKSPACE/scripts/20250714_0340_cluster_flip_evaluation.py", line 196, in <lambda>
+    key=lambda x: x[1]['improvement'], 
+                  ~~~~^^^^^^^^^^^^^^^
+IndexError: invalid index to scalar variable.

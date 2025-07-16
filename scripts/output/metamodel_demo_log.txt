@@ -1,0 +1,201 @@
+Evaluating flips:   0%|          | 0/20 [00:00<?, ?it/s]Train model on 14819 examples
+Model trained in 0:00:00.022029
+Train model on 14819 examples
+Model trained in 0:00:00.019211
+Train model on 14819 examples
+Model trained in 0:00:00.019341
+Train model on 14819 examples
+Model trained in 0:00:00.018592
+Train model on 14819 examples
+Model trained in 0:00:00.018208
+Evaluating flips:   5%|▌         | 1/20 [00:00<00:04,  4.61it/s]Train model on 14819 examples
+Model trained in 0:00:00.018455
+Train model on 14819 examples
+Model trained in 0:00:00.020065
+Train model on 14819 examples
+Model trained in 0:00:00.017658
+Train model on 14819 examples
+Model trained in 0:00:00.019966
+Train model on 14819 examples
+Model trained in 0:00:00.017585
+Evaluating flips:  10%|█         | 2/20 [00:00<00:03,  4.70it/s]Train model on 14819 examples
+Model trained in 0:00:00.018578
+Train model on 14819 examples
+Model trained in 0:00:00.016922
+Train model on 14819 examples
+Model trained in 0:00:00.018856
+Train model on 14819 examples
+Model trained in 0:00:00.019007
+Evaluating flips:  15%|█▌        | 3/20 [00:00<00:03,  5.25it/s]Train model on 14819 examples
+Model trained in 0:00:00.018195
+Train model on 14819 examples
+Model trained in 0:00:00.018180
+Train model on 14819 examples
+Model trained in 0:00:00.017121
+Train model on 14819 examples
+Model trained in 0:00:00.020290
+Evaluating flips:  20%|██        | 4/20 [00:00<00:02,  5.57it/s]Train model on 14819 examples
+Model trained in 0:00:00.018373
+Train model on 14819 examples
+Model trained in 0:00:00.017405
+Train model on 14819 examples
+Model trained in 0:00:00.018241
+Train model on 14819 examples
+Model trained in 0:00:00.018940
+Train model on 14819 examples
+Model trained in 0:00:00.018904
+Evaluating flips:  25%|██▌       | 5/20 [00:00<00:02,  5.30it/s]Train model on 14819 examples
+Model trained in 0:00:00.018176
+Train model on 14819 examples
+Model trained in 0:00:00.017125
+Train model on 14819 examples
+Model trained in 0:00:00.017475
+Train model on 14819 examples
+Model trained in 0:00:00.018154
+Evaluating flips:  30%|███       | 6/20 [00:01<00:02,  5.52it/s]Train model on 14819 examples
+Model trained in 0:00:00.017969
+Train model on 14819 examples
+Model trained in 0:00:00.017470
+Train model on 14819 examples
+Model trained in 0:00:00.018486
+Train model on 14819 examples
+Model trained in 0:00:00.017573
+Evaluating flips:  35%|███▌      | 7/20 [00:01<00:02,  5.76it/s]Train model on 14819 examples
+Model trained in 0:00:00.019502
+Train model on 14819 examples
+Model trained in 0:00:00.016973
+Train model on 14819 examples
+Model trained in 0:00:00.017607
+Train model on 14819 examples
+Model trained in 0:00:00.021810
+Train model on 14819 examples
+Model trained in 0:00:00.018720
+Train model on 14819 examples
+Model trained in 0:00:00.017753
+Evaluating flips:  40%|████      | 8/20 [00:01<00:02,  5.09it/s]Train model on 14819 examples
+Model trained in 0:00:00.017392
+Train model on 14819 examples
+Model trained in 0:00:00.017748
+Train model on 14819 examples
+Model trained in 0:00:00.018328
+Train model on 14819 examples
+Model trained in 0:00:00.018718
+Train model on 14819 examples
+Model trained in 0:00:00.017553
+Evaluating flips:  45%|████▌     | 9/20 [00:01<00:02,  5.04it/s]Train model on 14819 examples
+Model trained in 0:00:00.020006
+Train model on 14819 examples
+Model trained in 0:00:00.018311
+Train model on 14819 examples
+Model trained in 0:00:00.017823
+Train model on 14819 examples
+Model trained in 0:00:00.018443
+Train model on 14819 examples
+Model trained in 0:00:00.018779
+Train model on 14819 examples
+Model trained in 0:00:00.018346
+Evaluating flips:  50%|█████     | 10/20 [00:01<00:02,  4.68it/s]Train model on 14819 examples
+Model trained in 0:00:00.019129
+Train model on 14819 examples
+Model trained in 0:00:00.018986
+Train model on 14819 examples
+Model trained in 0:00:00.018379
+Train model on 14819 examples
+Model trained in 0:00:00.018085
+Train model on 14819 examples
+Model trained in 0:00:00.017265
+Evaluating flips:  55%|█████▌    | 11/20 [00:02<00:01,  4.71it/s]Train model on 14819 examples
+Model trained in 0:00:00.018637
+Train model on 14819 examples
+Model trained in 0:00:00.017886
+Train model on 14819 examples
+Model trained in 0:00:00.018358
+Train model on 14819 examples
+Model trained in 0:00:00.018176
+Train model on 14819 examples
+Model trained in 0:00:00.017569
+Evaluating flips:  60%|██████    | 12/20 [00:02<00:01,  4.72it/s]Train model on 14819 examples
+Model trained in 0:00:00.017714
+Train model on 14819 examples
+Model trained in 0:00:00.018818
+Train model on 14819 examples
+Model trained in 0:00:00.018840
+Train model on 14819 examples
+Model trained in 0:00:00.017671
+Train model on 14819 examples
+Model trained in 0:00:00.021532
+Train model on 14819 examples
+Model trained in 0:00:00.020101
+Evaluating flips:  65%|██████▌   | 13/20 [00:02<00:01,  4.45it/s]Train model on 14819 examples
+Model trained in 0:00:00.018321
+Train model on 14819 examples
+Model trained in 0:00:00.018761
+Train model on 14819 examples
+Model trained in 0:00:00.017954
+Train model on 14819 examples
+Model trained in 0:00:00.018048
+Train model on 14819 examples
+Model trained in 0:00:00.018027
+Train model on 14819 examples
+Model trained in 0:00:00.018782
+Evaluating flips:  70%|███████   | 14/20 [00:02<00:01,  4.31it/s]Train model on 14819 examples
+Model trained in 0:00:00.018046
+Train model on 14819 examples
+Model trained in 0:00:00.017940
+Train model on 14819 examples
+Model trained in 0:00:00.018920
+Train model on 14819 examples
+Model trained in 0:00:00.018323
+Train model on 14819 examples
+Model trained in 0:00:00.018419
+Evaluating flips:  75%|███████▌  | 15/20 [00:03<00:01,  4.42it/s]Train model on 14819 examples
+Model trained in 0:00:00.017769
+Train model on 14819 examples
+Model trained in 0:00:00.019711
+Train model on 14819 examples
+Model trained in 0:00:00.017369
+Evaluating flips:  80%|████████  | 16/20 [00:03<00:00,  5.08it/s]Train model on 14819 examples
+Model trained in 0:00:00.018355
+Train model on 14819 examples
+Model trained in 0:00:00.017217
+Train model on 14819 examples
+Model trained in 0:00:00.019317
+Train model on 14819 examples
+Model trained in 0:00:00.017194
+Train model on 14819 examples
+Model trained in 0:00:00.017407
+Evaluating flips:  85%|████████▌ | 17/20 [00:03<00:00,  5.07it/s]Train model on 14819 examples
+Model trained in 0:00:00.018018
+Train model on 14819 examples
+Model trained in 0:00:00.018533
+Train model on 14819 examples
+Model trained in 0:00:00.017995
+Train model on 14819 examples
+Model trained in 0:00:00.019313
+Train model on 14819 examples
+Model trained in 0:00:00.018891
+Train model on 14819 examples
+Model trained in 0:00:00.017630
+Evaluating flips:  90%|█████████ | 18/20 [00:03<00:00,  4.68it/s]Train model on 14819 examples
+Model trained in 0:00:00.020805
+Train model on 14819 examples
+Model trained in 0:00:00.017930
+Train model on 14819 examples
+Model trained in 0:00:00.020036
+Train model on 14819 examples
+Model trained in 0:00:00.017730
+Train model on 14819 examples
+Model trained in 0:00:00.017493
+Evaluating flips:  95%|█████████▌| 19/20 [00:03<00:00,  4.73it/s]Train model on 14819 examples
+Model trained in 0:00:00.017481
+Train model on 14819 examples
+Model trained in 0:00:00.018376
+Train model on 14819 examples
+Model trained in 0:00:00.017427
+Train model on 14819 examples
+Model trained in 0:00:00.017715
+Train model on 14819 examples
+Model trained in 0:00:00.018636
+Train model on 14819 examples
+Model trained in 0:00:00.017979
+Evaluating flips: 100%|██████████| 20/20 [00:04<00:00,  4.53it/s]Evaluating flips: 100%|██████████| 20/20 [00:04<00:00,  4.83it/s]

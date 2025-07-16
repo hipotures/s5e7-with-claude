@@ -1,0 +1,11 @@
+idx,anomaly,mean_improvement,std_improvement,positive_clusters,total_clusters
+1703,"{'idx': np.int64(1703), 'cluster': 7, 'label': 'Introvert', 'majority_label': 'Extrovert', 'cluster_intro_ratio': np.float64(0.016554809843400447)}",0.0,0.0,0,9
+1834,"{'idx': np.int64(1834), 'cluster': 7, 'label': 'Introvert', 'majority_label': 'Extrovert', 'cluster_intro_ratio': np.float64(0.016554809843400447)}",0.0,0.0,0,9
+2176,"{'idx': np.int64(2176), 'cluster': 7, 'label': 'Introvert', 'majority_label': 'Extrovert', 'cluster_intro_ratio': np.float64(0.016554809843400447)}",0.0,0.0,0,9
+2197,"{'idx': np.int64(2197), 'cluster': 7, 'label': 'Introvert', 'majority_label': 'Extrovert', 'cluster_intro_ratio': np.float64(0.016554809843400447)}",0.0,0.0,0,9
+2653,"{'idx': np.int64(2653), 'cluster': 7, 'label': 'Introvert', 'majority_label': 'Extrovert', 'cluster_intro_ratio': np.float64(0.016554809843400447)}",4.929508035098371e-05,0.00013942754238126524,1,9
+3833,"{'idx': np.int64(3833), 'cluster': 7, 'label': 'Introvert', 'majority_label': 'Extrovert', 'cluster_intro_ratio': np.float64(0.016554809843400447)}",0.0,0.0,0,9
+4463,"{'idx': np.int64(4463), 'cluster': 7, 'label': 'Introvert', 'majority_label': 'Extrovert', 'cluster_intro_ratio': np.float64(0.016554809843400447)}",0.0,0.0,0,9
+4519,"{'idx': np.int64(4519), 'cluster': 7, 'label': 'Introvert', 'majority_label': 'Extrovert', 'cluster_intro_ratio': np.float64(0.016554809843400447)}",-0.0021702788327482413,0.005935457397403925,0,9
+4548,"{'idx': np.int64(4548), 'cluster': 7, 'label': 'Introvert', 'majority_label': 'Extrovert', 'cluster_intro_ratio': np.float64(0.016554809843400447)}",0.0,0.0,0,9
+4637,"{'idx': np.int64(4637), 'cluster': 7, 'label': 'Introvert', 'majority_label': 'Extrovert', 'cluster_intro_ratio': np.float64(0.016554809843400447)}",0.0,0.0,0,9

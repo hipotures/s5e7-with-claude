@@ -1,0 +1,11 @@
+file,test_id,train_idx,improvement,flip,n_differences
+../scores/flip_METAMODEL_FIXED_0.008052_1_E2I_id_19316.csv,19316,8117,0.008052,Extrovert→Introvert,1
+../scores/flip_METAMODEL_FIXED_0.007303_1_E2I_id_21025.csv,21025,2197,0.007303,Extrovert→Introvert,1
+../scores/flip_METAMODEL_FIXED_0.002928_1_E2I_id_21835.csv,21835,5657,0.002928,Extrovert→Introvert,1
+../scores/flip_METAMODEL_FIXED_0.001757_1_E2I_id_21795.csv,21795,4548,0.001757,Extrovert→Introvert,1
+../scores/flip_METAMODEL_FIXED_0.001757_1_E2I_id_19866.csv,19866,6593,0.001757,Extrovert→Introvert,1
+../scores/flip_METAMODEL_FIXED_0.001757_1_E2I_id_19536.csv,19536,8145,0.001757,Extrovert→Introvert,1
+../scores/flip_METAMODEL_FIXED_0.000977_1_E2I_id_22493.csv,22493,4637,0.000977,Extrovert→Introvert,1
+../scores/flip_METAMODEL_FIXED_0.000308_1_E2I_id_21890.csv,21890,7881,0.000308,Extrovert→Introvert,1
+../scores/flip_METAMODEL_FIXED_0.000162_1_E2I_id_24043.csv,24043,1834,0.000162,Extrovert→Introvert,1
+../scores/flip_METAMODEL_FIXED_0.000146_1_E2I_id_18994.csv,18994,2653,0.000146,Extrovert→Introvert,1
