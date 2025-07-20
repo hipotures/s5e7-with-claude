@@ -1,0 +1,262 @@
+[
+  {
+    "filename": "amplified_false_positives_5x_20250714_021606_submission.csv",
+    "num_differences": 7,
+    "differences": [
+      "19612:E->I",
+      "20017:E->I",
+      "21932:E->I",
+      "23336:E->I",
+      "23350:E->I",
+      "23418:E->I",
+      "24005:E->I"
+    ]
+  },
+  {
+    "filename": "flip_BOUNDARY_2_E2I_id_18534.csv",
+    "num_differences": 1,
+    "differences": [
+      "18534:E->I"
+    ]
+  },
+  {
+    "filename": "flip_CORRECTED_DISAGREEMENT_1_E2I_id_18604.csv",
+    "num_differences": 1,
+    "differences": [
+      "18604:E->I"
+    ]
+  },
+  {
+    "filename": "flip_CORRECTED_DISAGREEMENT_1_E2I_id_18754.csv",
+    "num_differences": 1,
+    "differences": [
+      "18754:E->I"
+    ]
+  },
+  {
+    "filename": "flip_CORRECTED_DISAGREEMENT_1_E2I_id_18876.csv",
+    "num_differences": 1,
+    "differences": [
+      "18876:E->I"
+    ]
+  },
+  {
+    "filename": "flip_CORRECTED_DISAGREEMENT_1_E2I_id_19477.csv",
+    "num_differences": 1,
+    "differences": [
+      "19477:E->I"
+    ]
+  },
+  {
+    "filename": "flip_CORRECTED_DISAGREEMENT_1_E2I_id_19514.csv",
+    "num_differences": 1,
+    "differences": [
+      "19514:E->I"
+    ]
+  },
+  {
+    "filename": "flip_CORRECTED_DISAGREEMENT_1_E2I_id_19612.csv",
+    "num_differences": 1,
+    "differences": [
+      "19612:E->I"
+    ]
+  },
+  {
+    "filename": "flip_CORRECTED_DISAGREEMENT_1_E2I_id_19774.csv",
+    "num_differences": 1,
+    "differences": [
+      "19774:E->I"
+    ]
+  },
+  {
+    "filename": "flip_CORRECTED_DISAGREEMENT_1_E2I_id_19876.csv",
+    "num_differences": 1,
+    "differences": [
+      "19876:E->I"
+    ]
+  },
+  {
+    "filename": "flip_CORRECTED_DISAGREEMENT_1_E2I_id_20017.csv",
+    "num_differences": 1,
+    "differences": [
+      "20017:E->I"
+    ]
+  },
+  {
+    "filename": "flip_CORRECTED_DISAGREEMENT_1_E2I_id_21932.csv",
+    "num_differences": 1,
+    "differences": [
+      "21932:E->I"
+    ]
+  },
+  {
+    "filename": "flip_CORRECTED_DISAGREEMENT_1_E2I_id_22218.csv",
+    "num_differences": 1,
+    "differences": [
+      "22218:E->I"
+    ]
+  },
+  {
+    "filename": "flip_CORRECTED_DISAGREEMENT_1_E2I_id_22286.csv",
+    "num_differences": 1,
+    "differences": [
+      "22286:E->I"
+    ]
+  },
+  {
+    "filename": "flip_CORRECTED_DISAGREEMENT_1_E2I_id_22547.csv",
+    "num_differences": 1,
+    "differences": [
+      "22547:E->I"
+    ]
+  },
+  {
+    "filename": "flip_CORRECTED_DISAGREEMENT_1_E2I_id_23418.csv",
+    "num_differences": 1,
+    "differences": [
+      "23418:E->I"
+    ]
+  },
+  {
+    "filename": "flip_E2I_3_id_23336.csv",
+    "num_differences": 1,
+    "differences": [
+      "23336:E->I"
+    ]
+  },
+  {
+    "filename": "flip_E2I_4_id_23844.csv",
+    "num_differences": 1,
+    "differences": [
+      "23844:E->I"
+    ]
+  },
+  {
+    "filename": "flip_HARD_CASE_LIKE_11798_1_I2E_id_24428.csv",
+    "num_differences": 2,
+    "differences": [
+      "24005:E->I",
+      "24428:I->E"
+    ]
+  },
+  {
+    "filename": "flip_MIRROR_20934_v1_id_20033.csv",
+    "num_differences": 1,
+    "differences": [
+      "20033:I->E"
+    ]
+  },
+  {
+    "filename": "flip_MIRROR_20934_v2_id_22234.csv",
+    "num_differences": 1,
+    "differences": [
+      "22234:I->E"
+    ]
+  },
+  {
+    "filename": "flip_MIRROR_20934_v3_id_22927.csv",
+    "num_differences": 1,
+    "differences": [
+      "22927:I->E"
+    ]
+  },
+  {
+    "filename": "flip_MIRROR_20934_v4_id_19636.csv",
+    "num_differences": 1,
+    "differences": [
+      "19636:I->E"
+    ]
+  },
+  {
+    "filename": "flip_MIRROR_20934_v5_id_22850.csv",
+    "num_differences": 1,
+    "differences": [
+      "22850:I->E"
+    ]
+  },
+  {
+    "filename": "flip_MMD_1_E2I_id_23547.csv",
+    "num_differences": 2,
+    "differences": [
+      "23547:E->I",
+      "24005:E->I"
+    ]
+  },
+  {
+    "filename": "flip_NEW_1_first_records_E2I_id_18524.csv",
+    "num_differences": 1,
+    "differences": [
+      "18524:E->I"
+    ]
+  },
+  {
+    "filename": "flip_PATTERN34_1_E2I_id_18834.csv",
+    "num_differences": 1,
+    "differences": [
+      "18834:E->I"
+    ]
+  },
+  {
+    "filename": "flip_PATTERN34_2_E2I_id_18934.csv",
+    "num_differences": 1,
+    "differences": [
+      "18934:E->I"
+    ]
+  },
+  {
+    "filename": "flip_PATTERN34_3_E2I_id_19034.csv",
+    "num_differences": 1,
+    "differences": [
+      "19034:E->I"
+    ]
+  },
+  {
+    "filename": "flip_PATTERN34_5_E2I_id_19234.csv",
+    "num_differences": 1,
+    "differences": [
+      "19234:E->I"
+    ]
+  },
+  {
+    "filename": "flip_SEQ_1_I2E_id_18566.csv",
+    "num_differences": 1,
+    "differences": [
+      "18566:I->E"
+    ]
+  },
+  {
+    "filename": "flip_UNCERTAINTY_5_toI_id_24005.csv",
+    "num_differences": 1,
+    "differences": [
+      "24005:E->I"
+    ]
+  },
+  {
+    "filename": "flip_VERIFIED_BASELINE_0.000162_1_E2I_id_22040.csv",
+    "num_differences": 1,
+    "differences": [
+      "22040:E->I"
+    ]
+  },
+  {
+    "filename": "flip_VERIFIED_BASELINE_0.000308_1_E2I_id_21890.csv",
+    "num_differences": 1,
+    "differences": [
+      "21890:E->I"
+    ]
+  },
+  {
+    "filename": "flip_VERIFIED_BASELINE_0.000977_1_E2I_id_19065.csv",
+    "num_differences": 1,
+    "differences": [
+      "19065:E->I"
+    ]
+  },
+  {
+    "filename": "flip_VERIFIED_BASELINE_0.001757_1_E2I_id_18625.csv",
+    "num_differences": 1,
+    "differences": [
+      "18625:E->I"
+    ]
+  }
+]

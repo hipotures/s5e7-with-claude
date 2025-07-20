@@ -121,6 +121,37 @@ model = xgb.XGBClassifier(
 - TOP 3: 0.978137 (likely 1 error found)
 - Mathematical ceiling remains at 0.975708 for perfect predictions
 
+## Flip Testing Analysis (scripts/0.975708/)
+
+### Directory Structure
+- **Baseline file**: `subm-0.96950-20250704_121621-xgb-381482788433-148.csv` (MD5: c4c8721683a44601b6e423462ee7db98)
+- **minus-1/**: Files that scored 0.974898 (1 wrong flip)
+- **minus-2/**: Files that scored 0.974089 (2 wrong flips equivalent)
+- **trash/**: Duplicate files removed from analysis
+- **output/**: Analysis results and comparisons
+
+### Key Analysis Files
+- `neutral_ids.txt`: IDs that don't affect score when flipped
+- `m-1.txt`: IDs that decrease score by 1 point (0.000810)
+- `compare_submissions.py`: Compares all submissions against baseline
+- `analyze_baseline_differences.py`: Analyzes differences from baseline
+- `verify_flip_counts.py`: Verifies expected flip counts in minus-1/minus-2
+
+### Creating Flip Tests
+```bash
+# Create single flip test files
+python create_flip_tests.py  # or create_rfecv_flip_tests.py
+
+# Flip file naming convention:
+# flip_<STRATEGY>_<N>_<DIRECTION>_id_<ID>.csv
+# Direction: E2I (Extrovert to Introvert) or I2E (Introvert to Extrovert)
+```
+
+### Known ID Classifications
+- **Neutral IDs** (confirmed): 24005, 18887, 20153, 23177
+- **IDs giving -1**: 20932, 18634, 21359, 21800, 23872, 20934, 21138, 20728
+- **ID giving +1**: 20934 when flipped I→E (the only true error found)
+
 ## Translation and Identity Profile 
 
 ### Professional Identity

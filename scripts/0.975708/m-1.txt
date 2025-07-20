@@ -1,0 +1,11 @@
+# Lista ID które pogarszają wynik o -1 (0.975708 → 0.974898)
+# Źródło: pliki w katalogu minus-1/
+
+20932:I->E
+18634:E->I
+21359:E->I
+21800:E->I
+23872:E->I
+20934:E->I
+21138:E->I
+20728:I->E

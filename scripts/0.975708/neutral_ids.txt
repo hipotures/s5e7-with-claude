@@ -1,0 +1,62 @@
+# Lista ID neutralnych (nie wpływają na score)
+# Format: ID:baseline_value
+
+# Potwierdzone przez pojedyncze testy flip (wynik 0.975708)
+24005:E
+
+# Wydedukowane z analizy minus-2/
+# subm-0.97528 ma 3 zmiany: 20934 (-1), 21359 (-1), 22340 (0) = -2 total
+22340:E
+
+# Potwierdzone przez pojedyncze testy flip (wynik 0.975708) - 2025-07-20
+18887:I
+20153:I
+23177:E
+
+# Wydedukowane z analizy minus-2 (muszą być neutralne aby wynik się zgadzał)
+19612:E  # pojawia się w 2 plikach
+20017:E  # pojawia się w 1 pliku
+22286:E
+22547:E
+23418:E
+23547:E
+23844:E
+
+# Potencjalnie neutralne (wymagają weryfikacji)
+# Te ID zmieniają się w plikach z wynikiem 0.975708
+# ale mogą być częścią par które się znoszą
+19612:E
+20017:E  
+21932:E
+23336:E
+23418:E
+23350:E
+18534:E
+18604:E
+18754:E
+18876:E
+19477:E
+19514:E
+19774:E
+19876:E
+22218:E
+22286:E
+22547:E
+19636:I
+20033:I
+22234:I
+22850:I
+22927:I
+18524:E
+18566:I
+18625:E
+18834:E
+18934:E
+19034:E
+19065:E
+19234:E
+21890:E
+22040:E
+23547:E
+23844:E
+24428:I
